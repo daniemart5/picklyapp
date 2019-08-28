@@ -8,9 +8,9 @@
 
 bob = User.create(name: 'Bob', age: 45, city: 'Seattle', username: 'bobmart', password_digest: '0000', image: 'https://cdn.sandals.com/beaches/v12/images/general/destinations/home/beach.jpg')
 
-event1 = Event.create(name: 'Beach Lau', location: 'Seattle', description: 'Its super cool', category: 'Festival', website: 'none', rating: 5, like: 10 )
+event1 = Event.create(name: 'Beach Lau', location: 'Seattle', description: 'Its super cool', kind: 'Festival', website: 'none', rating: 5, like: 10 )
 
-restaurant1 = Restaurant.create(name: 'Burgers', location: 'Seattle', description: 'Its yummy!', category: 'American Burger Joint', website: 'none', rating: 4, like: 2 )
+restaurant1 = Restaurant.create(name: 'Burgers', location: 'Seattle', kind: 'American Burger Joint', website: 'none', rating: 4, like: 2 )
 
 bobsFav = Favorite.create(user_id: 1, favorite: 1, favorite_type: 'event')
 

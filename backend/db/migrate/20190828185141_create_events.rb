@@ -4,7 +4,7 @@ class CreateEvents < ActiveRecord::Migration[5.2]
       t.string :name
       t.string :location
       t.string :description
-      t.string :category
+      t.string :kind
       t.string :website
       t.integer :rating
       t.integer :like

@@ -3,7 +3,7 @@ class CreateRestaurants < ActiveRecord::Migration[5.2]
     create_table :restaurants do |t|
       t.string :name
       t.string :location
-      t.string :category
+      t.string :kind
       t.string :website
       t.integer :rating
       t.integer :like

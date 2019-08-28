@@ -4,10 +4,10 @@ class CreateEvents < ActiveRecord::Migration[5.2]
       t.string :name
       t.string :location
       t.string :description
-      t.string :type
+      t.string :kind
       t.string :website
-      t.int :rating
-      t.int :like
+      t.integer :rating
+      t.integer :like
 
       t.timestamps
     end

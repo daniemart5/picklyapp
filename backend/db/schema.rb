@@ -18,8 +18,8 @@ ActiveRecord::Schema.define(version: 2019_08_28_185211) do
   create_table "events", force: :cascade do |t|
     t.string "name"
     t.string "location"
+    t.string "description"
     t.string "kind"
-    t.string "type"
     t.string "website"
     t.integer "rating"
     t.integer "like"

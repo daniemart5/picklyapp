@@ -12,6 +12,6 @@ event1 = Event.create(name: 'Beach Lau', location: 'Seattle', description: 'Its 
 
 restaurant1 = Restaurant.create(name: 'Burgers', location: 'Seattle', kind: 'American Burger Joint', website: 'none', rating: 4, like: 2 )
 
-bobsFav = Favorite.create(user_id: 1, favorite: 1, favorite_type: 'event')
+bobsFav = Favorite.create(user_id: bob.id, favorite_id: event1.id, favorite_type: 'event')
 
-bobsFav2 = Favorite.create(user_id: 1, favorite: 1, favorite_type: 'restaurant')
+bobsFav2 = Favorite.create(user_id: bob.id, favorite_id: restaurant1.id, favorite_type: 'restaurant')

@@ -1,23 +1,36 @@
-import React, {Component} from "react";
-import Home from "./Containers/Home"; 
-import Landingpage from "./Containers/Landingpage";
+import React from 'react';
+import {BrowserRouter, Switch, Route, Link} from "react-router-dom";
+import Landing from './pages/Landing'
+import Homepage from './pages/Homepage'
+import Account from './pages/Account'
+import Search from './pages/Search'
 import "./App.css";
 
-class App extends Component {
-  
+class App extends React.Component {
+
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <h2>Pickly</h2>
-          <p>This is the app</p>
-        </header>
-        <div>
-          <p>
-            This app will change your, life maaaaaan
-          </p>
-        </div>
-      </div>
+      <BrowserRouter>
+        <Switch>
+          <Route path='/landing' exact component={Landing}/>
+          <Route path='/home' exact component={Homepage}/> 
+          <Route path='/account' exact component={Account}/>
+          <Route path='/search' exact component={Search}/>    
+          <div className="App">
+            <div className="container">
+              <h2>This is testing the page</h2>
+              <h3>Resons  why Danie is awesome</h3>
+              <ul>
+                <li>Cooks well</li>
+                <li>Cooks well</li>
+                <li>Cooks well</li>
+                <li>Cooks well</li>
+                <li>Cooks well</li>
+              </ul>
+            </div>
+          </div>
+        </Switch>
+      </BrowserRouter>
     );
   }
 }

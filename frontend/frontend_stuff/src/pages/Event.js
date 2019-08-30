@@ -8,7 +8,7 @@ class Event extends React.Component {
        <div className="App">
           <div className="container">
           <Header />
-          <h2>This is the Restaurant page</h2>
+          <h2>This is the Event page</h2>
             <h3>Name</h3>
             <p>
               location:

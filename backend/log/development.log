@@ -528,3 +528,1340 @@ Processing by RestaurantsController#index as HTML
 Completed 200 OK in 731429ms (Views: 0.3ms | ActiveRecord: 0.0ms)
 
 
+  [1m[35m (2.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[36mUser Exists (3.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER($1) LIMIT $2[0m  [["username", "peterpan4889"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:56
+  [1m[36mUser Create (6.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "city", "username", "password_digest", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Jim Shorts"], ["age", 38], ["city", "Orlando"], ["username", "peterpan4889"], ["password_digest", "0000"], ["image", "https://picsum.photos/id/1012/3973/2639"], ["created_at", "2019-09-02 17:19:45.792716"], ["updated_at", "2019-09-02 17:19:45.792716"]]
+  ↳ db/seeds.rb:56
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER($1) LIMIT $2[0m  [["username", "peterpan9354"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:56
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "city", "username", "password_digest", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Bob Sledd"], ["age", 16], ["city", "Austin"], ["username", "peterpan9354"], ["password_digest", "0000"], ["image", "https://picsum.photos/id/111/4400/2656"], ["created_at", "2019-09-02 17:19:45.803736"], ["updated_at", "2019-09-02 17:19:45.803736"]]
+  ↳ db/seeds.rb:56
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER($1) LIMIT $2[0m  [["username", "bobmart7981"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:56
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "city", "username", "password_digest", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Bob Frapples"], ["age", 35], ["city", "Austin"], ["username", "bobmart7981"], ["password_digest", "0000"], ["image", "https://picsum.photos/id/1025/4951/3301"], ["created_at", "2019-09-02 17:19:45.807107"], ["updated_at", "2019-09-02 17:19:45.807107"]]
+  ↳ db/seeds.rb:56
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER($1) LIMIT $2[0m  [["username", "princess983106"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:56
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "city", "username", "password_digest", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Rhea Curran"], ["age", 37], ["city", "Austin"], ["username", "princess983106"], ["password_digest", "0000"], ["image", "https://picsum.photos/id/1083/5472/3648"], ["created_at", "2019-09-02 17:19:45.810047"], ["updated_at", "2019-09-02 17:19:45.810047"]]
+  ↳ db/seeds.rb:56
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER($1) LIMIT $2[0m  [["username", "i_love_cats9916"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:56
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "city", "username", "password_digest", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "I. D. Clair"], ["age", 24], ["city", "Denver"], ["username", "i_love_cats9916"], ["password_digest", "0000"], ["image", "https://picsum.photos/id/390/5760/3840"], ["created_at", "2019-09-02 17:19:45.812552"], ["updated_at", "2019-09-02 17:19:45.812552"]]
+  ↳ db/seeds.rb:56
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER($1) LIMIT $2[0m  [["username", "i_love_cats9447"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:56
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "city", "username", "password_digest", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Kenny Dewitt"], ["age", 19], ["city", "Boise"], ["username", "i_love_cats9447"], ["password_digest", "0000"], ["image", "https://picsum.photos/id/237/3500/2095"], ["created_at", "2019-09-02 17:19:45.826466"], ["updated_at", "2019-09-02 17:19:45.826466"]]
+  ↳ db/seeds.rb:56
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER($1) LIMIT $2[0m  [["username", "tweet_yoself8421"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:56
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "city", "username", "password_digest", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Cody Pendant"], ["age", 22], ["city", "Boise"], ["username", "tweet_yoself8421"], ["password_digest", "0000"], ["image", "https://picsum.photos/id/1012/3973/2639"], ["created_at", "2019-09-02 17:19:45.828982"], ["updated_at", "2019-09-02 17:19:45.828982"]]
+  ↳ db/seeds.rb:56
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER($1) LIMIT $2[0m  [["username", "princess982819"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:56
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "city", "username", "password_digest", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Dee Liver"], ["age", 23], ["city", "New York"], ["username", "princess982819"], ["password_digest", "0000"], ["image", "https://picsum.photos/id/111/4400/2656"], ["created_at", "2019-09-02 17:19:45.831818"], ["updated_at", "2019-09-02 17:19:45.831818"]]
+  ↳ db/seeds.rb:56
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER($1) LIMIT $2[0m  [["username", "beerfriend4404"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:56
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "city", "username", "password_digest", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Ty Coon"], ["age", 49], ["city", "Austin"], ["username", "beerfriend4404"], ["password_digest", "0000"], ["image", "https://picsum.photos/id/1083/5472/3648"], ["created_at", "2019-09-02 17:19:45.834346"], ["updated_at", "2019-09-02 17:19:45.834346"]]
+  ↳ db/seeds.rb:56
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER($1) LIMIT $2[0m  [["username", "bobbie958223"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:56
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "city", "username", "password_digest", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Iona Ford"], ["age", 19], ["city", "Boise"], ["username", "bobbie958223"], ["password_digest", "0000"], ["image", "https://picsum.photos/id/1011/5472/3648"], ["created_at", "2019-09-02 17:19:45.836920"], ["updated_at", "2019-09-02 17:19:45.836920"]]
+  ↳ db/seeds.rb:56
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:66
+  [1m[36mEvent Create (1.9ms)[0m  [1m[32mINSERT INTO "events" ("name", "location", "description", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Meditation In the Park"], ["location", "Los Angeles"], ["description", "Come and join us as we lift each other to enlightenment"], ["kind", "Outdoor"], ["website", "https://picsum.photos/id/375/5184/3456"], ["rating", 5], ["like", 10], ["created_at", "2019-09-02 17:19:45.849381"], ["updated_at", "2019-09-02 17:19:45.849381"]]
+  ↳ db/seeds.rb:66
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:66
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:68
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("name", "location", "description", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "O Mcgees Pub Crawl "], ["location", "Denver"], ["description", "Pub Crawl of  all the major breweries in Denver! $125 gets you a commemorative mug, a drink in 5 places and a meal ticket."], ["kind", "Festival"], ["website", "https://picsum.photos/id/372/4871/3247"], ["rating", 5], ["like", 10], ["created_at", "2019-09-02 17:19:45.853207"], ["updated_at", "2019-09-02 17:19:45.853207"]]
+  ↳ db/seeds.rb:68
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:68
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:70
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("name", "location", "description", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Snoot Boop Shelter Extravaganva "], ["location", "Seattle"], ["description", "Come and give some Shelter cats some love! There will be food trucks, drinks and plenty of cats. Each cat is adoptable for only $10!"], ["kind", "Festival"], ["website", "https://picsum.photos/id/40/4106/2806"], ["rating", 5], ["like", 10], ["created_at", "2019-09-02 17:19:45.854861"], ["updated_at", "2019-09-02 17:19:45.854861"]]
+  ↳ db/seeds.rb:70
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:70
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:72
+  [1m[36mEvent Create (0.2ms)[0m  [1m[32mINSERT INTO "events" ("name", "location", "description", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Lets Canoe"], ["location", "Austin"], ["description", "We are putting together a chill canoe trip! Please rsvp so we can rent canoes. $20 per person unless you bring your own canoe! Meet at 8am in the park"], ["kind", "Outdoor"], ["website", "https://picsum.photos/id/469/3008/2000"], ["rating", 5], ["like", 10], ["created_at", "2019-09-02 17:19:45.856506"], ["updated_at", "2019-09-02 17:19:45.856506"]]
+  ↳ db/seeds.rb:72
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:72
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:74
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("name", "location", "description", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Beach Luau"], ["location", "Los Angeles"], ["description", "Bring all your beach stuff and head over to the annual Luau"], ["kind", "Festival"], ["website", "https://picsum.photos/id/372/4871/3247"], ["rating", 5], ["like", 10], ["created_at", "2019-09-02 17:19:45.857983"], ["updated_at", "2019-09-02 17:19:45.857983"]]
+  ↳ db/seeds.rb:74
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:74
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:76
+  [1m[36mEvent Create (0.2ms)[0m  [1m[32mINSERT INTO "events" ("name", "location", "description", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Hot Air Balloon Ride"], ["location", "Boise"], ["description", "See the beautiful  sites from 1,000 ft up!"], ["kind", "Outdoor"], ["website", "https://picsum.photos/id/401/5184/3456"], ["rating", 5], ["like", 0], ["created_at", "2019-09-02 17:19:45.859457"], ["updated_at", "2019-09-02 17:19:45.859457"]]
+  ↳ db/seeds.rb:76
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:76
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:78
+  [1m[36mEvent Create (0.2ms)[0m  [1m[32mINSERT INTO "events" ("name", "location", "description", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Typewritting 101"], ["location", "Boston"], ["description", "Come learn the fancy ways of typing on a type writer!"], ["kind", "Lesson"], ["website", "https://picsum.photos/id/403/3997/2665"], ["rating", 5], ["like", 0], ["created_at", "2019-09-02 17:19:45.860707"], ["updated_at", "2019-09-02 17:19:45.860707"]]
+  ↳ db/seeds.rb:78
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:78
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:80
+  [1m[36mEvent Create (0.2ms)[0m  [1m[32mINSERT INTO "events" ("name", "location", "description", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "4th of July Bash 2020"], ["location", "Austin"], ["description", "We bring  the bbq  you bring the fireworks! Best display gets a prize! Lets celebrate america."], ["kind", "Festival"], ["website", "https://picsum.photos/id/407/4272/2848"], ["rating", 5], ["like", 0], ["created_at", "2019-09-02 17:19:45.862048"], ["updated_at", "2019-09-02 17:19:45.862048"]]
+  ↳ db/seeds.rb:80
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:80
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:82
+  [1m[36mEvent Create (0.2ms)[0m  [1m[32mINSERT INTO "events" ("name", "location", "description", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Coffee Tasting"], ["location", "Seattle"], ["description", "Lets explore the inner workings of the coffee bean. We will go through proper cupping and taste profiling."], ["kind", "Lesson"], ["website", "https://picsum.photos/id/425/959/635"], ["rating", 5], ["like", 0], ["created_at", "2019-09-02 17:19:45.863477"], ["updated_at", "2019-09-02 17:19:45.863477"]]
+  ↳ db/seeds.rb:82
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:82
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER($1) LIMIT $2[0m  [["username", "bobbie959303"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:56
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "city", "username", "password_digest", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Bart Ender"], ["age", 32], ["city", "Austin"], ["username", "bobbie959303"], ["password_digest", "0000"], ["image", "https://picsum.photos/id/237/3500/2095"], ["created_at", "2019-09-02 17:23:58.088002"], ["updated_at", "2019-09-02 17:23:58.088002"]]
+  ↳ db/seeds.rb:56
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER($1) LIMIT $2[0m  [["username", "bobbie953938"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:56
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "city", "username", "password_digest", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Ty Tannick"], ["age", 60], ["city", "San Diego"], ["username", "bobbie953938"], ["password_digest", "0000"], ["image", "https://picsum.photos/id/1083/5472/3648"], ["created_at", "2019-09-02 17:23:58.091157"], ["updated_at", "2019-09-02 17:23:58.091157"]]
+  ↳ db/seeds.rb:56
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER($1) LIMIT $2[0m  [["username", "immaFungi87212"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:56
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "city", "username", "password_digest", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Sarah Bellum"], ["age", 29], ["city", "Chicago"], ["username", "immaFungi87212"], ["password_digest", "0000"], ["image", "https://picsum.photos/id/237/3500/2095"], ["created_at", "2019-09-02 17:23:58.094004"], ["updated_at", "2019-09-02 17:23:58.094004"]]
+  ↳ db/seeds.rb:56
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER($1) LIMIT $2[0m  [["username", "peterpan5243"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:56
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "city", "username", "password_digest", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Warren T."], ["age", 24], ["city", "New York"], ["username", "peterpan5243"], ["password_digest", "0000"], ["image", "https://picsum.photos/id/111/4400/2656"], ["created_at", "2019-09-02 17:23:58.097046"], ["updated_at", "2019-09-02 17:23:58.097046"]]
+  ↳ db/seeds.rb:56
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER($1) LIMIT $2[0m  [["username", "immaFungi87583"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:56
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "city", "username", "password_digest", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Sam Manilla"], ["age", 55], ["city", "San Diego"], ["username", "immaFungi87583"], ["password_digest", "0000"], ["image", "https://picsum.photos/id/1083/5472/3648"], ["created_at", "2019-09-02 17:23:58.100338"], ["updated_at", "2019-09-02 17:23:58.100338"]]
+  ↳ db/seeds.rb:56
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER($1) LIMIT $2[0m  [["username", "bobmart5790"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:56
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "city", "username", "password_digest", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Emma Royds"], ["age", 20], ["city", "Boise"], ["username", "bobmart5790"], ["password_digest", "0000"], ["image", "https://picsum.photos/id/1027/2848/4272"], ["created_at", "2019-09-02 17:23:58.103823"], ["updated_at", "2019-09-02 17:23:58.103823"]]
+  ↳ db/seeds.rb:56
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER($1) LIMIT $2[0m  [["username", "beerfriend4297"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:56
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "city", "username", "password_digest", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Chris Mass"], ["age", 56], ["city", "Orlando"], ["username", "beerfriend4297"], ["password_digest", "0000"], ["image", "https://picsum.photos/id/1025/4951/3301"], ["created_at", "2019-09-02 17:23:58.107039"], ["updated_at", "2019-09-02 17:23:58.107039"]]
+  ↳ db/seeds.rb:56
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER($1) LIMIT $2[0m  [["username", "sillyMcgee231081"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:56
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "city", "username", "password_digest", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Duane Pipe"], ["age", 22], ["city", "Chicago"], ["username", "sillyMcgee231081"], ["password_digest", "0000"], ["image", "https://picsum.photos/id/1025/4951/3301"], ["created_at", "2019-09-02 17:23:58.110199"], ["updated_at", "2019-09-02 17:23:58.110199"]]
+  ↳ db/seeds.rb:56
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER($1) LIMIT $2[0m  [["username", "beerfriend6565"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:56
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "city", "username", "password_digest", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Ben O'Drill"], ["age", 36], ["city", "Chicago"], ["username", "beerfriend6565"], ["password_digest", "0000"], ["image", "https://picsum.photos/id/390/5760/3840"], ["created_at", "2019-09-02 17:23:58.113045"], ["updated_at", "2019-09-02 17:23:58.113045"]]
+  ↳ db/seeds.rb:56
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER($1) LIMIT $2[0m  [["username", "peterpan7040"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:56
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "city", "username", "password_digest", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Evan Keel"], ["age", 56], ["city", "Los Angeles"], ["username", "peterpan7040"], ["password_digest", "0000"], ["image", "https://picsum.photos/id/1027/2848/4272"], ["created_at", "2019-09-02 17:23:58.116424"], ["updated_at", "2019-09-02 17:23:58.116424"]]
+  ↳ db/seeds.rb:56
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:66
+  [1m[36mEvent Create (0.6ms)[0m  [1m[32mINSERT INTO "events" ("name", "location", "description", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Meditation In the Park"], ["location", "Los Angeles"], ["description", "Come and join us as we lift each other to enlightenment"], ["kind", "Outdoor"], ["website", "https://picsum.photos/id/375/5184/3456"], ["rating", 5], ["like", 10], ["created_at", "2019-09-02 17:23:58.131626"], ["updated_at", "2019-09-02 17:23:58.131626"]]
+  ↳ db/seeds.rb:66
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:66
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:68
+  [1m[36mEvent Create (0.2ms)[0m  [1m[32mINSERT INTO "events" ("name", "location", "description", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "O Mcgees Pub Crawl "], ["location", "Denver"], ["description", "Pub Crawl of  all the major breweries in Denver! $125 gets you a commemorative mug, a drink in 5 places and a meal ticket."], ["kind", "Festival"], ["website", "https://picsum.photos/id/372/4871/3247"], ["rating", 5], ["like", 10], ["created_at", "2019-09-02 17:23:58.133864"], ["updated_at", "2019-09-02 17:23:58.133864"]]
+  ↳ db/seeds.rb:68
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:68
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:70
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("name", "location", "description", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Snoot Boop Shelter Extravaganva "], ["location", "Seattle"], ["description", "Come and give some Shelter cats some love! There will be food trucks, drinks and plenty of cats. Each cat is adoptable for only $10!"], ["kind", "Festival"], ["website", "https://picsum.photos/id/40/4106/2806"], ["rating", 5], ["like", 10], ["created_at", "2019-09-02 17:23:58.135446"], ["updated_at", "2019-09-02 17:23:58.135446"]]
+  ↳ db/seeds.rb:70
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:70
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:72
+  [1m[36mEvent Create (0.2ms)[0m  [1m[32mINSERT INTO "events" ("name", "location", "description", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Lets Canoe"], ["location", "Austin"], ["description", "We are putting together a chill canoe trip! Please rsvp so we can rent canoes. $20 per person unless you bring your own canoe! Meet at 8am in the park"], ["kind", "Outdoor"], ["website", "https://picsum.photos/id/469/3008/2000"], ["rating", 5], ["like", 10], ["created_at", "2019-09-02 17:23:58.136902"], ["updated_at", "2019-09-02 17:23:58.136902"]]
+  ↳ db/seeds.rb:72
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:72
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:74
+  [1m[36mEvent Create (0.2ms)[0m  [1m[32mINSERT INTO "events" ("name", "location", "description", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Beach Luau"], ["location", "Los Angeles"], ["description", "Bring all your beach stuff and head over to the annual Luau"], ["kind", "Festival"], ["website", "https://picsum.photos/id/372/4871/3247"], ["rating", 5], ["like", 10], ["created_at", "2019-09-02 17:23:58.138398"], ["updated_at", "2019-09-02 17:23:58.138398"]]
+  ↳ db/seeds.rb:74
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:74
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:76
+  [1m[36mEvent Create (0.2ms)[0m  [1m[32mINSERT INTO "events" ("name", "location", "description", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Hot Air Balloon Ride"], ["location", "Boise"], ["description", "See the beautiful  sites from 1,000 ft up!"], ["kind", "Outdoor"], ["website", "https://picsum.photos/id/401/5184/3456"], ["rating", 5], ["like", 0], ["created_at", "2019-09-02 17:23:58.139982"], ["updated_at", "2019-09-02 17:23:58.139982"]]
+  ↳ db/seeds.rb:76
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:76
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:78
+  [1m[36mEvent Create (0.2ms)[0m  [1m[32mINSERT INTO "events" ("name", "location", "description", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Typewritting 101"], ["location", "Boston"], ["description", "Come learn the fancy ways of typing on a type writer!"], ["kind", "Lesson"], ["website", "https://picsum.photos/id/403/3997/2665"], ["rating", 5], ["like", 0], ["created_at", "2019-09-02 17:23:58.141529"], ["updated_at", "2019-09-02 17:23:58.141529"]]
+  ↳ db/seeds.rb:78
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:78
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:80
+  [1m[36mEvent Create (0.2ms)[0m  [1m[32mINSERT INTO "events" ("name", "location", "description", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "4th of July Bash 2020"], ["location", "Austin"], ["description", "We bring  the bbq  you bring the fireworks! Best display gets a prize! Lets celebrate america."], ["kind", "Festival"], ["website", "https://picsum.photos/id/407/4272/2848"], ["rating", 5], ["like", 0], ["created_at", "2019-09-02 17:23:58.143114"], ["updated_at", "2019-09-02 17:23:58.143114"]]
+  ↳ db/seeds.rb:80
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:80
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:82
+  [1m[36mEvent Create (0.2ms)[0m  [1m[32mINSERT INTO "events" ("name", "location", "description", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Coffee Tasting"], ["location", "Seattle"], ["description", "Lets explore the inner workings of the coffee bean. We will go through proper cupping and taste profiling."], ["kind", "Lesson"], ["website", "https://picsum.photos/id/425/959/635"], ["rating", 5], ["like", 0], ["created_at", "2019-09-02 17:23:58.144611"], ["updated_at", "2019-09-02 17:23:58.144611"]]
+  ↳ db/seeds.rb:82
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:82
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:84
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("name", "location", "description", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Some Random Band Concert"], ["location", "Chicago"], ["description", "Rock and roll with these guys. Drinks are free but hope in humanity is $10 each."], ["kind", "Concert"], ["website", "https://picsum.photos/id/452/4096/2722"], ["rating", 5], ["like", 0], ["created_at", "2019-09-02 17:23:58.146189"], ["updated_at", "2019-09-02 17:23:58.146189"]]
+  ↳ db/seeds.rb:84
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:84
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER($1) LIMIT $2[0m  [["username", "immaFungi84924"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:56
+  [1m[36mUser Create (1.8ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "city", "username", "password_digest", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Noah Lott"], ["age", 14], ["city", "Austin"], ["username", "immaFungi84924"], ["password_digest", "0000"], ["image", "https://picsum.photos/id/237/3500/2095"], ["created_at", "2019-09-02 17:25:42.407132"], ["updated_at", "2019-09-02 17:25:42.407132"]]
+  ↳ db/seeds.rb:56
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER($1) LIMIT $2[0m  [["username", "i_love_cats4305"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:56
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "city", "username", "password_digest", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Annie Howe"], ["age", 50], ["city", "San Diego"], ["username", "i_love_cats4305"], ["password_digest", "0000"], ["image", "https://picsum.photos/id/177/2515/1830"], ["created_at", "2019-09-02 17:25:42.412940"], ["updated_at", "2019-09-02 17:25:42.412940"]]
+  ↳ db/seeds.rb:56
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER($1) LIMIT $2[0m  [["username", "beerfriend3389"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:56
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "city", "username", "password_digest", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Dee Sember"], ["age", 18], ["city", "New York"], ["username", "beerfriend3389"], ["password_digest", "0000"], ["image", "https://picsum.photos/id/1011/5472/3648"], ["created_at", "2019-09-02 17:25:42.415847"], ["updated_at", "2019-09-02 17:25:42.415847"]]
+  ↳ db/seeds.rb:56
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER($1) LIMIT $2[0m  [["username", "bobbie952661"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:56
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "city", "username", "password_digest", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Ryan Coke"], ["age", 23], ["city", "Orlando"], ["username", "bobbie952661"], ["password_digest", "0000"], ["image", "https://picsum.photos/id/1083/5472/3648"], ["created_at", "2019-09-02 17:25:42.418460"], ["updated_at", "2019-09-02 17:25:42.418460"]]
+  ↳ db/seeds.rb:56
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER($1) LIMIT $2[0m  [["username", "i_love_cats2349"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:56
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "city", "username", "password_digest", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Luke Adam Go"], ["age", 59], ["city", "Boise"], ["username", "i_love_cats2349"], ["password_digest", "0000"], ["image", "https://picsum.photos/id/1027/2848/4272"], ["created_at", "2019-09-02 17:25:42.421461"], ["updated_at", "2019-09-02 17:25:42.421461"]]
+  ↳ db/seeds.rb:56
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER($1) LIMIT $2[0m  [["username", "sillyMcgee235794"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:56
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "city", "username", "password_digest", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Beau Vine"], ["age", 60], ["city", "Seattle"], ["username", "sillyMcgee235794"], ["password_digest", "0000"], ["image", "https://picsum.photos/id/390/5760/3840"], ["created_at", "2019-09-02 17:25:42.424351"], ["updated_at", "2019-09-02 17:25:42.424351"]]
+  ↳ db/seeds.rb:56
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER($1) LIMIT $2[0m  [["username", "sillyMcgee236523"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:56
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "city", "username", "password_digest", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Candy Baskett"], ["age", 15], ["city", "Boise"], ["username", "sillyMcgee236523"], ["password_digest", "0000"], ["image", "https://picsum.photos/id/237/3500/2095"], ["created_at", "2019-09-02 17:25:42.426951"], ["updated_at", "2019-09-02 17:25:42.426951"]]
+  ↳ db/seeds.rb:56
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER($1) LIMIT $2[0m  [["username", "beerfriend8174"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:56
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "city", "username", "password_digest", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Dan Saul Knight"], ["age", 23], ["city", "New York"], ["username", "beerfriend8174"], ["password_digest", "0000"], ["image", "https://picsum.photos/id/111/4400/2656"], ["created_at", "2019-09-02 17:25:42.429482"], ["updated_at", "2019-09-02 17:25:42.429482"]]
+  ↳ db/seeds.rb:56
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER($1) LIMIT $2[0m  [["username", "immaFungi85445"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:56
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "city", "username", "password_digest", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Mary Ann Bright"], ["age", 36], ["city", "Denver"], ["username", "immaFungi85445"], ["password_digest", "0000"], ["image", "https://picsum.photos/id/1027/2848/4272"], ["created_at", "2019-09-02 17:25:42.432073"], ["updated_at", "2019-09-02 17:25:42.432073"]]
+  ↳ db/seeds.rb:56
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER($1) LIMIT $2[0m  [["username", "beerfriend9256"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:56
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "city", "username", "password_digest", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Curt N. Rodd"], ["age", 57], ["city", "Orlando"], ["username", "beerfriend9256"], ["password_digest", "0000"], ["image", "https://picsum.photos/id/1027/2848/4272"], ["created_at", "2019-09-02 17:25:42.434494"], ["updated_at", "2019-09-02 17:25:42.434494"]]
+  ↳ db/seeds.rb:56
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:66
+  [1m[36mEvent Create (0.5ms)[0m  [1m[32mINSERT INTO "events" ("name", "location", "description", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Meditation In the Park"], ["location", "Los Angeles"], ["description", "Come and join us as we lift each other to enlightenment"], ["kind", "Outdoor"], ["website", "https://picsum.photos/id/375/5184/3456"], ["rating", 5], ["like", 10], ["created_at", "2019-09-02 17:25:42.447903"], ["updated_at", "2019-09-02 17:25:42.447903"]]
+  ↳ db/seeds.rb:66
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:66
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:68
+  [1m[36mEvent Create (0.2ms)[0m  [1m[32mINSERT INTO "events" ("name", "location", "description", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "O Mcgees Pub Crawl "], ["location", "Denver"], ["description", "Pub Crawl of  all the major breweries in Denver! $125 gets you a commemorative mug, a drink in 5 places and a meal ticket."], ["kind", "Festival"], ["website", "https://picsum.photos/id/372/4871/3247"], ["rating", 5], ["like", 10], ["created_at", "2019-09-02 17:25:42.449897"], ["updated_at", "2019-09-02 17:25:42.449897"]]
+  ↳ db/seeds.rb:68
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:68
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:70
+  [1m[36mEvent Create (0.2ms)[0m  [1m[32mINSERT INTO "events" ("name", "location", "description", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Snoot Boop Shelter Extravaganva "], ["location", "Seattle"], ["description", "Come and give some Shelter cats some love! There will be food trucks, drinks and plenty of cats. Each cat is adoptable for only $10!"], ["kind", "Festival"], ["website", "https://picsum.photos/id/40/4106/2806"], ["rating", 5], ["like", 10], ["created_at", "2019-09-02 17:25:42.451307"], ["updated_at", "2019-09-02 17:25:42.451307"]]
+  ↳ db/seeds.rb:70
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:70
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:72
+  [1m[36mEvent Create (0.2ms)[0m  [1m[32mINSERT INTO "events" ("name", "location", "description", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Lets Canoe"], ["location", "Austin"], ["description", "We are putting together a chill canoe trip! Please rsvp so we can rent canoes. $20 per person unless you bring your own canoe! Meet at 8am in the park"], ["kind", "Outdoor"], ["website", "https://picsum.photos/id/469/3008/2000"], ["rating", 5], ["like", 10], ["created_at", "2019-09-02 17:25:42.452938"], ["updated_at", "2019-09-02 17:25:42.452938"]]
+  ↳ db/seeds.rb:72
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:72
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:74
+  [1m[36mEvent Create (0.4ms)[0m  [1m[32mINSERT INTO "events" ("name", "location", "description", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Beach Luau"], ["location", "Los Angeles"], ["description", "Bring all your beach stuff and head over to the annual Luau"], ["kind", "Festival"], ["website", "https://picsum.photos/id/372/4871/3247"], ["rating", 5], ["like", 10], ["created_at", "2019-09-02 17:25:42.454644"], ["updated_at", "2019-09-02 17:25:42.454644"]]
+  ↳ db/seeds.rb:74
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:74
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:76
+  [1m[36mEvent Create (0.2ms)[0m  [1m[32mINSERT INTO "events" ("name", "location", "description", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Hot Air Balloon Ride"], ["location", "Boise"], ["description", "See the beautiful  sites from 1,000 ft up!"], ["kind", "Outdoor"], ["website", "https://picsum.photos/id/401/5184/3456"], ["rating", 5], ["like", 0], ["created_at", "2019-09-02 17:25:42.456348"], ["updated_at", "2019-09-02 17:25:42.456348"]]
+  ↳ db/seeds.rb:76
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:76
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:78
+  [1m[36mEvent Create (0.2ms)[0m  [1m[32mINSERT INTO "events" ("name", "location", "description", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Typewritting 101"], ["location", "Boston"], ["description", "Come learn the fancy ways of typing on a type writer!"], ["kind", "Lesson"], ["website", "https://picsum.photos/id/403/3997/2665"], ["rating", 5], ["like", 0], ["created_at", "2019-09-02 17:25:42.457946"], ["updated_at", "2019-09-02 17:25:42.457946"]]
+  ↳ db/seeds.rb:78
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:78
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:80
+  [1m[36mEvent Create (0.2ms)[0m  [1m[32mINSERT INTO "events" ("name", "location", "description", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "4th of July Bash 2020"], ["location", "Austin"], ["description", "We bring  the bbq  you bring the fireworks! Best display gets a prize! Lets celebrate america."], ["kind", "Festival"], ["website", "https://picsum.photos/id/407/4272/2848"], ["rating", 5], ["like", 0], ["created_at", "2019-09-02 17:25:42.459469"], ["updated_at", "2019-09-02 17:25:42.459469"]]
+  ↳ db/seeds.rb:80
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:80
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:82
+  [1m[36mEvent Create (0.2ms)[0m  [1m[32mINSERT INTO "events" ("name", "location", "description", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Coffee Tasting"], ["location", "Seattle"], ["description", "Lets explore the inner workings of the coffee bean. We will go through proper cupping and taste profiling."], ["kind", "Lesson"], ["website", "https://picsum.photos/id/425/959/635"], ["rating", 5], ["like", 0], ["created_at", "2019-09-02 17:25:42.461108"], ["updated_at", "2019-09-02 17:25:42.461108"]]
+  ↳ db/seeds.rb:82
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:82
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:84
+  [1m[36mEvent Create (0.2ms)[0m  [1m[32mINSERT INTO "events" ("name", "location", "description", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Some Random Band Concert"], ["location", "Chicago"], ["description", "Rock and roll with these guys. Drinks are free but hope in humanity is $10 each."], ["kind", "Concert"], ["website", "https://picsum.photos/id/452/4096/2722"], ["rating", 5], ["like", 0], ["created_at", "2019-09-02 17:25:42.462537"], ["updated_at", "2019-09-02 17:25:42.462537"]]
+  ↳ db/seeds.rb:84
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:84
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER($1) LIMIT $2[0m  [["username", "princess982086"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:56
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "city", "username", "password_digest", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Helena Hanbaskett"], ["age", 30], ["city", "Orlando"], ["username", "princess982086"], ["password_digest", "0000"], ["image", "https://picsum.photos/id/177/2515/1830"], ["created_at", "2019-09-02 17:26:49.288781"], ["updated_at", "2019-09-02 17:26:49.288781"]]
+  ↳ db/seeds.rb:56
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER($1) LIMIT $2[0m  [["username", "tweet_yoself4105"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:56
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "city", "username", "password_digest", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Harry R. M. Pitts"], ["age", 26], ["city", "Los Angeles"], ["username", "tweet_yoself4105"], ["password_digest", "0000"], ["image", "https://picsum.photos/id/1083/5472/3648"], ["created_at", "2019-09-02 17:26:49.293830"], ["updated_at", "2019-09-02 17:26:49.293830"]]
+  ↳ db/seeds.rb:56
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER($1) LIMIT $2[0m  [["username", "peterpan8660"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:56
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "city", "username", "password_digest", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Ron A. Muck"], ["age", 59], ["city", "Boise"], ["username", "peterpan8660"], ["password_digest", "0000"], ["image", "https://picsum.photos/id/1027/2848/4272"], ["created_at", "2019-09-02 17:26:49.298174"], ["updated_at", "2019-09-02 17:26:49.298174"]]
+  ↳ db/seeds.rb:56
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER($1) LIMIT $2[0m  [["username", "tweet_yoself7761"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:56
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "city", "username", "password_digest", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Ben Thair"], ["age", 23], ["city", "Boston"], ["username", "tweet_yoself7761"], ["password_digest", "0000"], ["image", "https://picsum.photos/id/1025/4951/3301"], ["created_at", "2019-09-02 17:26:49.301837"], ["updated_at", "2019-09-02 17:26:49.301837"]]
+  ↳ db/seeds.rb:56
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER($1) LIMIT $2[0m  [["username", "bballmom783241"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:56
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "city", "username", "password_digest", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Liv Good"], ["age", 13], ["city", "Austin"], ["username", "bballmom783241"], ["password_digest", "0000"], ["image", "https://picsum.photos/id/1083/5472/3648"], ["created_at", "2019-09-02 17:26:49.305045"], ["updated_at", "2019-09-02 17:26:49.305045"]]
+  ↳ db/seeds.rb:56
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER($1) LIMIT $2[0m  [["username", "peterpan9059"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:56
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "city", "username", "password_digest", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Sue Case"], ["age", 13], ["city", "Chicago"], ["username", "peterpan9059"], ["password_digest", "0000"], ["image", "https://picsum.photos/id/1025/4951/3301"], ["created_at", "2019-09-02 17:26:49.308085"], ["updated_at", "2019-09-02 17:26:49.308085"]]
+  ↳ db/seeds.rb:56
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER($1) LIMIT $2[0m  [["username", "princess986120"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:56
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "city", "username", "password_digest", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Terry Achey"], ["age", 14], ["city", "Boise"], ["username", "princess986120"], ["password_digest", "0000"], ["image", "https://picsum.photos/id/177/2515/1830"], ["created_at", "2019-09-02 17:26:49.310859"], ["updated_at", "2019-09-02 17:26:49.310859"]]
+  ↳ db/seeds.rb:56
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER($1) LIMIT $2[0m  [["username", "tweet_yoself8048"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:56
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "city", "username", "password_digest", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Kat Toy"], ["age", 38], ["city", "Orlando"], ["username", "tweet_yoself8048"], ["password_digest", "0000"], ["image", "https://picsum.photos/id/111/4400/2656"], ["created_at", "2019-09-02 17:26:49.314218"], ["updated_at", "2019-09-02 17:26:49.314218"]]
+  ↳ db/seeds.rb:56
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER($1) LIMIT $2[0m  [["username", "sillyMcgee237891"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:56
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "city", "username", "password_digest", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Sandy Banks"], ["age", 36], ["city", "Orlando"], ["username", "sillyMcgee237891"], ["password_digest", "0000"], ["image", "https://picsum.photos/id/1027/2848/4272"], ["created_at", "2019-09-02 17:26:49.317299"], ["updated_at", "2019-09-02 17:26:49.317299"]]
+  ↳ db/seeds.rb:56
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER($1) LIMIT $2[0m  [["username", "tweet_yoself1828"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:56
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "city", "username", "password_digest", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Milly Graham"], ["age", 28], ["city", "Los Angeles"], ["username", "tweet_yoself1828"], ["password_digest", "0000"], ["image", "https://picsum.photos/id/1027/2848/4272"], ["created_at", "2019-09-02 17:26:49.320310"], ["updated_at", "2019-09-02 17:26:49.320310"]]
+  ↳ db/seeds.rb:56
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:66
+  [1m[36mEvent Create (0.7ms)[0m  [1m[32mINSERT INTO "events" ("name", "location", "description", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Meditation In the Park"], ["location", "Los Angeles"], ["description", "Come and join us as we lift each other to enlightenment"], ["kind", "Outdoor"], ["website", "https://picsum.photos/id/375/5184/3456"], ["rating", 5], ["like", 10], ["created_at", "2019-09-02 17:26:49.334327"], ["updated_at", "2019-09-02 17:26:49.334327"]]
+  ↳ db/seeds.rb:66
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:66
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:68
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("name", "location", "description", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "O Mcgees Pub Crawl "], ["location", "Denver"], ["description", "Pub Crawl of  all the major breweries in Denver! $125 gets you a commemorative mug, a drink in 5 places and a meal ticket."], ["kind", "Festival"], ["website", "https://picsum.photos/id/372/4871/3247"], ["rating", 5], ["like", 10], ["created_at", "2019-09-02 17:26:49.336819"], ["updated_at", "2019-09-02 17:26:49.336819"]]
+  ↳ db/seeds.rb:68
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:68
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:70
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("name", "location", "description", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Snoot Boop Shelter Extravaganva "], ["location", "Seattle"], ["description", "Come and give some Shelter cats some love! There will be food trucks, drinks and plenty of cats. Each cat is adoptable for only $10!"], ["kind", "Festival"], ["website", "https://picsum.photos/id/40/4106/2806"], ["rating", 5], ["like", 10], ["created_at", "2019-09-02 17:26:49.338529"], ["updated_at", "2019-09-02 17:26:49.338529"]]
+  ↳ db/seeds.rb:70
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:70
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:72
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("name", "location", "description", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Lets Canoe"], ["location", "Austin"], ["description", "We are putting together a chill canoe trip! Please rsvp so we can rent canoes. $20 per person unless you bring your own canoe! Meet at 8am in the park"], ["kind", "Outdoor"], ["website", "https://picsum.photos/id/469/3008/2000"], ["rating", 5], ["like", 10], ["created_at", "2019-09-02 17:26:49.340344"], ["updated_at", "2019-09-02 17:26:49.340344"]]
+  ↳ db/seeds.rb:72
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:72
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:74
+  [1m[36mEvent Create (1.6ms)[0m  [1m[32mINSERT INTO "events" ("name", "location", "description", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Beach Luau"], ["location", "Los Angeles"], ["description", "Bring all your beach stuff and head over to the annual Luau"], ["kind", "Festival"], ["website", "https://picsum.photos/id/372/4871/3247"], ["rating", 5], ["like", 10], ["created_at", "2019-09-02 17:26:49.342016"], ["updated_at", "2019-09-02 17:26:49.342016"]]
+  ↳ db/seeds.rb:74
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:74
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:76
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("name", "location", "description", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Hot Air Balloon Ride"], ["location", "Boise"], ["description", "See the beautiful  sites from 1,000 ft up!"], ["kind", "Outdoor"], ["website", "https://picsum.photos/id/401/5184/3456"], ["rating", 5], ["like", 0], ["created_at", "2019-09-02 17:26:49.345430"], ["updated_at", "2019-09-02 17:26:49.345430"]]
+  ↳ db/seeds.rb:76
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:76
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:78
+  [1m[36mEvent Create (0.4ms)[0m  [1m[32mINSERT INTO "events" ("name", "location", "description", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Typewritting 101"], ["location", "Boston"], ["description", "Come learn the fancy ways of typing on a type writer!"], ["kind", "Lesson"], ["website", "https://picsum.photos/id/403/3997/2665"], ["rating", 5], ["like", 0], ["created_at", "2019-09-02 17:26:49.347344"], ["updated_at", "2019-09-02 17:26:49.347344"]]
+  ↳ db/seeds.rb:78
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:78
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:80
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("name", "location", "description", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "4th of July Bash 2020"], ["location", "Austin"], ["description", "We bring  the bbq  you bring the fireworks! Best display gets a prize! Lets celebrate america."], ["kind", "Festival"], ["website", "https://picsum.photos/id/407/4272/2848"], ["rating", 5], ["like", 0], ["created_at", "2019-09-02 17:26:49.349331"], ["updated_at", "2019-09-02 17:26:49.349331"]]
+  ↳ db/seeds.rb:80
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:80
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:82
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("name", "location", "description", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Coffee Tasting"], ["location", "Seattle"], ["description", "Lets explore the inner workings of the coffee bean. We will go through proper cupping and taste profiling."], ["kind", "Lesson"], ["website", "https://picsum.photos/id/425/959/635"], ["rating", 5], ["like", 0], ["created_at", "2019-09-02 17:26:49.351125"], ["updated_at", "2019-09-02 17:26:49.351125"]]
+  ↳ db/seeds.rb:82
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:82
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:84
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("name", "location", "description", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Some Random Band Concert"], ["location", "Chicago"], ["description", "Rock and roll with these guys. Drinks are free but hope in humanity is $10 each."], ["kind", "Concert"], ["website", "https://picsum.photos/id/452/4096/2722"], ["rating", 5], ["like", 0], ["created_at", "2019-09-02 17:26:49.352900"], ["updated_at", "2019-09-02 17:26:49.352900"]]
+  ↳ db/seeds.rb:84
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:84
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:117
+  [1m[36mRestaurant Create (1.2ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "location", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Red Eats"], ["location", "Los Angeles"], ["kind", "French"], ["website", "https://picsum.photos/id/625/2507/1674"], ["rating", 0], ["like", 24], ["created_at", "2019-09-02 17:26:49.365734"], ["updated_at", "2019-09-02 17:26:49.365734"]]
+  ↳ db/seeds.rb:117
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:117
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:117
+  [1m[36mRestaurant Create (0.2ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "location", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Salty King"], ["location", "Denver"], ["kind", "Vegan"], ["website", "https://picsum.photos/id/513/4373/3280"], ["rating", 3], ["like", 35], ["created_at", "2019-09-02 17:26:49.368878"], ["updated_at", "2019-09-02 17:26:49.368878"]]
+  ↳ db/seeds.rb:117
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:117
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:117
+  [1m[36mRestaurant Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "location", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Blue Plate Grill"], ["location", "Denver"], ["kind", "American (New)"], ["website", "https://picsum.photos/id/7/4728/3168"], ["rating", 0], ["like", 17], ["created_at", "2019-09-02 17:26:49.370566"], ["updated_at", "2019-09-02 17:26:49.370566"]]
+  ↳ db/seeds.rb:117
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:117
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:117
+  [1m[36mRestaurant Create (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "location", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Hungry House"], ["location", "Boise"], ["kind", "Vegan"], ["website", "https://picsum.photos/id/211/1920/1280"], ["rating", 3], ["like", 5], ["created_at", "2019-09-02 17:26:49.372593"], ["updated_at", "2019-09-02 17:26:49.372593"]]
+  ↳ db/seeds.rb:117
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:117
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:117
+  [1m[36mRestaurant Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "location", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Thirsty Coffee"], ["location", "New York"], ["kind", "Thai"], ["website", "https://picsum.photos/id/7/4728/3168"], ["rating", 1], ["like", 9], ["created_at", "2019-09-02 17:26:49.374761"], ["updated_at", "2019-09-02 17:26:49.374761"]]
+  ↳ db/seeds.rb:117
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:117
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:117
+  [1m[36mRestaurant Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "location", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Red Sushi"], ["location", "New York"], ["kind", "Juice & Smoothies"], ["website", "https://picsum.photos/id/225/1500/979"], ["rating", 5], ["like", 48], ["created_at", "2019-09-02 17:26:49.376734"], ["updated_at", "2019-09-02 17:26:49.376734"]]
+  ↳ db/seeds.rb:117
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:117
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:117
+  [1m[36mRestaurant Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "location", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Big BBQ"], ["location", "Seattle"], ["kind", "African"], ["website", "https://picsum.photos/id/819/3264/3264"], ["rating", 4], ["like", 8], ["created_at", "2019-09-02 17:26:49.378750"], ["updated_at", "2019-09-02 17:26:49.378750"]]
+  ↳ db/seeds.rb:117
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:117
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:117
+  [1m[36mRestaurant Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "location", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Hungry Spoon"], ["location", "Chicago"], ["kind", "Mexican"], ["website", "https://picsum.photos/id/799/5472/3648"], ["rating", 1], ["like", 46], ["created_at", "2019-09-02 17:26:49.380668"], ["updated_at", "2019-09-02 17:26:49.380668"]]
+  ↳ db/seeds.rb:117
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:117
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:117
+  [1m[36mRestaurant Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "location", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Hungry Grill & Tap"], ["location", "Orlando"], ["kind", "Ethiopean"], ["website", "https://picsum.photos/id/859/1919/1919"], ["rating", 3], ["like", 57], ["created_at", "2019-09-02 17:26:49.382621"], ["updated_at", "2019-09-02 17:26:49.382621"]]
+  ↳ db/seeds.rb:117
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:117
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:117
+  [1m[36mRestaurant Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "location", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "TS Deli"], ["location", "Boise"], ["kind", "American (New)"], ["website", "https://picsum.photos/id/670/2048/1367"], ["rating", 0], ["like", 25], ["created_at", "2019-09-02 17:26:49.384517"], ["updated_at", "2019-09-02 17:26:49.384517"]]
+  ↳ db/seeds.rb:117
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:117
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:117
+  [1m[36mRestaurant Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "location", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Orange Juice Bar"], ["location", "New York"], ["kind", "Argentinian"], ["website", "https://picsum.photos/id/490/5774/3818"], ["rating", 1], ["like", 24], ["created_at", "2019-09-02 17:26:49.386493"], ["updated_at", "2019-09-02 17:26:49.386493"]]
+  ↳ db/seeds.rb:117
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:117
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:117
+  [1m[36mRestaurant Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "location", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Orange Eatery"], ["location", "Austin"], ["kind", "Pizza"], ["website", "https://picsum.photos/id/835/5472/3648"], ["rating", 2], ["like", 52], ["created_at", "2019-09-02 17:26:49.388490"], ["updated_at", "2019-09-02 17:26:49.388490"]]
+  ↳ db/seeds.rb:117
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:117
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:117
+  [1m[36mRestaurant Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "location", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Green Steakhouse"], ["location", "Chicago"], ["kind", "Ice Cream"], ["website", "https://picsum.photos/id/195/768/1024"], ["rating", 2], ["like", 58], ["created_at", "2019-09-02 17:26:49.390285"], ["updated_at", "2019-09-02 17:26:49.390285"]]
+  ↳ db/seeds.rb:117
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:117
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:117
+  [1m[36mRestaurant Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "location", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Spice Deli"], ["location", "New York"], ["kind", "Bakery"], ["website", "https://picsum.photos/id/225/1500/979"], ["rating", 1], ["like", 33], ["created_at", "2019-09-02 17:26:49.392251"], ["updated_at", "2019-09-02 17:26:49.392251"]]
+  ↳ db/seeds.rb:117
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:117
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:117
+  [1m[36mRestaurant Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "location", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Red King"], ["location", "Chicago"], ["kind", "Argentinian"], ["website", "https://picsum.photos/id/835/5472/3648"], ["rating", 5], ["like", 34], ["created_at", "2019-09-02 17:26:49.394327"], ["updated_at", "2019-09-02 17:26:49.394327"]]
+  ↳ db/seeds.rb:117
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:117
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:117
+  [1m[36mRestaurant Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "location", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Sweet House"], ["location", "Orlando"], ["kind", "Ethiopean"], ["website", "https://picsum.photos/id/490/5774/3818"], ["rating", 5], ["like", 37], ["created_at", "2019-09-02 17:26:49.396373"], ["updated_at", "2019-09-02 17:26:49.396373"]]
+  ↳ db/seeds.rb:117
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:117
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:117
+  [1m[36mRestaurant Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "location", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Orange Bakery"], ["location", "Orlando"], ["kind", "Vegetarian"], ["website", "https://picsum.photos/id/42/3456/2304"], ["rating", 0], ["like", 44], ["created_at", "2019-09-02 17:26:49.398452"], ["updated_at", "2019-09-02 17:26:49.398452"]]
+  ↳ db/seeds.rb:117
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:117
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:117
+  [1m[36mRestaurant Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "location", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Big Steakhouse"], ["location", "Chicago"], ["kind", "Ramen"], ["website", "https://picsum.photos/id/670/2048/1367"], ["rating", 0], ["like", 44], ["created_at", "2019-09-02 17:26:49.400550"], ["updated_at", "2019-09-02 17:26:49.400550"]]
+  ↳ db/seeds.rb:117
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:117
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:117
+  [1m[36mRestaurant Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "location", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Fat Eats"], ["location", "Seattle"], ["kind", "Pizza"], ["website", "https://picsum.photos/id/195/768/1024"], ["rating", 6], ["like", 40], ["created_at", "2019-09-02 17:26:49.402671"], ["updated_at", "2019-09-02 17:26:49.402671"]]
+  ↳ db/seeds.rb:117
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:117
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:117
+  [1m[36mRestaurant Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "location", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "36 Grill & Tap"], ["location", "Denver"], ["kind", "Vegetarian"], ["website", "https://picsum.photos/id/42/3456/2304"], ["rating", 3], ["like", 30], ["created_at", "2019-09-02 17:26:49.404808"], ["updated_at", "2019-09-02 17:26:49.404808"]]
+  ↳ db/seeds.rb:117
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:117
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER($1) LIMIT $2[0m  [["username", "princess985115"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:56
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "city", "username", "password_digest", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Paige Turner"], ["age", 23], ["city", "New York"], ["username", "princess985115"], ["password_digest", "0000"], ["image", "https://picsum.photos/id/390/5760/3840"], ["created_at", "2019-09-02 17:27:41.359462"], ["updated_at", "2019-09-02 17:27:41.359462"]]
+  ↳ db/seeds.rb:56
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER($1) LIMIT $2[0m  [["username", "bobmart3486"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:56
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "city", "username", "password_digest", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "I. Ball"], ["age", 56], ["city", "Chicago"], ["username", "bobmart3486"], ["password_digest", "0000"], ["image", "https://picsum.photos/id/177/2515/1830"], ["created_at", "2019-09-02 17:27:41.364119"], ["updated_at", "2019-09-02 17:27:41.364119"]]
+  ↳ db/seeds.rb:56
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER($1) LIMIT $2[0m  [["username", "i_love_cats8737"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:56
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "city", "username", "password_digest", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Ben Down"], ["age", 43], ["city", "Boston"], ["username", "i_love_cats8737"], ["password_digest", "0000"], ["image", "https://picsum.photos/id/111/4400/2656"], ["created_at", "2019-09-02 17:27:41.367135"], ["updated_at", "2019-09-02 17:27:41.367135"]]
+  ↳ db/seeds.rb:56
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER($1) LIMIT $2[0m  [["username", "princess988723"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:56
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "city", "username", "password_digest", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Lisa Ford"], ["age", 37], ["city", "San Diego"], ["username", "princess988723"], ["password_digest", "0000"], ["image", "https://picsum.photos/id/111/4400/2656"], ["created_at", "2019-09-02 17:27:41.370019"], ["updated_at", "2019-09-02 17:27:41.370019"]]
+  ↳ db/seeds.rb:56
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER($1) LIMIT $2[0m  [["username", "bobmart2427"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:56
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "city", "username", "password_digest", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Denny Juan Heredatt"], ["age", 44], ["city", "Boise"], ["username", "bobmart2427"], ["password_digest", "0000"], ["image", "https://picsum.photos/id/177/2515/1830"], ["created_at", "2019-09-02 17:27:41.372572"], ["updated_at", "2019-09-02 17:27:41.372572"]]
+  ↳ db/seeds.rb:56
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER($1) LIMIT $2[0m  [["username", "beerfriend1336"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:56
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "city", "username", "password_digest", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Missy Sippy"], ["age", 43], ["city", "New York"], ["username", "beerfriend1336"], ["password_digest", "0000"], ["image", "https://picsum.photos/id/177/2515/1830"], ["created_at", "2019-09-02 17:27:41.375362"], ["updated_at", "2019-09-02 17:27:41.375362"]]
+  ↳ db/seeds.rb:56
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER($1) LIMIT $2[0m  [["username", "beerfriend3424"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:56
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "city", "username", "password_digest", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Luke Warm"], ["age", 45], ["city", "Boston"], ["username", "beerfriend3424"], ["password_digest", "0000"], ["image", "https://picsum.photos/id/237/3500/2095"], ["created_at", "2019-09-02 17:27:41.378178"], ["updated_at", "2019-09-02 17:27:41.378178"]]
+  ↳ db/seeds.rb:56
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER($1) LIMIT $2[0m  [["username", "i_love_cats4373"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:56
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "city", "username", "password_digest", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Elmer Sklue"], ["age", 39], ["city", "Chicago"], ["username", "i_love_cats4373"], ["password_digest", "0000"], ["image", "https://picsum.photos/id/1083/5472/3648"], ["created_at", "2019-09-02 17:27:41.380603"], ["updated_at", "2019-09-02 17:27:41.380603"]]
+  ↳ db/seeds.rb:56
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER($1) LIMIT $2[0m  [["username", "bballmom781707"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:56
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "city", "username", "password_digest", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Annie Matter"], ["age", 23], ["city", "Denver"], ["username", "bballmom781707"], ["password_digest", "0000"], ["image", "https://picsum.photos/id/1011/5472/3648"], ["created_at", "2019-09-02 17:27:41.383191"], ["updated_at", "2019-09-02 17:27:41.383191"]]
+  ↳ db/seeds.rb:56
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER($1) LIMIT $2[0m  [["username", "bballmom784115"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:56
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "city", "username", "password_digest", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Ty Coon"], ["age", 46], ["city", "Austin"], ["username", "bballmom784115"], ["password_digest", "0000"], ["image", "https://picsum.photos/id/177/2515/1830"], ["created_at", "2019-09-02 17:27:41.385718"], ["updated_at", "2019-09-02 17:27:41.385718"]]
+  ↳ db/seeds.rb:56
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:66
+  [1m[36mEvent Create (0.5ms)[0m  [1m[32mINSERT INTO "events" ("name", "location", "description", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Meditation In the Park"], ["location", "Los Angeles"], ["description", "Come and join us as we lift each other to enlightenment"], ["kind", "Outdoor"], ["website", "https://picsum.photos/id/375/5184/3456"], ["rating", 5], ["like", 10], ["created_at", "2019-09-02 17:27:41.398054"], ["updated_at", "2019-09-02 17:27:41.398054"]]
+  ↳ db/seeds.rb:66
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:66
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:68
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("name", "location", "description", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "O Mcgees Pub Crawl "], ["location", "Denver"], ["description", "Pub Crawl of  all the major breweries in Denver! $125 gets you a commemorative mug, a drink in 5 places and a meal ticket."], ["kind", "Festival"], ["website", "https://picsum.photos/id/372/4871/3247"], ["rating", 5], ["like", 10], ["created_at", "2019-09-02 17:27:41.400269"], ["updated_at", "2019-09-02 17:27:41.400269"]]
+  ↳ db/seeds.rb:68
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:68
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:70
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("name", "location", "description", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Snoot Boop Shelter Extravaganva "], ["location", "Seattle"], ["description", "Come and give some Shelter cats some love! There will be food trucks, drinks and plenty of cats. Each cat is adoptable for only $10!"], ["kind", "Festival"], ["website", "https://picsum.photos/id/40/4106/2806"], ["rating", 5], ["like", 10], ["created_at", "2019-09-02 17:27:41.402005"], ["updated_at", "2019-09-02 17:27:41.402005"]]
+  ↳ db/seeds.rb:70
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:70
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:72
+  [1m[36mEvent Create (0.2ms)[0m  [1m[32mINSERT INTO "events" ("name", "location", "description", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Lets Canoe"], ["location", "Austin"], ["description", "We are putting together a chill canoe trip! Please rsvp so we can rent canoes. $20 per person unless you bring your own canoe! Meet at 8am in the park"], ["kind", "Outdoor"], ["website", "https://picsum.photos/id/469/3008/2000"], ["rating", 5], ["like", 10], ["created_at", "2019-09-02 17:27:41.403748"], ["updated_at", "2019-09-02 17:27:41.403748"]]
+  ↳ db/seeds.rb:72
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:72
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:74
+  [1m[36mEvent Create (0.2ms)[0m  [1m[32mINSERT INTO "events" ("name", "location", "description", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Beach Luau"], ["location", "Los Angeles"], ["description", "Bring all your beach stuff and head over to the annual Luau"], ["kind", "Festival"], ["website", "https://picsum.photos/id/372/4871/3247"], ["rating", 5], ["like", 10], ["created_at", "2019-09-02 17:27:41.405296"], ["updated_at", "2019-09-02 17:27:41.405296"]]
+  ↳ db/seeds.rb:74
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:74
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:76
+  [1m[36mEvent Create (0.2ms)[0m  [1m[32mINSERT INTO "events" ("name", "location", "description", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Hot Air Balloon Ride"], ["location", "Boise"], ["description", "See the beautiful  sites from 1,000 ft up!"], ["kind", "Outdoor"], ["website", "https://picsum.photos/id/401/5184/3456"], ["rating", 5], ["like", 0], ["created_at", "2019-09-02 17:27:41.406652"], ["updated_at", "2019-09-02 17:27:41.406652"]]
+  ↳ db/seeds.rb:76
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:76
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:78
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("name", "location", "description", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Typewritting 101"], ["location", "Boston"], ["description", "Come learn the fancy ways of typing on a type writer!"], ["kind", "Lesson"], ["website", "https://picsum.photos/id/403/3997/2665"], ["rating", 5], ["like", 0], ["created_at", "2019-09-02 17:27:41.408239"], ["updated_at", "2019-09-02 17:27:41.408239"]]
+  ↳ db/seeds.rb:78
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:78
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:80
+  [1m[36mEvent Create (0.2ms)[0m  [1m[32mINSERT INTO "events" ("name", "location", "description", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "4th of July Bash 2020"], ["location", "Austin"], ["description", "We bring  the bbq  you bring the fireworks! Best display gets a prize! Lets celebrate america."], ["kind", "Festival"], ["website", "https://picsum.photos/id/407/4272/2848"], ["rating", 5], ["like", 0], ["created_at", "2019-09-02 17:27:41.409960"], ["updated_at", "2019-09-02 17:27:41.409960"]]
+  ↳ db/seeds.rb:80
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:80
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:82
+  [1m[36mEvent Create (0.2ms)[0m  [1m[32mINSERT INTO "events" ("name", "location", "description", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Coffee Tasting"], ["location", "Seattle"], ["description", "Lets explore the inner workings of the coffee bean. We will go through proper cupping and taste profiling."], ["kind", "Lesson"], ["website", "https://picsum.photos/id/425/959/635"], ["rating", 5], ["like", 0], ["created_at", "2019-09-02 17:27:41.411452"], ["updated_at", "2019-09-02 17:27:41.411452"]]
+  ↳ db/seeds.rb:82
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:82
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:84
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("name", "location", "description", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Some Random Band Concert"], ["location", "Chicago"], ["description", "Rock and roll with these guys. Drinks are free but hope in humanity is $10 each."], ["kind", "Concert"], ["website", "https://picsum.photos/id/452/4096/2722"], ["rating", 5], ["like", 0], ["created_at", "2019-09-02 17:27:41.413053"], ["updated_at", "2019-09-02 17:27:41.413053"]]
+  ↳ db/seeds.rb:84
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:84
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:117
+  [1m[36mRestaurant Create (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "location", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Silver Eatery"], ["location", "Boise"], ["kind", "Bakery"], ["website", "https://picsum.photos/id/625/2507/1674"], ["rating", 2], ["like", 21], ["created_at", "2019-09-02 17:27:41.425419"], ["updated_at", "2019-09-02 17:27:41.425419"]]
+  ↳ db/seeds.rb:117
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:117
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:117
+  [1m[36mRestaurant Create (0.2ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "location", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Big Bar & Grill"], ["location", "Los Angeles"], ["kind", "Argentinian"], ["website", "https://picsum.photos/id/428/2529/1581"], ["rating", 1], ["like", 18], ["created_at", "2019-09-02 17:27:41.427550"], ["updated_at", "2019-09-02 17:27:41.427550"]]
+  ↳ db/seeds.rb:117
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:117
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:117
+  [1m[36mRestaurant Create (0.2ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "location", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Belly Bakery"], ["location", "Los Angeles"], ["kind", "Healthy"], ["website", "https://picsum.photos/id/163/2000/1333"], ["rating", 0], ["like", 19], ["created_at", "2019-09-02 17:27:41.429558"], ["updated_at", "2019-09-02 17:27:41.429558"]]
+  ↳ db/seeds.rb:117
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:117
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:117
+  [1m[36mRestaurant Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "location", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Golden Burger"], ["location", "Chicago"], ["kind", "Greek"], ["website", "https://picsum.photos/id/819/3264/3264"], ["rating", 3], ["like", 19], ["created_at", "2019-09-02 17:27:41.431310"], ["updated_at", "2019-09-02 17:27:41.431310"]]
+  ↳ db/seeds.rb:117
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:117
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:117
+  [1m[36mRestaurant Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "location", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "9652 Diner"], ["location", "San Diego"], ["kind", "Vegetarian"], ["website", "https://picsum.photos/id/7/4728/3168"], ["rating", 2], ["like", 37], ["created_at", "2019-09-02 17:27:41.433190"], ["updated_at", "2019-09-02 17:27:41.433190"]]
+  ↳ db/seeds.rb:117
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:117
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:117
+  [1m[36mRestaurant Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "location", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Green Bar & Grill"], ["location", "San Diego"], ["kind", "African"], ["website", "https://picsum.photos/id/490/5774/3818"], ["rating", 1], ["like", 16], ["created_at", "2019-09-02 17:27:41.435046"], ["updated_at", "2019-09-02 17:27:41.435046"]]
+  ↳ db/seeds.rb:117
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:117
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:117
+  [1m[36mRestaurant Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "location", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "28 Spoon"], ["location", "Orlando"], ["kind", "Sandwiches"], ["website", "https://picsum.photos/id/42/3456/2304"], ["rating", 1], ["like", 8], ["created_at", "2019-09-02 17:27:41.437020"], ["updated_at", "2019-09-02 17:27:41.437020"]]
+  ↳ db/seeds.rb:117
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:117
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:117
+  [1m[36mRestaurant Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "location", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Fat Dragon"], ["location", "New York"], ["kind", "Korean"], ["website", "https://picsum.photos/id/195/768/1024"], ["rating", 2], ["like", 10], ["created_at", "2019-09-02 17:27:41.438888"], ["updated_at", "2019-09-02 17:27:41.438888"]]
+  ↳ db/seeds.rb:117
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:117
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:117
+  [1m[36mRestaurant Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "location", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Big Brasserie"], ["location", "Austin"], ["kind", "German"], ["website", "https://picsum.photos/id/428/2529/1581"], ["rating", 1], ["like", 8], ["created_at", "2019-09-02 17:27:41.440781"], ["updated_at", "2019-09-02 17:27:41.440781"]]
+  ↳ db/seeds.rb:117
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:117
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:117
+  [1m[36mRestaurant Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "location", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "4100 Pizza"], ["location", "Boston"], ["kind", "Mexican"], ["website", "https://picsum.photos/id/625/2507/1674"], ["rating", 0], ["like", 28], ["created_at", "2019-09-02 17:27:41.442666"], ["updated_at", "2019-09-02 17:27:41.442666"]]
+  ↳ db/seeds.rb:117
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:117
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:117
+  [1m[36mRestaurant Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "location", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Sweet King"], ["location", "New York"], ["kind", "Pizza"], ["website", "https://picsum.photos/id/859/1919/1919"], ["rating", 3], ["like", 11], ["created_at", "2019-09-02 17:27:41.444469"], ["updated_at", "2019-09-02 17:27:41.444469"]]
+  ↳ db/seeds.rb:117
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:117
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:117
+  [1m[36mRestaurant Create (0.2ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "location", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Golden Grill"], ["location", "Chicago"], ["kind", "Senegalese"], ["website", "https://picsum.photos/id/824/5330/3553"], ["rating", 1], ["like", 21], ["created_at", "2019-09-02 17:27:41.446093"], ["updated_at", "2019-09-02 17:27:41.446093"]]
+  ↳ db/seeds.rb:117
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:117
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:117
+  [1m[36mRestaurant Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "location", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "IK Spoon"], ["location", "Austin"], ["kind", "Thai"], ["website", "https://picsum.photos/id/824/5330/3553"], ["rating", 6], ["like", 37], ["created_at", "2019-09-02 17:27:41.447711"], ["updated_at", "2019-09-02 17:27:41.447711"]]
+  ↳ db/seeds.rb:117
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:117
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:117
+  [1m[36mRestaurant Create (0.2ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "location", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Green Bar & Grill"], ["location", "Austin"], ["kind", "Ethiopean"], ["website", "https://picsum.photos/id/428/2529/1581"], ["rating", 6], ["like", 28], ["created_at", "2019-09-02 17:27:41.449321"], ["updated_at", "2019-09-02 17:27:41.449321"]]
+  ↳ db/seeds.rb:117
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:117
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:117
+  [1m[36mRestaurant Create (0.2ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "location", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Spice Pizza"], ["location", "Austin"], ["kind", "Ramen"], ["website", "https://picsum.photos/id/824/5330/3553"], ["rating", 6], ["like", 13], ["created_at", "2019-09-02 17:27:41.450824"], ["updated_at", "2019-09-02 17:27:41.450824"]]
+  ↳ db/seeds.rb:117
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:117
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:117
+  [1m[36mRestaurant Create (0.2ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "location", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Fat Bar & Grill"], ["location", "New York"], ["kind", "Healthy"], ["website", "https://picsum.photos/id/211/1920/1280"], ["rating", 2], ["like", 59], ["created_at", "2019-09-02 17:27:41.452352"], ["updated_at", "2019-09-02 17:27:41.452352"]]
+  ↳ db/seeds.rb:117
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:117
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:117
+  [1m[36mRestaurant Create (0.2ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "location", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Golden Sushi"], ["location", "Los Angeles"], ["kind", "Senegalese"], ["website", "https://picsum.photos/id/799/5472/3648"], ["rating", 3], ["like", 52], ["created_at", "2019-09-02 17:27:41.453954"], ["updated_at", "2019-09-02 17:27:41.453954"]]
+  ↳ db/seeds.rb:117
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:117
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:117
+  [1m[36mRestaurant Create (0.2ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "location", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Smokestack Brasserie"], ["location", "San Diego"], ["kind", "Japanese"], ["website", "https://picsum.photos/id/670/2048/1367"], ["rating", 6], ["like", 57], ["created_at", "2019-09-02 17:27:41.455511"], ["updated_at", "2019-09-02 17:27:41.455511"]]
+  ↳ db/seeds.rb:117
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:117
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:117
+  [1m[36mRestaurant Create (0.2ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "location", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "50 BBQ"], ["location", "New York"], ["kind", "Korean"], ["website", "https://picsum.photos/id/163/2000/1333"], ["rating", 6], ["like", 14], ["created_at", "2019-09-02 17:27:41.457205"], ["updated_at", "2019-09-02 17:27:41.457205"]]
+  ↳ db/seeds.rb:117
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:117
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:117
+  [1m[36mRestaurant Create (0.2ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "location", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Sugar Eats"], ["location", "Boston"], ["kind", "Italian"], ["website", "https://picsum.photos/id/835/5472/3648"], ["rating", 2], ["like", 21], ["created_at", "2019-09-02 17:27:41.458778"], ["updated_at", "2019-09-02 17:27:41.458778"]]
+  ↳ db/seeds.rb:117
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:117
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mRestaurant Load (0.6ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mRestaurant Load (0.6ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" ORDER BY "restaurants"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (152.9ms)[0m  [1m[35mDROP DATABASE IF EXISTS "picklyapp_development"[0m
+  ↳ bin/rails:9
+  [1m[35m (149.8ms)[0m  [1m[35mDROP DATABASE IF EXISTS "picklyapp_test"[0m
+  ↳ bin/rails:9
+  [1m[35m (490.1ms)[0m  [1m[35mCREATE DATABASE "picklyapp_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (281.4ms)[0m  [1m[35mCREATE DATABASE "picklyapp_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35mSQL (2.8ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  ↳ db/schema.rb:16
+  [1m[35m (1.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "events" CASCADE[0m
+  ↳ db/schema.rb:18
+  [1m[35m (13.3ms)[0m  [1m[35mCREATE TABLE "events" ("id" bigserial primary key, "name" character varying, "location" character varying, "description" character varying, "kind" character varying, "website" character varying, "rating" integer, "like" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:18
+  [1m[35m (0.6ms)[0m  [1m[35mDROP TABLE IF EXISTS "favorites" CASCADE[0m
+  ↳ db/schema.rb:30
+  [1m[35m (7.6ms)[0m  [1m[35mCREATE TABLE "favorites" ("id" bigserial primary key, "user_id" integer, "favorite_id" integer, "favorite_type" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:30
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "restaurants" CASCADE[0m
+  ↳ db/schema.rb:38
+  [1m[35m (6.0ms)[0m  [1m[35mCREATE TABLE "restaurants" ("id" bigserial primary key, "name" character varying, "location" character varying, "kind" character varying, "website" character varying, "rating" integer, "like" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:38
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE[0m
+  ↳ db/schema.rb:49
+  [1m[35m (6.0ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "name" character varying, "age" integer, "city" character varying, "username" character varying, "password_digest" character varying, "image" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:49
+  [1m[35m (3.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (1.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20190828185211)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (1.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20190828185141),
+(20190828185101),
+(20190828184902);
+
+[0m
+  ↳ db/schema.rb:13
+  [1m[35m (5.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Create (0.7ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-09-02 17:38:19.482014"], ["updated_at", "2019-09-02 17:38:19.482014"]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35mSQL (0.6ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  ↳ db/schema.rb:16
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "events" CASCADE[0m
+  ↳ db/schema.rb:18
+  [1m[35m (7.1ms)[0m  [1m[35mCREATE TABLE "events" ("id" bigserial primary key, "name" character varying, "location" character varying, "description" character varying, "kind" character varying, "website" character varying, "rating" integer, "like" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:18
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "favorites" CASCADE[0m
+  ↳ db/schema.rb:30
+  [1m[35m (3.7ms)[0m  [1m[35mCREATE TABLE "favorites" ("id" bigserial primary key, "user_id" integer, "favorite_id" integer, "favorite_type" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:30
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "restaurants" CASCADE[0m
+  ↳ db/schema.rb:38
+  [1m[35m (4.9ms)[0m  [1m[35mCREATE TABLE "restaurants" ("id" bigserial primary key, "name" character varying, "location" character varying, "kind" character varying, "website" character varying, "rating" integer, "like" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:38
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE[0m
+  ↳ db/schema.rb:49
+  [1m[35m (5.8ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "name" character varying, "age" integer, "city" character varying, "username" character varying, "password_digest" character varying, "image" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:49
+  [1m[35m (5.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (1.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20190828185211)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20190828185141),
+(20190828185101),
+(20190828184902);
+
+[0m
+  ↳ db/schema.rb:13
+  [1m[35m (4.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Create (0.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-09-02 17:38:19.566969"], ["updated_at", "2019-09-02 17:38:19.566969"]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Update (0.5ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = $1, "updated_at" = $2 WHERE "ar_internal_metadata"."key" = $3[0m  [["value", "test"], ["updated_at", "2019-09-02 17:38:19.571323"], ["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER($1) LIMIT $2[0m  [["username", "i_love_cats7322"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:56
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "city", "username", "password_digest", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "I. M. Boring"], ["age", 45], ["city", "Seattle"], ["username", "i_love_cats7322"], ["password_digest", "0000"], ["image", "https://picsum.photos/id/237/3500/2095"], ["created_at", "2019-09-02 17:38:19.666841"], ["updated_at", "2019-09-02 17:38:19.666841"]]
+  ↳ db/seeds.rb:56
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER($1) LIMIT $2[0m  [["username", "sillyMcgee232689"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:56
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "city", "username", "password_digest", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Penny Lane"], ["age", 20], ["city", "Chicago"], ["username", "sillyMcgee232689"], ["password_digest", "0000"], ["image", "https://picsum.photos/id/111/4400/2656"], ["created_at", "2019-09-02 17:38:19.670072"], ["updated_at", "2019-09-02 17:38:19.670072"]]
+  ↳ db/seeds.rb:56
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER($1) LIMIT $2[0m  [["username", "bobmart7691"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:56
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "city", "username", "password_digest", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Al Kaholic"], ["age", 51], ["city", "Boston"], ["username", "bobmart7691"], ["password_digest", "0000"], ["image", "https://picsum.photos/id/111/4400/2656"], ["created_at", "2019-09-02 17:38:19.672632"], ["updated_at", "2019-09-02 17:38:19.672632"]]
+  ↳ db/seeds.rb:56
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER($1) LIMIT $2[0m  [["username", "sillyMcgee236742"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:56
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "city", "username", "password_digest", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Rich Kidd"], ["age", 23], ["city", "Orlando"], ["username", "sillyMcgee236742"], ["password_digest", "0000"], ["image", "https://picsum.photos/id/237/3500/2095"], ["created_at", "2019-09-02 17:38:19.675150"], ["updated_at", "2019-09-02 17:38:19.675150"]]
+  ↳ db/seeds.rb:56
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER($1) LIMIT $2[0m  [["username", "bobmart1589"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:56
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "city", "username", "password_digest", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Hope Ferterbest"], ["age", 58], ["city", "New York"], ["username", "bobmart1589"], ["password_digest", "0000"], ["image", "https://picsum.photos/id/1011/5472/3648"], ["created_at", "2019-09-02 17:38:19.677310"], ["updated_at", "2019-09-02 17:38:19.677310"]]
+  ↳ db/seeds.rb:56
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER($1) LIMIT $2[0m  [["username", "princess989480"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:56
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "city", "username", "password_digest", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Ty Tass"], ["age", 13], ["city", "Los Angeles"], ["username", "princess989480"], ["password_digest", "0000"], ["image", "https://picsum.photos/id/390/5760/3840"], ["created_at", "2019-09-02 17:38:19.689935"], ["updated_at", "2019-09-02 17:38:19.689935"]]
+  ↳ db/seeds.rb:56
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER($1) LIMIT $2[0m  [["username", "bobbie954983"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:56
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "city", "username", "password_digest", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Jerry Atrics"], ["age", 28], ["city", "Austin"], ["username", "bobbie954983"], ["password_digest", "0000"], ["image", "https://picsum.photos/id/1025/4951/3301"], ["created_at", "2019-09-02 17:38:19.692407"], ["updated_at", "2019-09-02 17:38:19.692407"]]
+  ↳ db/seeds.rb:56
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER($1) LIMIT $2[0m  [["username", "bballmom786407"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:56
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "city", "username", "password_digest", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Jasmine Rice"], ["age", 39], ["city", "San Diego"], ["username", "bballmom786407"], ["password_digest", "0000"], ["image", "https://picsum.photos/id/1025/4951/3301"], ["created_at", "2019-09-02 17:38:19.695030"], ["updated_at", "2019-09-02 17:38:19.695030"]]
+  ↳ db/seeds.rb:56
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER($1) LIMIT $2[0m  [["username", "peterpan2222"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:56
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "city", "username", "password_digest", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "C. Worthy"], ["age", 35], ["city", "Los Angeles"], ["username", "peterpan2222"], ["password_digest", "0000"], ["image", "https://picsum.photos/id/1011/5472/3648"], ["created_at", "2019-09-02 17:38:19.697764"], ["updated_at", "2019-09-02 17:38:19.697764"]]
+  ↳ db/seeds.rb:56
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER($1) LIMIT $2[0m  [["username", "bobbie959563"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:56
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "city", "username", "password_digest", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Otto Graf"], ["age", 54], ["city", "Boise"], ["username", "bobbie959563"], ["password_digest", "0000"], ["image", "https://picsum.photos/id/1012/3973/2639"], ["created_at", "2019-09-02 17:38:19.700337"], ["updated_at", "2019-09-02 17:38:19.700337"]]
+  ↳ db/seeds.rb:56
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:66
+  [1m[36mEvent Create (0.6ms)[0m  [1m[32mINSERT INTO "events" ("name", "location", "description", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Meditation In the Park"], ["location", "Los Angeles"], ["description", "Come and join us as we lift each other to enlightenment"], ["kind", "Outdoor"], ["website", "https://picsum.photos/id/375/5184/3456"], ["rating", 5], ["like", 10], ["created_at", "2019-09-02 17:38:19.711287"], ["updated_at", "2019-09-02 17:38:19.711287"]]
+  ↳ db/seeds.rb:66
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:66
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:68
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("name", "location", "description", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "O Mcgees Pub Crawl "], ["location", "Denver"], ["description", "Pub Crawl of  all the major breweries in Denver! $125 gets you a commemorative mug, a drink in 5 places and a meal ticket."], ["kind", "Festival"], ["website", "https://picsum.photos/id/372/4871/3247"], ["rating", 5], ["like", 10], ["created_at", "2019-09-02 17:38:19.716222"], ["updated_at", "2019-09-02 17:38:19.716222"]]
+  ↳ db/seeds.rb:68
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:68
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:70
+  [1m[36mEvent Create (0.2ms)[0m  [1m[32mINSERT INTO "events" ("name", "location", "description", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Snoot Boop Shelter Extravaganva "], ["location", "Seattle"], ["description", "Come and give some Shelter cats some love! There will be food trucks, drinks and plenty of cats. Each cat is adoptable for only $10!"], ["kind", "Festival"], ["website", "https://picsum.photos/id/40/4106/2806"], ["rating", 5], ["like", 10], ["created_at", "2019-09-02 17:38:19.721307"], ["updated_at", "2019-09-02 17:38:19.721307"]]
+  ↳ db/seeds.rb:70
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:70
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:72
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("name", "location", "description", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Lets Canoe"], ["location", "Austin"], ["description", "We are putting together a chill canoe trip! Please rsvp so we can rent canoes. $20 per person unless you bring your own canoe! Meet at 8am in the park"], ["kind", "Outdoor"], ["website", "https://picsum.photos/id/469/3008/2000"], ["rating", 5], ["like", 10], ["created_at", "2019-09-02 17:38:19.724667"], ["updated_at", "2019-09-02 17:38:19.724667"]]
+  ↳ db/seeds.rb:72
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:72
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:74
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("name", "location", "description", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Beach Luau"], ["location", "Los Angeles"], ["description", "Bring all your beach stuff and head over to the annual Luau"], ["kind", "Festival"], ["website", "https://picsum.photos/id/372/4871/3247"], ["rating", 5], ["like", 10], ["created_at", "2019-09-02 17:38:19.730588"], ["updated_at", "2019-09-02 17:38:19.730588"]]
+  ↳ db/seeds.rb:74
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:74
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:76
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("name", "location", "description", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Hot Air Balloon Ride"], ["location", "Boise"], ["description", "See the beautiful  sites from 1,000 ft up!"], ["kind", "Outdoor"], ["website", "https://picsum.photos/id/401/5184/3456"], ["rating", 5], ["like", 0], ["created_at", "2019-09-02 17:38:19.732685"], ["updated_at", "2019-09-02 17:38:19.732685"]]
+  ↳ db/seeds.rb:76
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:76
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:78
+  [1m[36mEvent Create (0.2ms)[0m  [1m[32mINSERT INTO "events" ("name", "location", "description", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Typewritting 101"], ["location", "Boston"], ["description", "Come learn the fancy ways of typing on a type writer!"], ["kind", "Lesson"], ["website", "https://picsum.photos/id/403/3997/2665"], ["rating", 5], ["like", 0], ["created_at", "2019-09-02 17:38:19.734933"], ["updated_at", "2019-09-02 17:38:19.734933"]]
+  ↳ db/seeds.rb:78
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:78
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:80
+  [1m[36mEvent Create (0.2ms)[0m  [1m[32mINSERT INTO "events" ("name", "location", "description", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "4th of July Bash 2020"], ["location", "Austin"], ["description", "We bring  the bbq  you bring the fireworks! Best display gets a prize! Lets celebrate america."], ["kind", "Festival"], ["website", "https://picsum.photos/id/407/4272/2848"], ["rating", 5], ["like", 0], ["created_at", "2019-09-02 17:38:19.737054"], ["updated_at", "2019-09-02 17:38:19.737054"]]
+  ↳ db/seeds.rb:80
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:80
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:82
+  [1m[36mEvent Create (0.2ms)[0m  [1m[32mINSERT INTO "events" ("name", "location", "description", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Coffee Tasting"], ["location", "Seattle"], ["description", "Lets explore the inner workings of the coffee bean. We will go through proper cupping and taste profiling."], ["kind", "Lesson"], ["website", "https://picsum.photos/id/425/959/635"], ["rating", 5], ["like", 0], ["created_at", "2019-09-02 17:38:19.738979"], ["updated_at", "2019-09-02 17:38:19.738979"]]
+  ↳ db/seeds.rb:82
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:82
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:84
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("name", "location", "description", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Some Random Band Concert"], ["location", "Chicago"], ["description", "Rock and roll with these guys. Drinks are free but hope in humanity is $10 each."], ["kind", "Concert"], ["website", "https://picsum.photos/id/452/4096/2722"], ["rating", 5], ["like", 0], ["created_at", "2019-09-02 17:38:19.741140"], ["updated_at", "2019-09-02 17:38:19.741140"]]
+  ↳ db/seeds.rb:84
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:84
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:117
+  [1m[36mRestaurant Create (0.7ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "location", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Fast Grill"], ["location", "Denver"], ["kind", "Vietnamese"], ["website", "https://picsum.photos/id/625/2507/1674"], ["rating", 0], ["like", 53], ["created_at", "2019-09-02 17:38:19.763618"], ["updated_at", "2019-09-02 17:38:19.763618"]]
+  ↳ db/seeds.rb:117
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:117
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:117
+  [1m[36mRestaurant Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "location", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Fat Creamery"], ["location", "Denver"], ["kind", "Desserts"], ["website", "https://picsum.photos/id/824/5330/3553"], ["rating", 3], ["like", 7], ["created_at", "2019-09-02 17:38:19.782329"], ["updated_at", "2019-09-02 17:38:19.782329"]]
+  ↳ db/seeds.rb:117
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:117
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:117
+  [1m[36mRestaurant Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "location", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Red Grill & Tap"], ["location", "Boston"], ["kind", "German"], ["website", "https://picsum.photos/id/513/4373/3280"], ["rating", 0], ["like", 16], ["created_at", "2019-09-02 17:38:19.784107"], ["updated_at", "2019-09-02 17:38:19.784107"]]
+  ↳ db/seeds.rb:117
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:117
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:117
+  [1m[36mRestaurant Create (0.2ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "location", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Salty Spoon"], ["location", "Denver"], ["kind", "Vegan"], ["website", "https://picsum.photos/id/490/5774/3818"], ["rating", 3], ["like", 29], ["created_at", "2019-09-02 17:38:19.785748"], ["updated_at", "2019-09-02 17:38:19.785748"]]
+  ↳ db/seeds.rb:117
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:117
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:117
+  [1m[36mRestaurant Create (0.2ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "location", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Golden Cafe"], ["location", "Denver"], ["kind", "Tex Mex"], ["website", "https://picsum.photos/id/490/5774/3818"], ["rating", 3], ["like", 59], ["created_at", "2019-09-02 17:38:19.787134"], ["updated_at", "2019-09-02 17:38:19.787134"]]
+  ↳ db/seeds.rb:117
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:117
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:117
+  [1m[36mRestaurant Create (0.2ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "location", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Spice Deli"], ["location", "San Diego"], ["kind", "Sandwiches"], ["website", "https://picsum.photos/id/7/4728/3168"], ["rating", 2], ["like", 12], ["created_at", "2019-09-02 17:38:19.788625"], ["updated_at", "2019-09-02 17:38:19.788625"]]
+  ↳ db/seeds.rb:117
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:117
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:117
+  [1m[36mRestaurant Create (0.2ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "location", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Blue Plate Subs"], ["location", "Austin"], ["kind", "Ethiopean"], ["website", "https://picsum.photos/id/824/5330/3553"], ["rating", 3], ["like", 11], ["created_at", "2019-09-02 17:38:19.790105"], ["updated_at", "2019-09-02 17:38:19.790105"]]
+  ↳ db/seeds.rb:117
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:117
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:117
+  [1m[36mRestaurant Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "location", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "JQJ King"], ["location", "Denver"], ["kind", "Vietnamese"], ["website", "https://picsum.photos/id/7/4728/3168"], ["rating", 5], ["like", 44], ["created_at", "2019-09-02 17:38:19.791743"], ["updated_at", "2019-09-02 17:38:19.791743"]]
+  ↳ db/seeds.rb:117
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:117
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:117
+  [1m[36mRestaurant Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "location", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Orange Eats"], ["location", "Austin"], ["kind", "Brazilian"], ["website", "https://picsum.photos/id/225/1500/979"], ["rating", 1], ["like", 31], ["created_at", "2019-09-02 17:38:19.793541"], ["updated_at", "2019-09-02 17:38:19.793541"]]
+  ↳ db/seeds.rb:117
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:117
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:117
+  [1m[36mRestaurant Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "location", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Orange Bakery"], ["location", "Seattle"], ["kind", "Thai"], ["website", "https://picsum.photos/id/42/3456/2304"], ["rating", 3], ["like", 28], ["created_at", "2019-09-02 17:38:19.795491"], ["updated_at", "2019-09-02 17:38:19.795491"]]
+  ↳ db/seeds.rb:117
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:117
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:117
+  [1m[36mRestaurant Create (0.2ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "location", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "1494 Subs"], ["location", "Chicago"], ["kind", "Mexican"], ["website", "https://picsum.photos/id/490/5774/3818"], ["rating", 0], ["like", 51], ["created_at", "2019-09-02 17:38:19.797373"], ["updated_at", "2019-09-02 17:38:19.797373"]]
+  ↳ db/seeds.rb:117
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:117
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:117
+  [1m[36mRestaurant Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "location", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Blue Brasserie"], ["location", "Austin"], ["kind", "Sandwiches"], ["website", "https://picsum.photos/id/163/2000/1333"], ["rating", 5], ["like", 47], ["created_at", "2019-09-02 17:38:19.799092"], ["updated_at", "2019-09-02 17:38:19.799092"]]
+  ↳ db/seeds.rb:117
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:117
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:117
+  [1m[36mRestaurant Create (0.2ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "location", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Silver Bar & Grill"], ["location", "Chicago"], ["kind", "Argentinian"], ["website", "https://picsum.photos/id/819/3264/3264"], ["rating", 0], ["like", 16], ["created_at", "2019-09-02 17:38:19.800865"], ["updated_at", "2019-09-02 17:38:19.800865"]]
+  ↳ db/seeds.rb:117
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:117
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:117
+  [1m[36mRestaurant Create (0.2ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "location", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Sugar Coffee"], ["location", "Denver"], ["kind", "Brazilian"], ["website", "https://picsum.photos/id/195/768/1024"], ["rating", 3], ["like", 48], ["created_at", "2019-09-02 17:38:19.802448"], ["updated_at", "2019-09-02 17:38:19.802448"]]
+  ↳ db/seeds.rb:117
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:117
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:117
+  [1m[36mRestaurant Create (0.2ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "location", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Fat Steakhouse"], ["location", "Boise"], ["kind", "Desserts"], ["website", "https://picsum.photos/id/1060/5598/3732"], ["rating", 4], ["like", 20], ["created_at", "2019-09-02 17:38:19.804027"], ["updated_at", "2019-09-02 17:38:19.804027"]]
+  ↳ db/seeds.rb:117
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:117
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:117
+  [1m[36mRestaurant Create (0.2ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "location", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Silver Eatery"], ["location", "Los Angeles"], ["kind", "Caribbean"], ["website", "https://picsum.photos/id/513/4373/3280"], ["rating", 3], ["like", 42], ["created_at", "2019-09-02 17:38:19.805672"], ["updated_at", "2019-09-02 17:38:19.805672"]]
+  ↳ db/seeds.rb:117
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:117
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:117
+  [1m[36mRestaurant Create (0.2ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "location", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Sweet BBQ"], ["location", "Boston"], ["kind", "Korean"], ["website", "https://picsum.photos/id/670/2048/1367"], ["rating", 3], ["like", 20], ["created_at", "2019-09-02 17:38:19.807179"], ["updated_at", "2019-09-02 17:38:19.807179"]]
+  ↳ db/seeds.rb:117
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:117
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:117
+  [1m[36mRestaurant Create (0.2ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "location", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "KPV Eatery"], ["location", "Austin"], ["kind", "Bar"], ["website", "https://picsum.photos/id/163/2000/1333"], ["rating", 2], ["like", 44], ["created_at", "2019-09-02 17:38:19.808824"], ["updated_at", "2019-09-02 17:38:19.808824"]]
+  ↳ db/seeds.rb:117
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:117
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:117
+  [1m[36mRestaurant Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "location", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Smokestack Bakery"], ["location", "Seattle"], ["kind", "Korean"], ["website", "https://picsum.photos/id/7/4728/3168"], ["rating", 5], ["like", 49], ["created_at", "2019-09-02 17:38:19.810542"], ["updated_at", "2019-09-02 17:38:19.810542"]]
+  ↳ db/seeds.rb:117
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:117
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:117
+  [1m[36mRestaurant Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "location", "kind", "website", "rating", "like", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "QN Shakes"], ["location", "Austin"], ["kind", "Desserts"], ["website", "https://picsum.photos/id/859/1919/1919"], ["rating", 3], ["like", 6], ["created_at", "2019-09-02 17:38:19.812514"], ["updated_at", "2019-09-02 17:38:19.812514"]]
+  ↳ db/seeds.rb:117
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:117
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mRestaurant Load (0.7ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mRestaurant Load (1.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" ORDER BY "restaurants"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mEvent Load (0.6ms)[0m  [1m[34mSELECT  "events".* FROM "events" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mEvent Load (0.6ms)[0m  [1m[34mSELECT  "events".* FROM "events" ORDER BY "events"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]

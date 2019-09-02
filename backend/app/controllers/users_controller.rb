@@ -1,31 +1,31 @@
 class UsersController < ApplicationController
 
     def index
-        @users = User.all
-        render @user, except: [:created_at, :updated_at]
+        users = User.all
+        render json: users, except: [:created_at, :updated_at]
     end 
 
     def show
-        @user = User.find(params[:id])
-        render @user, except: [:created_at, :updated_at]
+        user = User.find(params[:id])
+        render json: user, except: [:created_at, :updated_at]
     end 
 
     def new
-        @user = User.new
+        user = User.new
     end 
 
     def created
-        @user = User.new(name:params[:name])
-        @user.save
-        render @user, except: [:created_at, :updated_at]
+        user = User.new(name:params[:name])
+        user.save
+        render json: user, except: [:created_at, :updated_at]
       
     end 
 
     def destory
-        @user = User.find(params[id])
-        @user.delete
+        user = User.find(params[id])
+        user.delete
         session.clear
-        render @user, except: [:created_at, :updated_at]
+        render json: user, except: [:created_at, :updated_at]
     end 
 
 end

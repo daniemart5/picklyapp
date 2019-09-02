@@ -5,13 +5,13 @@ require 'json'
 class RestaurantsController < ApplicationController
     
     def index
-        @restaurants = Restaurant.all
-        render @restaurants, except: [:created_at, :updated_at]
+        restaurants = Restaurant.all
+        render json: restaurants, except: [:created_at, :updated_at]
     end 
 
 
     def show
-        @restaurant = Restaurant.find(params[:id])
-        render @restaurant, except: [:created_at, :updated_at]
+        restaurant = Restaurant.find(params[:id])
+        render json: restaurant, except: [:created_at, :updated_at]
     end
 end

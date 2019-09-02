@@ -1,14 +1,25 @@
 import React from 'react';
 import Header from '../layout/Header';
+import Restaurant from './Restaurant';
 
 
 class Homepage extends React.Component {
-    
+    "http://localhost:3000/events";
+   
     constructor(){
       super();
       this.state = {
-        user: []
+        restaurants: [],
+        events: []
       }
+    }
+
+    componentDidMount = () => {
+      fetch("http://localhost:3000/restaurants")
+      .then(res => res.json())
+      .then(data => {
+        return this.setState({restaurants})}
+        )
     }
 
     render() {
@@ -16,6 +27,7 @@ class Homepage extends React.Component {
         <div className="App">
           <div className="container">
           <Header />
+          <Restaurant restaurants={this.state.restaurants} /> 
             <h2>Hello Danie!</h2>
             <h2>[ :D ] </h2>
             <h3>I am  a person who does things</h3>

@@ -427,3 +427,104 @@ Processing by RestaurantsController#index as HTML
 Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for ::1 at 2019-08-30 16:03:50 -0700
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/daniemartinoli/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/daniemartinoli/.rvm/gems/ruby-2.6.1/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/daniemartinoli/.rvm/gems/ruby-2.6.1/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb (6.5ms)
+Completed 200 OK in 18ms (Views: 15.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurants" for ::1 at 2019-08-30 16:03:58 -0700
+  
+LoadError (cannot load such file -- pry):
+  
+app/controllers/restaurants_controller.rb:1:in `<main>'
+Started GET "/restaurants" for ::1 at 2019-08-30 16:06:11 -0700
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/daniemartinoli/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by RestaurantsController#index as HTML
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+
+  
+KeyError (key not found: :ciphers):
+  
+app/controllers/restaurants_controller.rb:15:in `getRestaurants'
+app/controllers/restaurants_controller.rb:8:in `index'
+Started GET "/restaurants" for ::1 at 2019-08-30 16:07:57 -0700
+Processing by RestaurantsController#index as HTML
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+KeyError (key not found: :ciphers):
+  
+app/controllers/restaurants_controller.rb:16:in `getRestaurants'
+app/controllers/restaurants_controller.rb:8:in `index'
+Started GET "/restaurants" for ::1 at 2019-08-30 16:10:09 -0700
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/daniemartinoli/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by RestaurantsController#index as HTML
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms)
+
+
+  
+KeyError (key not found: :ciphers):
+  
+app/controllers/restaurants_controller.rb:16:in `getRestaurants'
+app/controllers/restaurants_controller.rb:8:in `index'
+Started GET "/restaurants" for ::1 at 2019-08-30 16:10:19 -0700
+Processing by RestaurantsController#index as HTML
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms)
+
+
+  
+KeyError (key not found: :ciphers):
+  
+app/controllers/restaurants_controller.rb:16:in `getRestaurants'
+app/controllers/restaurants_controller.rb:8:in `index'
+Started GET "/restaurants" for ::1 at 2019-08-30 16:13:31 -0700
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/daniemartinoli/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by RestaurantsController#index as HTML
+Completed 500 Internal Server Error in 1097ms (ActiveRecord: 0.0ms)
+
+
+  
+TypeError (no implicit conversion of HTTParty::Response into String):
+  
+app/controllers/restaurants_controller.rb:17:in `getRestaurants'
+app/controllers/restaurants_controller.rb:8:in `index'
+Started GET "/restaurants" for ::1 at 2019-08-30 16:14:12 -0700
+Processing by RestaurantsController#index as HTML
+Completed 500 Internal Server Error in 169495ms (ActiveRecord: 0.0ms)
+
+
+  
+TypeError (no implicit conversion of HTTParty::Response into String):
+  
+app/controllers/restaurants_controller.rb:17:in `getRestaurants'
+app/controllers/restaurants_controller.rb:8:in `index'
+Started GET "/restaurants" for ::1 at 2019-08-30 16:17:12 -0700
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/daniemartinoli/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by RestaurantsController#index as HTML
+Completed 200 OK in 37956ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurants" for ::1 at 2019-08-30 16:18:58 -0700
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/daniemartinoli/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by RestaurantsController#index as HTML
+Completed 200 OK in 170040ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurants" for ::1 at 2019-08-30 16:22:05 -0700
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/daniemartinoli/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by RestaurantsController#index as HTML
+Completed 200 OK in 731429ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+

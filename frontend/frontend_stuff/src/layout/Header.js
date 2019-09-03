@@ -5,7 +5,7 @@ function Header(){
     return (
         <header style={headerStyle}>
             <h1> Pickly </h1>
-            <Link to='/landing'>Login Page </Link>
+            <Link to='/'>Login Page </Link>
             | <Link to='/home'>Home </Link> 
             | <Link to='/account'>Account </Link>
             | <Link to='/search'>Search </Link>

@@ -12,10 +12,10 @@ class App extends React.Component {
     return (
       <BrowserRouter>
         <Switch>
-          <Route path='/landing' exact component={Landing}/>
-          <Route path='/home' exact component={Homepage}/> 
-          <Route path='/account' exact component={Account}/>
-          <Route path='/search' exact component={Search}/>    
+          <Route path = "/" exact component = {Landing}/>
+          <Route path = "/home" component = {Homepage}/> 
+          <Route path = "/account" component = {Account}/>
+          <Route path = "/search" component = {Search}/>    
           <div className="App">
             <div className="container">
               <h2>This is testing the page</h2>

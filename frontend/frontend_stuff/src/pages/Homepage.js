@@ -1,44 +1,43 @@
 import React from 'react';
 import Header from '../layout/Header';
-import Restaurant from './Restaurant';
-
+const API = "http://localhost:3000/users/";
 
 class Homepage extends React.Component {
-    "http://localhost:3000/events";
-   
-    constructor(){
-      super();
-      this.state = {
-        restaurants: [],
-        events: []
-      }
-    }
 
-    componentDidMount = () => {
-      fetch("http://localhost:3000/restaurants")
+  state = {
+    render: true,
+    name: "",
+    username: "",
+    userID: undefined
+  };
+
+  componentDidMount = () => {
+  
+    fetch(`${API}`)
       .then(res => res.json())
-      .then(data => {
-        return this.setState({restaurants})}
-        )
-    }
-
-    render() {
+      .then(json => {
+        this.setState({
+          name: json.name,
+          username: json.username
+        });
+      });
+  };
+  
+  render() {
       return (
         <div className="App">
-          <div className="container">
-          <Header />
-          <Restaurant restaurants={this.state.restaurants} /> 
-            <h2>Hello Danie!</h2>
-            <h2>[ :D ] </h2>
-            <h3>I am  a person who does things</h3>
-            <p>
-              This is the bio section for a person to describe who they are and what kind of taco is their fav.
-            </p>
+            <div className="container">
+            <Header /> 
+            <h1>Hello, insert name! Welcome back :)</h1>  
+            <h4> Recent Places: </h4>
+            <h4> Friends Favorite Places </h4>
+            <h4> Upcoming Plans </h4>
           </div>
         </div>
       );
-    }
-  }
+    }       
+}
+  
   
   export default Homepage
 ;

@@ -1,35 +1,23 @@
 import React from 'react';
 import Header from '../layout/Header';
-const API = "http://localhost:3000/users/";
+import {withRouter} from "react-router-dom";
+
 
 class Homepage extends React.Component {
-
+      
   state = {
-    render: true,
-    name: "",
-    username: "",
-    userID: undefined
-  };
-
-  componentDidMount = () => {
-  
-    fetch(`${API}`)
-      .then(res => res.json())
-      .then(json => {
-        this.setState({
-          name: json.name,
-          username: json.username
-        });
-      });
+    user: JSON.parse(localStorage.getItem("user"))    
   };
   
   render() {
       return (
         <div className="App">
             <div className="container">
-            <Header /> 
-            <h1>Hello, insert name! Welcome back :)</h1>  
-            <h4> Recent Places: </h4>
+            <Header />
+           
+            <img className="pictures" src={this.state.user.image}/> 
+            <h1>Hello, {this.state.user.name}! Welcome back :)</h1>  
+            <h4> Recent Places:  </h4>
             <h4> Friends Favorite Places </h4>
             <h4> Upcoming Plans </h4>
           </div>
@@ -39,6 +27,6 @@ class Homepage extends React.Component {
 }
   
   
-  export default Homepage
+  export default withRouter(Homepage)
 ;
   

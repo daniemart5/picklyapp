@@ -10,7 +10,9 @@ class Search extends React.Component {
     super();
     this.state = {
       restaurants: [],
-      events: []
+      events: [],
+      filteredRes: "",
+      filteredEve: ""
     }
   }
 
@@ -29,19 +31,45 @@ class Search extends React.Component {
       )
   }
 
+  filteredEve = () => {
+    return this.state.events.filter(event => {
+    return event.name.toLowerCase().includes(this.state.filteredEve.toLowerCase())
+    })
+  }
+
+  filteredRes = () => {
+    return this.state.restaurants.filter(restaurant => {
+    return restaurant.name.toLowerCase().includes(this.state.filteredRes.toLowerCase())
+    })
+  }
+
+
+  handleChange = (ev) => {
+    ev.preventDefault()
+    this.setState({filteredEve: ev.target.value})
+  }
+  
+
   render() {
+
     return (
       <div className="App">
         <div className="container">
-        <Header />
-        <div>{this.state.restaurants.map(restaurant => {
-        return <Restaurant restaurant ={restaurant} />})
-        }</div>
-           
-        <div>{this.state.events.map(event => {
-        return <Event event ={event} />})
-        }</div>
 
+          <Header />
+          <input
+          type="text"
+          value={this.filteredEve}
+          placeholder={"Search your Recent Transactions"}
+          onChange={this.handleChange}
+          />
+          {filteredRes().map(restaurant => {
+          return <Restaurant restaurant ={restaurant} />})
+          }
+            
+         {filteredEve().map(event => {
+          return <Event event ={event} />})
+          }
         </div>
       </div>
       );

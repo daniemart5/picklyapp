@@ -1,23 +1,21 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import logo from './picklyLogo.jpg';
+
+
 
 function Header(){
     return (
-        <header style={headerStyle}>
-            <h1> Pickly </h1>
-            <Link to='/'>Login Page </Link>
-            | <Link to='/home'>Home </Link> 
-            | <Link to='/account'>Account </Link>
+        <header className="headerStyle">
+            <span><img className="logo" src={logo} alt="Catcus logo for pickly"/> <h1> * PICKLY *</h1> </span>
+            <br></br>
+            <Link to='/home'>Home</Link>
             | <Link to='/search'>Search </Link>
-            | <Link>Log Out</Link>
+            | <Link to='/favorites'>Favorites </Link> 
+            | <Link to='/account'>Account </Link>
+            | <Link to='/'> </Link>
         </header>
     )
 }
 
-const headerStyle = {
-    color: '#CCC7B9',
-    textAlign: 'center',
-    padding: '10px'
-  
-  }
 export default Header;

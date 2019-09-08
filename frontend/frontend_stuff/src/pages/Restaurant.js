@@ -12,6 +12,9 @@ class Restaurant extends React.Component {
         <h3>City: {this.props.restaurant.location}</h3> 
         <p>{this.props.restaurant.discription}</p>
         <p>Rating: {this.props.restaurant.rating} | Likes: {this.props.restaurant.like}</p>
+       
+        <button className="form-submit">Like 🔥</button>
+        <button className="form-submit">Favorite ❤️</button>
         </div>
     </div>
       );

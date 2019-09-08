@@ -1,24 +1,36 @@
 import React from 'react';
-import Header from '../layout/Header';
+import Login from '../layout/Login';
+import Register from '../layout/Register';
+import logo from '../layout/picklyLogo.jpg';
 
 class Landing extends React.Component {
 
-    render() {
+  constructor(props){
+    super(props);
+    this.state = {showLogin: true}
+  }
+
+  handleToggleClick = () =>{
+    this.setState(prevState => ({
+      showLogin: !prevState.showLogin
+    }))
+  }
+
+  render() {
       return (
-       <div className="App">
-          <div className="container">
-            <Header /> 
-            <h2>Pickly</h2>
+      <div className="App">
+        <img className="logo" src={logo} alt="Catcus logo for pickly"/>
+        <div className="center">
+          <div className="card">
+          <div className={this.props.login ? "login" : "hide"}> 
             <h3>What's your pick tonight?</h3>
-            <ul>
-              <li>Corgis</li>
-              <li>Beagles</li>
-              <li>Golden Retrivers</li>
-              <li>Mutts</li>
-              <li>You name it</li>
-            </ul>
+            <button className="form-submit" onClick={this.handleToggleClick}>Login</button>
+            <button className="form-submit" onClick={this.handleToggleClick}>Register</button>
+            {this.state.showLogin ? <Login user={this.props.user} handleLoginUser={this.props.handleLoginUser}/> : <Register handleCreateUser={this.props.handleCreateUser}/>}
+          </div>
           </div>
         </div>
+      </div>
       );
     }
   }

@@ -1,11 +1,106 @@
 html {
-  text-align: center;
-  background-color: #21ADA5;
-  font: helvetica; 
+  background-color: #21ADA5; 
+  font-family: Raleway, sans-serif;
+  font-weight: bold;
+  padding: 1%;
+  margin: 1%;
+  border-radius: 15px;
 }
 
+.logo {
+  text-align: left;
+  width: 10%;
+  height: 25%;
+  border-radius: 35px;
+  padding: 1%;
+}
 
+.pictures {
+  width: 50%;
+  height: 50%;
+  padding: 1%;
+  border-radius: 35px;
+}
 
+.hidden {
+  visibility: hidden;
 
+}
+
+.container {
+  text-align: center;
+}
+
+/* ---------------- Header --------------- */
+
+.headerStyle {
+  color: #423A3F;
+  padding: 20px;
+  background-color: #F7B733;
+  border: none;
+  letter-spacing: 0.2rem;
+  transition: 0.3s opacity ease;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+/* -------------- Login ---------------- */
+
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+.landing{
+    font-family: 'Raleway', sans-serif;
+    
+    background-color: #1abc9c;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 1rem;
+}
+
+.card > form {
+    display: flex;
+    flex-direction: column;
+}
+
+.card h1 {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.form-item{
+    font-family: 'Raleway', sans-serif;
+    padding: 5px;
+    margin-bottom: 2rem;
+    height: 30px;
+    width: 16rem;
+    border: 1px solid grey;
+}
+
+.form-submit{
+    font-family: Raleway, sans-serif;
+    font-weight: bold;
+    height: 35px;
+    color: #423A3F, bold;
+    background-color: #F7B733;
+    border: none;
+    letter-spacing: 0.2rem;
+    transition: 0.3s opacity ease;
+    cursor: pointer;
+    border-radius: 15px;
+}
+.form-submit:hover{
+   opacity: 0.6;
+   border-radius: 15px;
+}
 
 

@@ -58,7 +58,7 @@ images = [
         age: age,
         city: city,
         username: username,
-        password_digest: password,
+        password: password,
         image: image
         )
 end

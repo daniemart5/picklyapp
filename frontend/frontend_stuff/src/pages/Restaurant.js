@@ -1,24 +1,20 @@
 import React from 'react';
-import Header from '../layout/Header';
-import ResCard from '../layout/ResCard'
 
 class Restaurant extends React.Component {
 
-  state = {
-  restaurants: "",
-  }
-  
-
   render() {
+    
     return (
      <div className="App">
         <div className="container">
-        <Header />
-          <h2>This is the Restaurant page</h2>
-            {restaurants.map(restaurant => <ResCard restaurant = {restaurant}/>)}
-           
-            {/* {allDogs.map(dog => <DogCard addDog = {this.addDog} user_name = {this.props.user_name} userID= {this.props.userID} key = {allDogs.indexOf(dog)} dog = {dog} />)} */}
-
+          <img className="pictures" src={this.props.restaurant.website} alt="nice looking restaurant"/>
+        <h2>{this.props.restaurant.name} | {this.props.restaurant.kind} </h2>
+        <h3>City: {this.props.restaurant.location}</h3> 
+        <p>{this.props.restaurant.discription}</p>
+        <p>Rating: {this.props.restaurant.rating} | Likes: {this.props.restaurant.like}</p>
+       
+        <button className="form-submit">Like 🔥</button>
+        <button className="form-submit">Favorite ❤️</button>
         </div>
     </div>
       );

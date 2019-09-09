@@ -1,6 +1,13 @@
 import React from 'react';
 
 class Restaurant extends React.Component {
+  
+  likeButton = () => {
+    let newLikes = this.props.restaurant.like + 1
+    this.setState({
+      likes: newLikes
+    })
+  }
 
   render() {
     
@@ -13,7 +20,7 @@ class Restaurant extends React.Component {
         <p>{this.props.restaurant.discription}</p>
         <p>Rating: {this.props.restaurant.rating} | Likes: {this.props.restaurant.like}</p>
        
-        <button className="form-submit">Like 🔥</button>
+        <button onClick={this.likeButton} className="form-submit">Like 🔥</button>
         <button className="form-submit">Favorite ❤️</button>
         </div>
     </div>

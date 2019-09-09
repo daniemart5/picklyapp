@@ -31,13 +31,13 @@ class Search extends React.Component {
       )
   }
 
-  filteredEve = () => {
+  filteredEvents = (props) => {
     return this.state.events.filter(event => {
     return event.name.toLowerCase().includes(this.state.filteredEve.toLowerCase())
     })
   }
 
-  filteredRes = () => {
+  filteredRestaurants = (props) => {
     return this.state.restaurants.filter(restaurant => {
     return restaurant.name.toLowerCase().includes(this.state.filteredRes.toLowerCase())
     })
@@ -63,13 +63,15 @@ class Search extends React.Component {
           placeholder={"Search your Recent Transactions"}
           onChange={this.handleChange}
           />
-          {filteredRes().map(restaurant => {
+          <div>{this.filteredRestaurants().map(restaurant => {
           return <Restaurant restaurant ={restaurant} />})
           }
+          </div>
             
-         {filteredEve().map(event => {
+          <div>{this.filteredEvents().map(event => {
           return <Event event ={event} />})
           }
+          </div>
         </div>
       </div>
       );

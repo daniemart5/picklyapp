@@ -30,16 +30,11 @@ class Search extends React.Component {
       )
   }
 
-  handleChangeRes = (ev) => {
+  handleChange = (ev) => {
     ev.preventDefault()
-    this.setState({filteredRes: ev.target.value})
+    this.setState({filteredRes: ev.target.value, filteredEve: ev.target.value})
   }
   
-  handleChangeEve = (ev) => {
-    ev.preventDefault()
-    this.setState({filteredRes: ev.target.value})
-  }
-
   filteredRestaurants = (props) => {
      return this.state.restaurants.filter(restaurant => {
       return restaurant.name.toLowerCase().includes(this.state.filteredRes.toLowerCase())
@@ -62,22 +57,19 @@ class Search extends React.Component {
           <input
           type="text"
           placeholder={"Events"}
-          onChange={this.handleChangeEve}
-          value={this.filteredEve}
-          />
-
-          <input
-          type="text"
-          placeholder={"Resaurants"}
-          onChange={this.handleChangeRes}
-          value={this.filteredRes}
+          onChange={this.handleChange}
+          value={this.filteredEve, this.filteredRes}
           />        
 
-        {this.filteredRestaurants().map(restaurant => {
-           return <Restaurant restaurant={restaurant}/> })}
-      
-        {this.filteredEvents().map(event => {
-           return <Event event={event}/> })}
+          {this.filteredRestaurants().map((restaurant, index) => {
+            return <Restaurant restaurant={restaurant} key={index}/>; 
+            })
+          }
+        
+          {this.filteredEvents().map((event, index) => {
+            return <Event event={event} key={index} />;
+              })
+          }
           
         </div>
       </div>

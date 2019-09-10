@@ -34,10 +34,8 @@ class Event extends React.Component {
         <div className="container">
          <img className="pictures" src={this.props.event.website} alt="nice looking event"/>
         <h2>{this.props.event.name} | {this.props.event.kind}</h2>
-        <h3>{this.props.event.location}</h3>
+        <h3>{this.props.event.location} | Rating: {this.props.event.rating}</h3>
         <p>{this.props.event.description}</p>
-        <p>Rating: {this.props.event.rating} | Likes: {this.props.event.like}</p>
-        <button onClick={this.likeButton} className="form-submit">Like 🔥</button>
         <button onClick={this.handleFav} className="form-submit">Favorite ❤️</button>
         </div>
     </div>

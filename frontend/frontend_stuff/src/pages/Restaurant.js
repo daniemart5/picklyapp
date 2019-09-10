@@ -1,6 +1,36 @@
 import React from 'react';
 
 class Restaurant extends React.Component {
+  
+  state = {
+    restaurants: "",
+  }
+
+  likeButton = () => {
+    let newLikes = this.props.restaurant.like + 1
+    this.setState({
+      likes: newLikes
+    })
+  }
+
+  handleFav = () => {
+    let user = JSON.parse(localStorage.getItem("user"))
+
+
+    fetch ('http://localhost:3000/favorites', {
+      method: 'POST',
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({            
+        user_id: user.id,
+        favorite_id: this.props.restaurant.id,
+        favorite_type: 'Restaurant'})
+      })
+      .then(res => res.json())
+      .then(data =>  {this.setState({restaurants: data.restaurants})})
+      
+  }
 
   render() {
     
@@ -13,8 +43,8 @@ class Restaurant extends React.Component {
         <p>{this.props.restaurant.discription}</p>
         <p>Rating: {this.props.restaurant.rating} | Likes: {this.props.restaurant.like}</p>
        
-        <button className="form-submit">Like 🔥</button>
-        <button className="form-submit">Favorite ❤️</button>
+        <button onClick={this.likeButton} className="form-submit">Like 🔥</button>
+        <button onClick={this.handleFav} className="form-submit">Favorite ❤️</button>
         </div>
     </div>
       );

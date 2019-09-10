@@ -6,7 +6,7 @@ class Register extends Component {
     state={ 
         name: '',
         username: '',
-        password: '',
+        bio: '',
         age: '',
         city: ''
     }
@@ -17,23 +17,43 @@ class Register extends Component {
             [e.target.username]: e.target.value,
             [e.target.age]: e.target.value,
             [e.target.city]: e.target.value, 
+            [e.target.bio]: e.target.value
         });
     }
     
     handleSubmit=(e)=>{
         e.preventDefault() 
-        const newUserData = {user: {
+        const newUserData = {
             name: this.state.name,
             username: this.state.username,
-            password: this.state.password,
+            bio: this.state.bio,
             age: this.state.age,
             city: this.state.city
             }
+            console.log(newUserData)
+            this.handleCreateUser(newUserData)
         }
-        this.props.handleCreateUser(newUserData)
-        this.props.history.push('/home');
-    }
     
+
+    handleCreateUser = () => {
+        fetch ('http://localhost:3000/users', {
+          method: 'POST',
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({            name: this.state.name,
+            username: this.state.username,
+            bio: this.state.bio,
+            age: this.state.age,
+            city: this.state.city})
+        })
+        .then(res => res.json())
+        .then(data =>  {
+            console.log(data)
+            localStorage.setItem("user", JSON.stringify(data))
+            this.props.history.push('/home')})
+      }
+
     render() {
         return (
         <div className="register">
@@ -45,7 +65,8 @@ class Register extends Component {
                     className="form-item"
                     name = "name" 
                     type = "text" 
-                    placeholder = "enter name" />
+                    placeholder = "enter name"
+                    value={this.state.name} />
                     
                     <h3>Enter Username</h3> 
                     <input 
@@ -53,7 +74,8 @@ class Register extends Component {
                     className="form-item"
                     name = "username" 
                     type = "text" 
-                    placeholder = "enter username" />
+                    placeholder = "enter username"
+                    value={this.state.username} />
                 
                     <h3>Enter Age</h3>
                     <input
@@ -61,7 +83,8 @@ class Register extends Component {
                     className="form-item" 
                     name = "age" 
                     type = "number" 
-                    placeholder = "enter age" />
+                    placeholder = "enter age"
+                    value={this.state.age} />
                 
                     <h3>Enter city</h3>
                     <input
@@ -69,28 +92,23 @@ class Register extends Component {
                     className="form-item" 
                     name = "city" 
                     type = "text" 
-                    placeholder = "enter city" />
+                    placeholder = "enter city"
+                    value={this.state.city} />
 
-                    <h3>Enter Password</h3> 
+                    <h3>Enter bio</h3> 
                     <input
                     onChange={this.handleChange}
                     className="form-item" 
-                    name = "password" 
-                    type = "password" 
-                    placeholder = "enter password"/>
-                
-                    <h3>Re-enter Password </h3>
-                    <input 
-                    onChange={this.handleChange}
-                    className="form-item"
-                    name = "password" 
-                    type = "password" 
-                    placeholder = "re-enter password"/>
+                    name = "bio" 
+                    type = "text" 
+                    placeholder = "enter bio"
+                    value={this.state.bio
+                    }/>
                     <br />
                     <br/>
                     <input 
                     className="form-submit" 
-                    type="button" 
+                    type="submit" 
                     value ="Create User"/>   
                 </form>
             </div>

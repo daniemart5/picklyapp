@@ -4,8 +4,7 @@ import { withRouter } from "react-router-dom";
 class Login extends Component {
 
     state={ 
-        username: '',
-        password: ''
+        username: ''
     }
     
     handleChange=(e)=>{
@@ -14,14 +13,34 @@ class Login extends Component {
     
     handleSubmit=(e)=>{
         e.preventDefault() 
-        const userData = {user: {
-            username: this.state.username,
-            password: this.state.password
-            }
-        }
-        this.props.handleLoginUser(userData)
-        this.props.history.push('/home');
+        // const userData = {user: {
+        //     username: this.state.username,
+        //     password: this.state.password
+        //     }
+        // }
+        this.handleLoginUser()
+
     }
+
+    handleLoginUser = () => {
+        fetch('http://localhost:3000/login', { 
+        method: 'POST',
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({            
+            username: this.state.username
+        })
+        })
+        .then(res => res.json())
+        .then(user => {
+          console.log(user)
+          localStorage.setItem("user", JSON.stringify(user))
+          this.setState({user})
+          this.props.history.push('/home');
+        })
+        
+      }
 
 
     render() {
@@ -38,18 +57,7 @@ class Login extends Component {
                 type = "text" 
                 value ={this.state.username}
                 placeholder = "enter username" />
-                
-                <h3>Enter Password</h3> 
-                
-                <input 
-                onChange={this.handleChange}
-                className="form-item"
-                name = "password" 
-                type = "password" 
-                value={this.state.password}
-                placeholder = "enter password"/>
-                <br/>
-                <br/>
+                <br></br>
                 <input 
                 className="form-submit" 
                 type="submit" 

@@ -3,7 +3,6 @@ import Header from '../layout/Header';
 import Restaurant from './Restaurant';
 import Event from './Event';
 
-
 class Search extends React.Component {
 
   constructor(){
@@ -31,24 +30,22 @@ class Search extends React.Component {
       )
   }
 
-  filteredEvents = (props) => {
-    return this.state.events.filter(event => {
-    return event.name.toLowerCase().includes(this.state.filteredEve.toLowerCase())
-    })
-  }
-
-  filteredRestaurants = (props) => {
-    return this.state.restaurants.filter(restaurant => {
-    return restaurant.name.toLowerCase().includes(this.state.filteredRes.toLowerCase())
-    })
-  }
-
-
   handleChange = (ev) => {
     ev.preventDefault()
-    this.setState({filteredEve: ev.target.value})
+    this.setState({filteredRes: ev.target.value, filteredEve: ev.target.value})
   }
   
+  filteredRestaurants = (props) => {
+     return this.state.restaurants.filter(restaurant => {
+      return restaurant.name.toLowerCase().includes(this.state.filteredRes.toLowerCase())
+    })
+  }
+
+  filteredEvents = (props) => {
+    return this.state.events.filter(event => {
+     return event.name.toLowerCase().includes(this.state.filteredEve.toLowerCase())
+   })
+ }
 
   render() {
 
@@ -59,19 +56,21 @@ class Search extends React.Component {
           <Header />
           <input
           type="text"
-          value={this.filteredEve}
-          placeholder={"Search your Recent Transactions"}
+          placeholder={"Events"}
           onChange={this.handleChange}
-          />
-          <div>{this.filteredRestaurants().map(restaurant => {
-          return <Restaurant restaurant ={restaurant} />})
+          value={this.filteredEve, this.filteredRes}
+          />        
+
+          {this.filteredRestaurants().map((restaurant, index) => {
+            return <Restaurant restaurant={restaurant} key={index}/>; 
+            })
           }
-          </div>
-            
-          <div>{this.filteredEvents().map(event => {
-          return <Event event ={event} />})
+        
+          {this.filteredEvents().map((event, index) => {
+            return <Event event={event} key={index} />;
+              })
           }
-          </div>
+          
         </div>
       </div>
       );

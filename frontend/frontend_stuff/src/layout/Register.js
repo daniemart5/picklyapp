@@ -6,7 +6,7 @@ class Register extends Component {
     state={ 
         name: '',
         username: '',
-        password: '',
+        bio: '',
         age: '',
         city: ''
     }
@@ -17,7 +17,7 @@ class Register extends Component {
             [e.target.username]: e.target.value,
             [e.target.age]: e.target.value,
             [e.target.city]: e.target.value, 
-            [e.target.password]: e.target.value
+            [e.target.bio]: e.target.value
         });
     }
     
@@ -26,26 +26,32 @@ class Register extends Component {
         const newUserData = {
             name: this.state.name,
             username: this.state.username,
-            password: this.state.password,
+            bio: this.state.bio,
             age: this.state.age,
             city: this.state.city
             }
+            console.log(newUserData)
             this.handleCreateUser(newUserData)
-            this.props.history.push('/home');
         }
     
 
-    handleCreateUser = (newUserData) => {
+    handleCreateUser = () => {
         fetch ('http://localhost:3000/users', {
           method: 'POST',
           headers: {
             "Content-Type": "application/json",
-            "Accept": "application/json"
           },
-          body: JSON.stringify({newUserData})
+          body: JSON.stringify({            name: this.state.name,
+            username: this.state.username,
+            bio: this.state.bio,
+            age: this.state.age,
+            city: this.state.city})
         })
-        .then(res => console.log(res.json()))
-        .then(user => this.setState({user}))
+        .then(res => res.json())
+        .then(data =>  {
+            console.log(data)
+            localStorage.setItem("user", JSON.stringify(data))
+            this.props.history.push('/home')})
       }
 
     render() {
@@ -89,14 +95,15 @@ class Register extends Component {
                     placeholder = "enter city"
                     value={this.state.city} />
 
-                    <h3>Enter Password</h3> 
+                    <h3>Enter bio</h3> 
                     <input
                     onChange={this.handleChange}
                     className="form-item" 
-                    name = "password" 
-                    type = "password" 
-                    placeholder = "enter password"
-                    value={this.state.password}/>
+                    name = "bio" 
+                    type = "text" 
+                    placeholder = "enter bio"
+                    value={this.state.bio
+                    }/>
                     <br />
                     <br/>
                     <input 

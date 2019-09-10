@@ -48,18 +48,18 @@ images = [
 # Creates 10 users using Faker data
 10.times do
     username = "#{usernames.sample}#{(1000..9999).to_a.sample}"
-    password = "0000"
     name = Faker::FunnyName.name
     age = (12..60).to_a.sample
     city = cities.sample
     image = images.sample
+    bio = "Enter Bio here!"
     User.create(
         name: name,
         age: age,
         city: city,
         username: username,
-        password: password,
-        image: image
+        image: image,
+        bio: bio
         )
 end
 

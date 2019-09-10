@@ -51,8 +51,8 @@ ActiveRecord::Schema.define(version: 2019_08_28_185211) do
     t.integer "age"
     t.string "city"
     t.string "username"
-    t.string "password_digest"
     t.string "image"
+    t.string "bio"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

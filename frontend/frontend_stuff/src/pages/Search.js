@@ -63,12 +63,20 @@ class Search extends React.Component {
           placeholder={"Search your Recent Transactions"}
           onChange={this.handleChange}
           />
-          <div>{this.filteredRestaurants().map(restaurant => {
+
+
+          <input
+          type="text"
+          value={this.filteredRes}
+          placeholder={"Search your Recent Transactions"}
+          onChange={this.handleChange}
+          />
+          <div>{this.filteredRes().map(restaurant => {
           return <Restaurant restaurant ={restaurant} />})
           }
           </div>
             
-          <div>{this.filteredEvents().map(event => {
+          <div>{this.filteredEve().map(event => {
           return <Event event ={event} />})
           }
           </div>

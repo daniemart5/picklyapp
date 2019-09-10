@@ -8,7 +8,7 @@ class Favorites extends Component {
     state = {
         user: JSON.parse(localStorage.getItem("user")),  
         restaurants: [],
-        events: ""
+        events: []
       };
 
     componentDidMount = () => {
@@ -21,12 +21,13 @@ class Favorites extends Component {
           }
           })
           .then(res => res.json())
-          .then(user => {this.setState({restaurants: user.restaurants, events: user.events})})
+          .then(user => {console.log({restaurants: user.restaurants, events: user.events})})
         }
 
-    
+        
     render() {
         return (
+            
         <div className="App">
     
             <Header /> 

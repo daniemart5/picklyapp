@@ -14,8 +14,7 @@ class Homepage extends React.Component {
         <div className="App">
             <div className="container">
             <Header />
-           
-            <img className="pictures" src={this.state.user.image}/> 
+            
             <h1>Hello, {this.state.user.name}! Welcome back :)</h1>  
             <h4> Recent Places:  </h4>
             <h4> Friends Favorite Places </h4>

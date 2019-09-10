@@ -16,44 +16,19 @@ class App extends React.Component {
     super(props);
     this.state = {
       user: {
-      id: "",
       name: "",
       username: "",
       city: "",
+      bio: "",
+      age: ""
+      },
       search: ""
-      }
+      
     }
   }
 
   updateSearch = (ev) => {
     this.setState({search: ev.target.value.substr(0, 20)});
-  }
-
-  handleLoginUser = (userData) => {
-    fetch('http://localhost:3000/login', { 
-    method: 'POST',
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(userData)
-    })
-    .then(res => res.json())
-    .then(user => {
-      localStorage.setItem("user", JSON.stringify(user))
-      this.setState({user})})
-    
-  }
-
-  handleCreateUser = (newUserData) => {
-    fetch ('http://localhost:3000/', {
-      method: 'POST',
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify({newUserData})
-    })
-    .then(res => res.json())
-    .then(user => this.setState({user}))
   }
 
    

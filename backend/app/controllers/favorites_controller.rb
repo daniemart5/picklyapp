@@ -14,10 +14,9 @@ class FavoritesController < ApplicationController
         @favorite = Favorite.new
     end 
 
-    def created
-        @favorite = Favorite.new(name:params[:name])
-        @favorite.save
-        render @favorite, except: [:created_at, :updated_at]
+    def create
+        @favorite = Favorite.create(user_id: params[:user_id], favorite_id: params[:favorite_id], favorite_type: params[:favorite_type])
+        render json: @favorite
       
     end 
 

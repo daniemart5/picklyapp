@@ -3,7 +3,6 @@ import Header from '../layout/Header';
 import Restaurant from './Restaurant';
 import Event from './Event';
 
-
 class Search extends React.Component {
 
   constructor(){
@@ -31,24 +30,27 @@ class Search extends React.Component {
       )
   }
 
-  filteredEvents = (props) => {
-    return this.state.events.filter(event => {
-    return event.name.toLowerCase().includes(this.state.filteredEve.toLowerCase())
-    })
+  handleChangeRes = (ev) => {
+    ev.preventDefault()
+    this.setState({filteredRes: ev.target.value})
+  }
+  
+  handleChangeEve = (ev) => {
+    ev.preventDefault()
+    this.setState({filteredRes: ev.target.value})
   }
 
   filteredRestaurants = (props) => {
-    return this.state.restaurants.filter(restaurant => {
-    return restaurant.name.toLowerCase().includes(this.state.filteredRes.toLowerCase())
+     return this.state.restaurants.filter(restaurant => {
+      return restaurant.name.toLowerCase().includes(this.state.filteredRes.toLowerCase())
     })
   }
 
-
-  handleChange = (ev) => {
-    ev.preventDefault()
-    this.setState({filteredEve: ev.target.value})
-  }
-  
+  filteredEvents = (props) => {
+    return this.state.events.filter(event => {
+     return event.name.toLowerCase().includes(this.state.filteredEve.toLowerCase())
+   })
+ }
 
   render() {
 
@@ -59,27 +61,24 @@ class Search extends React.Component {
           <Header />
           <input
           type="text"
+          placeholder={"Events"}
+          onChange={this.handleChangeEve}
           value={this.filteredEve}
-          placeholder={"Search your Recent Transactions"}
-          onChange={this.handleChange}
           />
-
 
           <input
           type="text"
+          placeholder={"Resaurants"}
+          onChange={this.handleChangeRes}
           value={this.filteredRes}
-          placeholder={"Search your Recent Transactions"}
-          onChange={this.handleChange}
-          />
-          <div>{this.filteredRes().map(restaurant => {
-          return <Restaurant restaurant ={restaurant} />})
-          }
-          </div>
-            
-          <div>{this.filteredEve().map(event => {
-          return <Event event ={event} />})
-          }
-          </div>
+          />        
+
+        {this.filteredRestaurants().map(restaurant => {
+           return <Restaurant restaurant={restaurant}/> })}
+      
+        {this.filteredEvents().map(event => {
+           return <Event event={event}/> })}
+          
         </div>
       </div>
       );

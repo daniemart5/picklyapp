@@ -21,7 +21,7 @@ class Favorites extends Component {
           }
           })
           .then(res => res.json())
-          .then(user => {console.log({restaurants: user.restaurants, events: user.events})})
+          .then(user => {this.setState({restaurants: user.restaurants, events: user.events})})
         }
 
         

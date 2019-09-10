@@ -11925,3 +11925,635 @@ No serializer found for resource: #<Event id: 1, name: "Meditation In the Park",
 Completed 200 OK in 8ms (Views: 6.6ms | ActiveRecord: 1.2ms)
 
 
+Started GET "/events" for ::1 at 2019-09-10 11:13:32 -0700
+Started GET "/restaurants" for ::1 at 2019-09-10 11:13:32 -0700
+  [1m[35m (3.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/daniemartinoli/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (3.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/daniemartinoli/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by RestaurantsController#index as */*
+Processing by EventsController#index as */*
+  [1m[36mRestaurant Load (19.9ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/controllers/restaurants_controller.rb:9
+  [1m[36mEvent Load (1.5ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:5
+No serializer found for resource: #<Event id: 1, name: "Meditation In the Park", location: "Los Angeles", description: "Come and join us as we lift each other to enlighte...", kind: "Outdoor", website: "https://picsum.photos/id/375/5184/3456", rating: 5, like: 10, created_at: "2019-09-09 18:22:13", updated_at: "2019-09-09 18:22:13">
+No serializer found for resource: #<Restaurant id: 1, name: "Spice Grill & Tap", location: "Orlando", kind: "Argentinian", website: "https://picsum.photos/id/365/5616/3744", rating: 3, like: 22, created_at: "2019-09-09 18:22:13", updated_at: "2019-09-09 18:22:13">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Event::ActiveRecord_Relation (2.21ms)
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Restaurant::ActiveRecord_Relation (1.75ms)
+Completed 200 OK in 66ms (Views: 40.2ms | ActiveRecord: 17.0ms)
+
+
+Completed 200 OK in 67ms (Views: 30.3ms | ActiveRecord: 30.5ms)
+
+
+Started GET "/events" for ::1 at 2019-09-10 11:14:25 -0700
+Started GET "/restaurants" for ::1 at 2019-09-10 11:14:25 -0700
+Processing by EventsController#index as */*
+Processing by RestaurantsController#index as */*
+  [1m[36mEvent Load (1.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:5
+No serializer found for resource: #<Event id: 1, name: "Meditation In the Park", location: "Los Angeles", description: "Come and join us as we lift each other to enlighte...", kind: "Outdoor", website: "https://picsum.photos/id/375/5184/3456", rating: 5, like: 10, created_at: "2019-09-09 18:22:13", updated_at: "2019-09-09 18:22:13">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Event::ActiveRecord_Relation (0.94ms)
+Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 1.2ms)
+
+
+  [1m[36mRestaurant Load (2.5ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/controllers/restaurants_controller.rb:9
+No serializer found for resource: #<Restaurant id: 1, name: "Spice Grill & Tap", location: "Orlando", kind: "Argentinian", website: "https://picsum.photos/id/365/5616/3744", rating: 3, like: 22, created_at: "2019-09-09 18:22:13", updated_at: "2019-09-09 18:22:13">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Restaurant::ActiveRecord_Relation (1.48ms)
+Completed 200 OK in 6ms (Views: 3.1ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/restaurants" for ::1 at 2019-09-10 11:16:52 -0700
+Started GET "/events" for ::1 at 2019-09-10 11:16:52 -0700
+Processing by RestaurantsController#index as */*
+Processing by EventsController#index as */*
+  [1m[36mRestaurant Load (0.7ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/controllers/restaurants_controller.rb:9
+  [1m[36mEvent Load (0.6ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:5
+No serializer found for resource: #<Event id: 1, name: "Meditation In the Park", location: "Los Angeles", description: "Come and join us as we lift each other to enlighte...", kind: "Outdoor", website: "https://picsum.photos/id/375/5184/3456", rating: 5, like: 10, created_at: "2019-09-09 18:22:13", updated_at: "2019-09-09 18:22:13">
+No serializer found for resource: #<Restaurant id: 1, name: "Spice Grill & Tap", location: "Orlando", kind: "Argentinian", website: "https://picsum.photos/id/365/5616/3744", rating: 3, like: 22, created_at: "2019-09-09 18:22:13", updated_at: "2019-09-09 18:22:13">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Restaurant::ActiveRecord_Relation (3.51ms)
+Completed 200 OK in 9ms (Views: 7.6ms | ActiveRecord: 0.7ms)
+
+
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Event::ActiveRecord_Relation (7.37ms)
+Completed 200 OK in 11ms (Views: 10.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/events" for ::1 at 2019-09-10 11:19:29 -0700
+Started GET "/restaurants" for ::1 at 2019-09-10 11:19:29 -0700
+Processing by EventsController#index as */*
+Processing by RestaurantsController#index as */*
+  [1m[36mEvent Load (20.5ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  [1m[36mRestaurant Load (20.3ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/controllers/events_controller.rb:5
+  ↳ app/controllers/restaurants_controller.rb:9
+No serializer found for resource: #<Event id: 1, name: "Meditation In the Park", location: "Los Angeles", description: "Come and join us as we lift each other to enlighte...", kind: "Outdoor", website: "https://picsum.photos/id/375/5184/3456", rating: 5, like: 10, created_at: "2019-09-09 18:22:13", updated_at: "2019-09-09 18:22:13">
+No serializer found for resource: #<Restaurant id: 1, name: "Spice Grill & Tap", location: "Orlando", kind: "Argentinian", website: "https://picsum.photos/id/365/5616/3744", rating: 3, like: 22, created_at: "2019-09-09 18:22:13", updated_at: "2019-09-09 18:22:13">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Restaurant::ActiveRecord_Relation (2.33ms)
+Completed 200 OK in 27ms (Views: 6.3ms | ActiveRecord: 20.3ms)
+
+
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Event::ActiveRecord_Relation (1.52ms)
+Completed 200 OK in 28ms (Views: 7.4ms | ActiveRecord: 20.5ms)
+
+
+Started GET "/restaurants" for ::1 at 2019-09-10 11:19:32 -0700
+Started GET "/events" for ::1 at 2019-09-10 11:19:32 -0700
+Processing by RestaurantsController#index as */*
+Processing by EventsController#index as */*
+  [1m[36mRestaurant Load (1.2ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/controllers/restaurants_controller.rb:9
+No serializer found for resource: #<Restaurant id: 1, name: "Spice Grill & Tap", location: "Orlando", kind: "Argentinian", website: "https://picsum.photos/id/365/5616/3744", rating: 3, like: 22, created_at: "2019-09-09 18:22:13", updated_at: "2019-09-09 18:22:13">
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Restaurant::ActiveRecord_Relation (2.75ms)
+No serializer found for resource: #<Event id: 1, name: "Meditation In the Park", location: "Los Angeles", description: "Come and join us as we lift each other to enlighte...", kind: "Outdoor", website: "https://picsum.photos/id/375/5184/3456", rating: 5, like: 10, created_at: "2019-09-09 18:22:13", updated_at: "2019-09-09 18:22:13">
+Completed 200 OK in 7ms (Views: 5.4ms | ActiveRecord: 1.2ms)
+
+
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Event::ActiveRecord_Relation (0.87ms)
+Completed 200 OK in 8ms (Views: 6.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/restaurants" for ::1 at 2019-09-10 11:20:00 -0700
+Started GET "/events" for ::1 at 2019-09-10 11:20:00 -0700
+Processing by RestaurantsController#index as */*
+Processing by EventsController#index as */*
+  [1m[36mRestaurant Load (0.5ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/controllers/restaurants_controller.rb:9
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+No serializer found for resource: #<Restaurant id: 1, name: "Spice Grill & Tap", location: "Orlando", kind: "Argentinian", website: "https://picsum.photos/id/365/5616/3744", rating: 3, like: 22, created_at: "2019-09-09 18:22:13", updated_at: "2019-09-09 18:22:13">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Restaurant::ActiveRecord_Relation (2.98ms)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.5ms)
+
+
+  ↳ app/controllers/events_controller.rb:5
+No serializer found for resource: #<Event id: 1, name: "Meditation In the Park", location: "Los Angeles", description: "Come and join us as we lift each other to enlighte...", kind: "Outdoor", website: "https://picsum.photos/id/375/5184/3456", rating: 5, like: 10, created_at: "2019-09-09 18:22:13", updated_at: "2019-09-09 18:22:13">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Event::ActiveRecord_Relation (1.75ms)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/restaurants" for ::1 at 2019-09-10 11:25:49 -0700
+Started GET "/events" for ::1 at 2019-09-10 11:25:49 -0700
+Processing by RestaurantsController#index as */*
+  [1m[36mRestaurant Load (6.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/controllers/restaurants_controller.rb:9
+Processing by EventsController#index as */*
+No serializer found for resource: #<Restaurant id: 1, name: "Spice Grill & Tap", location: "Orlando", kind: "Argentinian", website: "https://picsum.photos/id/365/5616/3744", rating: 3, like: 22, created_at: "2019-09-09 18:22:13", updated_at: "2019-09-09 18:22:13">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Restaurant::ActiveRecord_Relation (1.71ms)
+  [1m[36mEvent Load (2.0ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+Completed 200 OK in 10ms (Views: 4.2ms | ActiveRecord: 6.1ms)
+
+
+  ↳ app/controllers/events_controller.rb:5
+No serializer found for resource: #<Event id: 1, name: "Meditation In the Park", location: "Los Angeles", description: "Come and join us as we lift each other to enlighte...", kind: "Outdoor", website: "https://picsum.photos/id/375/5184/3456", rating: 5, like: 10, created_at: "2019-09-09 18:22:13", updated_at: "2019-09-09 18:22:13">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Event::ActiveRecord_Relation (1.31ms)
+Completed 200 OK in 6ms (Views: 3.7ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/restaurants" for ::1 at 2019-09-10 11:26:07 -0700
+Started GET "/events" for ::1 at 2019-09-10 11:26:07 -0700
+Processing by RestaurantsController#index as */*
+Processing by EventsController#index as */*
+  [1m[36mEvent Load (1.0ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:5
+  [1m[36mRestaurant Load (2.3ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/controllers/restaurants_controller.rb:9
+No serializer found for resource: #<Event id: 1, name: "Meditation In the Park", location: "Los Angeles", description: "Come and join us as we lift each other to enlighte...", kind: "Outdoor", website: "https://picsum.photos/id/375/5184/3456", rating: 5, like: 10, created_at: "2019-09-09 18:22:13", updated_at: "2019-09-09 18:22:13">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Event::ActiveRecord_Relation (1.81ms)
+No serializer found for resource: #<Restaurant id: 1, name: "Spice Grill & Tap", location: "Orlando", kind: "Argentinian", website: "https://picsum.photos/id/365/5616/3744", rating: 3, like: 22, created_at: "2019-09-09 18:22:13", updated_at: "2019-09-09 18:22:13">
+Completed 200 OK in 23ms (Views: 21.8ms | ActiveRecord: 1.0ms)
+
+
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Restaurant::ActiveRecord_Relation (2.81ms)
+Completed 200 OK in 27ms (Views: 24.9ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/restaurants" for ::1 at 2019-09-10 11:26:22 -0700
+Started GET "/events" for ::1 at 2019-09-10 11:26:22 -0700
+Processing by RestaurantsController#index as */*
+Processing by EventsController#index as */*
+  [1m[36mRestaurant Load (2.6ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/controllers/restaurants_controller.rb:9
+No serializer found for resource: #<Restaurant id: 1, name: "Spice Grill & Tap", location: "Orlando", kind: "Argentinian", website: "https://picsum.photos/id/365/5616/3744", rating: 3, like: 22, created_at: "2019-09-09 18:22:13", updated_at: "2019-09-09 18:22:13">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Restaurant::ActiveRecord_Relation (3.01ms)
+Completed 200 OK in 8ms (Views: 4.7ms | ActiveRecord: 2.6ms)
+
+
+  [1m[36mEvent Load (7.9ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:5
+No serializer found for resource: #<Event id: 1, name: "Meditation In the Park", location: "Los Angeles", description: "Come and join us as we lift each other to enlighte...", kind: "Outdoor", website: "https://picsum.photos/id/375/5184/3456", rating: 5, like: 10, created_at: "2019-09-09 18:22:13", updated_at: "2019-09-09 18:22:13">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Event::ActiveRecord_Relation (1.45ms)
+Completed 200 OK in 11ms (Views: 3.2ms | ActiveRecord: 7.9ms)
+
+
+Started GET "/restaurants" for ::1 at 2019-09-10 11:26:25 -0700
+Started GET "/events" for ::1 at 2019-09-10 11:26:25 -0700
+Processing by EventsController#index as */*
+Processing by RestaurantsController#index as */*
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:5
+  [1m[36mRestaurant Load (0.3ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+No serializer found for resource: #<Event id: 1, name: "Meditation In the Park", location: "Los Angeles", description: "Come and join us as we lift each other to enlighte...", kind: "Outdoor", website: "https://picsum.photos/id/375/5184/3456", rating: 5, like: 10, created_at: "2019-09-09 18:22:13", updated_at: "2019-09-09 18:22:13">
+  ↳ app/controllers/restaurants_controller.rb:9
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Event::ActiveRecord_Relation (1.06ms)
+No serializer found for resource: #<Restaurant id: 1, name: "Spice Grill & Tap", location: "Orlando", kind: "Argentinian", website: "https://picsum.photos/id/365/5616/3744", rating: 3, like: 22, created_at: "2019-09-09 18:22:13", updated_at: "2019-09-09 18:22:13">
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.4ms)
+
+
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Restaurant::ActiveRecord_Relation (1.49ms)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/restaurants" for ::1 at 2019-09-10 11:26:45 -0700
+Started GET "/events" for ::1 at 2019-09-10 11:26:45 -0700
+Processing by RestaurantsController#index as */*
+Processing by EventsController#index as */*
+  [1m[36mRestaurant Load (1.5ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  [1m[36mEvent Load (0.9ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/restaurants_controller.rb:9
+  ↳ app/controllers/events_controller.rb:5
+No serializer found for resource: #<Restaurant id: 1, name: "Spice Grill & Tap", location: "Orlando", kind: "Argentinian", website: "https://picsum.photos/id/365/5616/3744", rating: 3, like: 22, created_at: "2019-09-09 18:22:13", updated_at: "2019-09-09 18:22:13">
+No serializer found for resource: #<Event id: 1, name: "Meditation In the Park", location: "Los Angeles", description: "Come and join us as we lift each other to enlighte...", kind: "Outdoor", website: "https://picsum.photos/id/375/5184/3456", rating: 5, like: 10, created_at: "2019-09-09 18:22:13", updated_at: "2019-09-09 18:22:13">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Restaurant::ActiveRecord_Relation (3.35ms)
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Event::ActiveRecord_Relation (1.26ms)
+Completed 200 OK in 9ms (Views: 7.6ms | ActiveRecord: 1.5ms)
+
+
+Completed 200 OK in 9ms (Views: 7.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/12" for ::1 at 2019-09-10 11:26:47 -0700
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"12", "user"=>{}}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+[active_model_serializers]   [1m[36mRestaurant Load (5.6ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" INNER JOIN "favorites" ON "restaurants"."id" = "favorites"."favorite_id" WHERE "favorites"."user_id" = $1 AND "favorites"."favorite_type" = $2[0m  [["user_id", 12], ["favorite_type", "Restaurant"]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:17
+[active_model_serializers]   [1m[36mEvent Load (0.6ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "favorites" ON "events"."id" = "favorites"."favorite_id" WHERE "favorites"."user_id" = $1 AND "favorites"."favorite_type" = $2[0m  [["user_id", 12], ["favorite_type", "Event"]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:17
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (21.68ms)
+Completed 200 OK in 51ms (Views: 15.8ms | ActiveRecord: 19.3ms)
+
+
+Started GET "/users/12" for ::1 at 2019-09-10 11:26:51 -0700
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"12", "user"=>{}}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+[active_model_serializers]   [1m[36mRestaurant Load (0.7ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" INNER JOIN "favorites" ON "restaurants"."id" = "favorites"."favorite_id" WHERE "favorites"."user_id" = $1 AND "favorites"."favorite_type" = $2[0m  [["user_id", 12], ["favorite_type", "Restaurant"]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:17
+[active_model_serializers]   [1m[36mEvent Load (0.6ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "favorites" ON "events"."id" = "favorites"."favorite_id" WHERE "favorites"."user_id" = $1 AND "favorites"."favorite_type" = $2[0m  [["user_id", 12], ["favorite_type", "Event"]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:17
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (5.27ms)
+Completed 200 OK in 8ms (Views: 4.7ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/users/12" for ::1 at 2019-09-10 11:30:04 -0700
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"12", "user"=>{}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+[active_model_serializers]   [1m[36mRestaurant Load (0.4ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" INNER JOIN "favorites" ON "restaurants"."id" = "favorites"."favorite_id" WHERE "favorites"."user_id" = $1 AND "favorites"."favorite_type" = $2[0m  [["user_id", 12], ["favorite_type", "Restaurant"]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:17
+[active_model_serializers]   [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "favorites" ON "events"."id" = "favorites"."favorite_id" WHERE "favorites"."user_id" = $1 AND "favorites"."favorite_type" = $2[0m  [["user_id", 12], ["favorite_type", "Event"]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:17
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (4.22ms)
+Completed 200 OK in 6ms (Views: 3.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/users/12" for ::1 at 2019-09-10 11:30:39 -0700
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"12", "user"=>{}}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+[active_model_serializers]   [1m[36mRestaurant Load (0.5ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" INNER JOIN "favorites" ON "restaurants"."id" = "favorites"."favorite_id" WHERE "favorites"."user_id" = $1 AND "favorites"."favorite_type" = $2[0m  [["user_id", 12], ["favorite_type", "Restaurant"]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:17
+[active_model_serializers]   [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "favorites" ON "events"."id" = "favorites"."favorite_id" WHERE "favorites"."user_id" = $1 AND "favorites"."favorite_type" = $2[0m  [["user_id", 12], ["favorite_type", "Event"]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:17
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (9.49ms)
+Completed 200 OK in 12ms (Views: 8.8ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/events" for ::1 at 2019-09-10 11:30:43 -0700
+Started GET "/restaurants" for ::1 at 2019-09-10 11:30:43 -0700
+Processing by EventsController#index as */*
+Processing by RestaurantsController#index as */*
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:5
+  [1m[36mRestaurant Load (0.4ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+No serializer found for resource: #<Event id: 1, name: "Meditation In the Park", location: "Los Angeles", description: "Come and join us as we lift each other to enlighte...", kind: "Outdoor", website: "https://picsum.photos/id/375/5184/3456", rating: 5, like: 10, created_at: "2019-09-09 18:22:13", updated_at: "2019-09-09 18:22:13">
+  ↳ app/controllers/restaurants_controller.rb:9
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Event::ActiveRecord_Relation (1.38ms)
+No serializer found for resource: #<Restaurant id: 1, name: "Spice Grill & Tap", location: "Orlando", kind: "Argentinian", website: "https://picsum.photos/id/365/5616/3744", rating: 3, like: 22, created_at: "2019-09-09 18:22:13", updated_at: "2019-09-09 18:22:13">
+Completed 200 OK in 6ms (Views: 4.0ms | ActiveRecord: 0.5ms)
+
+
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Restaurant::ActiveRecord_Relation (1.58ms)
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/restaurants" for ::1 at 2019-09-10 11:31:01 -0700
+Started GET "/events" for ::1 at 2019-09-10 11:31:01 -0700
+Processing by RestaurantsController#index as */*
+Processing by EventsController#index as */*
+  [1m[36mRestaurant Load (6.5ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/controllers/restaurants_controller.rb:9
+No serializer found for resource: #<Restaurant id: 1, name: "Spice Grill & Tap", location: "Orlando", kind: "Argentinian", website: "https://picsum.photos/id/365/5616/3744", rating: 3, like: 22, created_at: "2019-09-09 18:22:13", updated_at: "2019-09-09 18:22:13">
+  [1m[36mEvent Load (5.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:5
+No serializer found for resource: #<Event id: 1, name: "Meditation In the Park", location: "Los Angeles", description: "Come and join us as we lift each other to enlighte...", kind: "Outdoor", website: "https://picsum.photos/id/375/5184/3456", rating: 5, like: 10, created_at: "2019-09-09 18:22:13", updated_at: "2019-09-09 18:22:13">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Event::ActiveRecord_Relation (1.64ms)
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Restaurant::ActiveRecord_Relation (2.67ms)
+Completed 200 OK in 15ms (Views: 9.6ms | ActiveRecord: 5.1ms)
+
+
+Completed 200 OK in 17ms (Views: 9.9ms | ActiveRecord: 6.5ms)
+
+
+Started GET "/restaurants" for ::1 at 2019-09-10 11:31:56 -0700
+Started GET "/events" for ::1 at 2019-09-10 11:31:56 -0700
+Processing by EventsController#index as */*
+Processing by RestaurantsController#index as */*
+  [1m[36mEvent Load (0.8ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:5
+No serializer found for resource: #<Event id: 1, name: "Meditation In the Park", location: "Los Angeles", description: "Come and join us as we lift each other to enlighte...", kind: "Outdoor", website: "https://picsum.photos/id/375/5184/3456", rating: 5, like: 10, created_at: "2019-09-09 18:22:13", updated_at: "2019-09-09 18:22:13">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Event::ActiveRecord_Relation (1.51ms)
+  [1m[36mRestaurant Load (2.9ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/controllers/restaurants_controller.rb:9
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.8ms)
+
+
+No serializer found for resource: #<Restaurant id: 1, name: "Spice Grill & Tap", location: "Orlando", kind: "Argentinian", website: "https://picsum.photos/id/365/5616/3744", rating: 3, like: 22, created_at: "2019-09-09 18:22:13", updated_at: "2019-09-09 18:22:13">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Restaurant::ActiveRecord_Relation (2.4ms)
+Completed 200 OK in 8ms (Views: 4.9ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/restaurants" for ::1 at 2019-09-10 11:32:57 -0700
+Started GET "/events" for ::1 at 2019-09-10 11:32:57 -0700
+Processing by EventsController#index as */*
+Processing by RestaurantsController#index as */*
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:5
+  [1m[36mRestaurant Load (0.4ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/controllers/restaurants_controller.rb:9
+No serializer found for resource: #<Event id: 1, name: "Meditation In the Park", location: "Los Angeles", description: "Come and join us as we lift each other to enlighte...", kind: "Outdoor", website: "https://picsum.photos/id/375/5184/3456", rating: 5, like: 10, created_at: "2019-09-09 18:22:13", updated_at: "2019-09-09 18:22:13">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Event::ActiveRecord_Relation (1.42ms)
+No serializer found for resource: #<Restaurant id: 1, name: "Spice Grill & Tap", location: "Orlando", kind: "Argentinian", website: "https://picsum.photos/id/365/5616/3744", rating: 3, like: 22, created_at: "2019-09-09 18:22:13", updated_at: "2019-09-09 18:22:13">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Restaurant::ActiveRecord_Relation (3.43ms)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.4ms)
+
+
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/restaurants" for ::1 at 2019-09-10 11:35:35 -0700
+Started GET "/events" for ::1 at 2019-09-10 11:35:35 -0700
+Processing by EventsController#index as */*
+Processing by RestaurantsController#index as */*
+  [1m[36mEvent Load (1.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:5
+No serializer found for resource: #<Event id: 1, name: "Meditation In the Park", location: "Los Angeles", description: "Come and join us as we lift each other to enlighte...", kind: "Outdoor", website: "https://picsum.photos/id/375/5184/3456", rating: 5, like: 10, created_at: "2019-09-09 18:22:13", updated_at: "2019-09-09 18:22:13">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Event::ActiveRecord_Relation (1.85ms)
+Completed 200 OK in 6ms (Views: 4.4ms | ActiveRecord: 1.1ms)
+
+
+  [1m[36mRestaurant Load (12.4ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/controllers/restaurants_controller.rb:9
+No serializer found for resource: #<Restaurant id: 1, name: "Spice Grill & Tap", location: "Orlando", kind: "Argentinian", website: "https://picsum.photos/id/365/5616/3744", rating: 3, like: 22, created_at: "2019-09-09 18:22:13", updated_at: "2019-09-09 18:22:13">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Restaurant::ActiveRecord_Relation (2.05ms)
+Completed 200 OK in 16ms (Views: 3.9ms | ActiveRecord: 12.4ms)
+
+
+Started GET "/restaurants" for ::1 at 2019-09-10 11:36:11 -0700
+Started GET "/events" for ::1 at 2019-09-10 11:36:11 -0700
+Processing by RestaurantsController#index as */*
+Processing by EventsController#index as */*
+  [1m[36mRestaurant Load (4.6ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/restaurants_controller.rb:9
+  ↳ app/controllers/events_controller.rb:5
+No serializer found for resource: #<Restaurant id: 1, name: "Spice Grill & Tap", location: "Orlando", kind: "Argentinian", website: "https://picsum.photos/id/365/5616/3744", rating: 3, like: 22, created_at: "2019-09-09 18:22:13", updated_at: "2019-09-09 18:22:13">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Restaurant::ActiveRecord_Relation (2.33ms)
+Completed 200 OK in 9ms (Views: 4.6ms | ActiveRecord: 4.6ms)
+
+
+No serializer found for resource: #<Event id: 1, name: "Meditation In the Park", location: "Los Angeles", description: "Come and join us as we lift each other to enlighte...", kind: "Outdoor", website: "https://picsum.photos/id/375/5184/3456", rating: 5, like: 10, created_at: "2019-09-09 18:22:13", updated_at: "2019-09-09 18:22:13">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Event::ActiveRecord_Relation (2.16ms)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events" for ::1 at 2019-09-10 11:36:21 -0700
+Started GET "/restaurants" for ::1 at 2019-09-10 11:36:21 -0700
+Processing by RestaurantsController#index as */*
+Processing by EventsController#index as */*
+  [1m[36mRestaurant Load (2.5ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/controllers/restaurants_controller.rb:9
+No serializer found for resource: #<Restaurant id: 1, name: "Spice Grill & Tap", location: "Orlando", kind: "Argentinian", website: "https://picsum.photos/id/365/5616/3744", rating: 3, like: 22, created_at: "2019-09-09 18:22:13", updated_at: "2019-09-09 18:22:13">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Restaurant::ActiveRecord_Relation (2.63ms)
+  [1m[36mEvent Load (5.4ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+Completed 200 OK in 9ms (Views: 5.8ms | ActiveRecord: 2.5ms)
+
+
+  ↳ app/controllers/events_controller.rb:5
+No serializer found for resource: #<Event id: 1, name: "Meditation In the Park", location: "Los Angeles", description: "Come and join us as we lift each other to enlighte...", kind: "Outdoor", website: "https://picsum.photos/id/375/5184/3456", rating: 5, like: 10, created_at: "2019-09-09 18:22:13", updated_at: "2019-09-09 18:22:13">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Event::ActiveRecord_Relation (1.81ms)
+Completed 200 OK in 11ms (Views: 5.2ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/events" for ::1 at 2019-09-10 11:37:10 -0700
+Started GET "/restaurants" for ::1 at 2019-09-10 11:37:10 -0700
+Processing by RestaurantsController#index as */*
+Processing by EventsController#index as */*
+  [1m[36mRestaurant Load (0.6ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/controllers/restaurants_controller.rb:9
+No serializer found for resource: #<Restaurant id: 1, name: "Spice Grill & Tap", location: "Orlando", kind: "Argentinian", website: "https://picsum.photos/id/365/5616/3744", rating: 3, like: 22, created_at: "2019-09-09 18:22:13", updated_at: "2019-09-09 18:22:13">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Restaurant::ActiveRecord_Relation (1.59ms)
+  [1m[36mEvent Load (2.6ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.6ms)
+
+
+  ↳ app/controllers/events_controller.rb:5
+No serializer found for resource: #<Event id: 1, name: "Meditation In the Park", location: "Los Angeles", description: "Come and join us as we lift each other to enlighte...", kind: "Outdoor", website: "https://picsum.photos/id/375/5184/3456", rating: 5, like: 10, created_at: "2019-09-09 18:22:13", updated_at: "2019-09-09 18:22:13">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Event::ActiveRecord_Relation (0.92ms)
+Completed 200 OK in 5ms (Views: 2.6ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/restaurants" for ::1 at 2019-09-10 11:42:16 -0700
+Started GET "/events" for ::1 at 2019-09-10 11:42:16 -0700
+Processing by RestaurantsController#index as */*
+Processing by EventsController#index as */*
+  [1m[36mRestaurant Load (0.6ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/controllers/restaurants_controller.rb:9
+No serializer found for resource: #<Restaurant id: 1, name: "Spice Grill & Tap", location: "Orlando", kind: "Argentinian", website: "https://picsum.photos/id/365/5616/3744", rating: 3, like: 22, created_at: "2019-09-09 18:22:13", updated_at: "2019-09-09 18:22:13">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Restaurant::ActiveRecord_Relation (2.69ms)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.6ms)
+
+
+  [1m[36mEvent Load (1.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:5
+No serializer found for resource: #<Event id: 1, name: "Meditation In the Park", location: "Los Angeles", description: "Come and join us as we lift each other to enlighte...", kind: "Outdoor", website: "https://picsum.photos/id/375/5184/3456", rating: 5, like: 10, created_at: "2019-09-09 18:22:13", updated_at: "2019-09-09 18:22:13">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Event::ActiveRecord_Relation (1.52ms)
+Completed 200 OK in 9ms (Views: 7.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/restaurants" for ::1 at 2019-09-10 11:43:48 -0700
+Started GET "/events" for ::1 at 2019-09-10 11:43:48 -0700
+Processing by EventsController#index as */*
+Processing by RestaurantsController#index as */*
+  [1m[36mEvent Load (0.6ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:5
+No serializer found for resource: #<Event id: 1, name: "Meditation In the Park", location: "Los Angeles", description: "Come and join us as we lift each other to enlighte...", kind: "Outdoor", website: "https://picsum.photos/id/375/5184/3456", rating: 5, like: 10, created_at: "2019-09-09 18:22:13", updated_at: "2019-09-09 18:22:13">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Event::ActiveRecord_Relation (0.87ms)
+  [1m[36mRestaurant Load (1.0ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.6ms)
+
+
+  ↳ app/controllers/restaurants_controller.rb:9
+No serializer found for resource: #<Restaurant id: 1, name: "Spice Grill & Tap", location: "Orlando", kind: "Argentinian", website: "https://picsum.photos/id/365/5616/3744", rating: 3, like: 22, created_at: "2019-09-09 18:22:13", updated_at: "2019-09-09 18:22:13">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Restaurant::ActiveRecord_Relation (1.94ms)
+Completed 200 OK in 6ms (Views: 4.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/restaurants" for ::1 at 2019-09-10 11:45:02 -0700
+Processing by RestaurantsController#index as */*
+Started GET "/events" for ::1 at 2019-09-10 11:45:02 -0700
+  [1m[36mRestaurant Load (0.8ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/controllers/restaurants_controller.rb:9
+No serializer found for resource: #<Restaurant id: 1, name: "Spice Grill & Tap", location: "Orlando", kind: "Argentinian", website: "https://picsum.photos/id/365/5616/3744", rating: 3, like: 22, created_at: "2019-09-09 18:22:13", updated_at: "2019-09-09 18:22:13">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Restaurant::ActiveRecord_Relation (1.48ms)
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.8ms)
+
+
+Processing by EventsController#index as */*
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:5
+No serializer found for resource: #<Event id: 1, name: "Meditation In the Park", location: "Los Angeles", description: "Come and join us as we lift each other to enlighte...", kind: "Outdoor", website: "https://picsum.photos/id/375/5184/3456", rating: 5, like: 10, created_at: "2019-09-09 18:22:13", updated_at: "2019-09-09 18:22:13">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Event::ActiveRecord_Relation (0.9ms)
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/restaurants" for ::1 at 2019-09-10 11:45:31 -0700
+Started GET "/events" for ::1 at 2019-09-10 11:45:31 -0700
+Processing by EventsController#index as */*
+Processing by RestaurantsController#index as */*
+  [1m[36mEvent Load (0.8ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:5
+No serializer found for resource: #<Event id: 1, name: "Meditation In the Park", location: "Los Angeles", description: "Come and join us as we lift each other to enlighte...", kind: "Outdoor", website: "https://picsum.photos/id/375/5184/3456", rating: 5, like: 10, created_at: "2019-09-09 18:22:13", updated_at: "2019-09-09 18:22:13">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Event::ActiveRecord_Relation (10.91ms)
+Completed 200 OK in 14ms (Views: 12.6ms | ActiveRecord: 0.8ms)
+
+
+  [1m[36mRestaurant Load (13.2ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/controllers/restaurants_controller.rb:9
+No serializer found for resource: #<Restaurant id: 1, name: "Spice Grill & Tap", location: "Orlando", kind: "Argentinian", website: "https://picsum.photos/id/365/5616/3744", rating: 3, like: 22, created_at: "2019-09-09 18:22:13", updated_at: "2019-09-09 18:22:13">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Restaurant::ActiveRecord_Relation (3.9ms)
+Completed 200 OK in 19ms (Views: 6.0ms | ActiveRecord: 13.2ms)
+
+
+Started GET "/events" for ::1 at 2019-09-10 11:56:54 -0700
+Started GET "/restaurants" for ::1 at 2019-09-10 11:56:54 -0700
+Processing by RestaurantsController#index as */*
+Processing by EventsController#index as */*
+  [1m[36mRestaurant Load (1.4ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/controllers/restaurants_controller.rb:9
+  [1m[36mEvent Load (4.7ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+No serializer found for resource: #<Restaurant id: 1, name: "Spice Grill & Tap", location: "Orlando", kind: "Argentinian", website: "https://picsum.photos/id/365/5616/3744", rating: 3, like: 22, created_at: "2019-09-09 18:22:13", updated_at: "2019-09-09 18:22:13">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Restaurant::ActiveRecord_Relation (3.01ms)
+  ↳ app/controllers/events_controller.rb:5
+No serializer found for resource: #<Event id: 1, name: "Meditation In the Park", location: "Los Angeles", description: "Come and join us as we lift each other to enlighte...", kind: "Outdoor", website: "https://picsum.photos/id/375/5184/3456", rating: 5, like: 10, created_at: "2019-09-09 18:22:13", updated_at: "2019-09-09 18:22:13">
+Completed 200 OK in 15ms (Views: 11.2ms | ActiveRecord: 1.4ms)
+
+
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Event::ActiveRecord_Relation (2.06ms)
+Completed 200 OK in 15ms (Views: 9.5ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/restaurants" for ::1 at 2019-09-10 12:01:01 -0700
+Started GET "/events" for ::1 at 2019-09-10 12:01:01 -0700
+Processing by RestaurantsController#index as */*
+Processing by EventsController#index as */*
+  [1m[36mRestaurant Load (2.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/controllers/restaurants_controller.rb:9
+No serializer found for resource: #<Restaurant id: 1, name: "Spice Grill & Tap", location: "Orlando", kind: "Argentinian", website: "https://picsum.photos/id/365/5616/3744", rating: 3, like: 22, created_at: "2019-09-09 18:22:13", updated_at: "2019-09-09 18:22:13">
+  [1m[36mEvent Load (3.3ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Restaurant::ActiveRecord_Relation (3.52ms)
+  ↳ app/controllers/events_controller.rb:5
+Completed 200 OK in 9ms (Views: 6.6ms | ActiveRecord: 2.1ms)
+
+
+No serializer found for resource: #<Event id: 1, name: "Meditation In the Park", location: "Los Angeles", description: "Come and join us as we lift each other to enlighte...", kind: "Outdoor", website: "https://picsum.photos/id/375/5184/3456", rating: 5, like: 10, created_at: "2019-09-09 18:22:13", updated_at: "2019-09-09 18:22:13">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Event::ActiveRecord_Relation (2.74ms)
+Completed 200 OK in 13ms (Views: 9.2ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/restaurants" for ::1 at 2019-09-10 12:01:37 -0700
+Started GET "/events" for ::1 at 2019-09-10 12:01:37 -0700
+Processing by RestaurantsController#index as */*
+Processing by EventsController#index as */*
+  [1m[36mEvent Load (18.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  [1m[36mRestaurant Load (21.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/controllers/events_controller.rb:5
+  ↳ app/controllers/restaurants_controller.rb:9
+No serializer found for resource: #<Event id: 1, name: "Meditation In the Park", location: "Los Angeles", description: "Come and join us as we lift each other to enlighte...", kind: "Outdoor", website: "https://picsum.photos/id/375/5184/3456", rating: 5, like: 10, created_at: "2019-09-09 18:22:13", updated_at: "2019-09-09 18:22:13">
+No serializer found for resource: #<Restaurant id: 1, name: "Spice Grill & Tap", location: "Orlando", kind: "Argentinian", website: "https://picsum.photos/id/365/5616/3744", rating: 3, like: 22, created_at: "2019-09-09 18:22:13", updated_at: "2019-09-09 18:22:13">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Restaurant::ActiveRecord_Relation (4.76ms)
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Event::ActiveRecord_Relation (2.36ms)
+Completed 200 OK in 30ms (Views: 11.2ms | ActiveRecord: 18.1ms)
+
+
+Completed 200 OK in 33ms (Views: 11.3ms | ActiveRecord: 21.1ms)
+
+
+Started GET "/events" for ::1 at 2019-09-10 12:02:11 -0700
+Started GET "/restaurants" for ::1 at 2019-09-10 12:02:11 -0700
+Processing by EventsController#index as */*
+Processing by RestaurantsController#index as */*
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:5
+No serializer found for resource: #<Event id: 1, name: "Meditation In the Park", location: "Los Angeles", description: "Come and join us as we lift each other to enlighte...", kind: "Outdoor", website: "https://picsum.photos/id/375/5184/3456", rating: 5, like: 10, created_at: "2019-09-09 18:22:13", updated_at: "2019-09-09 18:22:13">
+  [1m[36mRestaurant Load (0.9ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Event::ActiveRecord_Relation (1.4ms)
+  ↳ app/controllers/restaurants_controller.rb:9
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.5ms)
+
+
+No serializer found for resource: #<Restaurant id: 1, name: "Spice Grill & Tap", location: "Orlando", kind: "Argentinian", website: "https://picsum.photos/id/365/5616/3744", rating: 3, like: 22, created_at: "2019-09-09 18:22:13", updated_at: "2019-09-09 18:22:13">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Restaurant::ActiveRecord_Relation (2.24ms)
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/restaurants" for ::1 at 2019-09-10 12:02:27 -0700
+Started GET "/events" for ::1 at 2019-09-10 12:02:27 -0700
+Processing by EventsController#index as */*
+Processing by RestaurantsController#index as */*
+  [1m[36mRestaurant Load (29.8ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/controllers/restaurants_controller.rb:9
+No serializer found for resource: #<Restaurant id: 1, name: "Spice Grill & Tap", location: "Orlando", kind: "Argentinian", website: "https://picsum.photos/id/365/5616/3744", rating: 3, like: 22, created_at: "2019-09-09 18:22:13", updated_at: "2019-09-09 18:22:13">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Restaurant::ActiveRecord_Relation (3.65ms)
+  [1m[36mEvent Load (36.6ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+Completed 200 OK in 37ms (Views: 6.5ms | ActiveRecord: 29.8ms)
+
+
+  ↳ app/controllers/events_controller.rb:5
+No serializer found for resource: #<Event id: 1, name: "Meditation In the Park", location: "Los Angeles", description: "Come and join us as we lift each other to enlighte...", kind: "Outdoor", website: "https://picsum.photos/id/375/5184/3456", rating: 5, like: 10, created_at: "2019-09-09 18:22:13", updated_at: "2019-09-09 18:22:13">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Event::ActiveRecord_Relation (2.71ms)
+Completed 200 OK in 43ms (Views: 6.5ms | ActiveRecord: 36.6ms)
+
+
+Started GET "/restaurants" for ::1 at 2019-09-10 12:04:49 -0700
+Started GET "/events" for ::1 at 2019-09-10 12:04:49 -0700
+Processing by EventsController#index as */*
+Processing by RestaurantsController#index as */*
+  [1m[36mEvent Load (43.3ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:5
+  [1m[36mRestaurant Load (42.9ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+No serializer found for resource: #<Event id: 1, name: "Meditation In the Park", location: "Los Angeles", description: "Come and join us as we lift each other to enlighte...", kind: "Outdoor", website: "https://picsum.photos/id/375/5184/3456", rating: 5, like: 10, created_at: "2019-09-09 18:22:13", updated_at: "2019-09-09 18:22:13">
+  ↳ app/controllers/restaurants_controller.rb:9
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Event::ActiveRecord_Relation (1.47ms)
+No serializer found for resource: #<Restaurant id: 1, name: "Spice Grill & Tap", location: "Orlando", kind: "Argentinian", website: "https://picsum.photos/id/365/5616/3744", rating: 3, like: 22, created_at: "2019-09-09 18:22:13", updated_at: "2019-09-09 18:22:13">
+Completed 200 OK in 48ms (Views: 4.7ms | ActiveRecord: 43.3ms)
+
+
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Restaurant::ActiveRecord_Relation (3.2ms)
+Completed 200 OK in 51ms (Views: 8.3ms | ActiveRecord: 42.9ms)
+
+
+Started GET "/events" for ::1 at 2019-09-10 12:06:18 -0700
+Started GET "/restaurants" for ::1 at 2019-09-10 12:06:18 -0700
+Processing by EventsController#index as */*
+Processing by RestaurantsController#index as */*
+  [1m[36mEvent Load (0.8ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:5
+No serializer found for resource: #<Event id: 1, name: "Meditation In the Park", location: "Los Angeles", description: "Come and join us as we lift each other to enlighte...", kind: "Outdoor", website: "https://picsum.photos/id/375/5184/3456", rating: 5, like: 10, created_at: "2019-09-09 18:22:13", updated_at: "2019-09-09 18:22:13">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Event::ActiveRecord_Relation (1.34ms)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.8ms)
+
+
+  [1m[36mRestaurant Load (2.9ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/controllers/restaurants_controller.rb:9
+No serializer found for resource: #<Restaurant id: 1, name: "Spice Grill & Tap", location: "Orlando", kind: "Argentinian", website: "https://picsum.photos/id/365/5616/3744", rating: 3, like: 22, created_at: "2019-09-09 18:22:13", updated_at: "2019-09-09 18:22:13">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Restaurant::ActiveRecord_Relation (3.41ms)
+Completed 200 OK in 9ms (Views: 6.3ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/restaurants" for ::1 at 2019-09-10 12:10:51 -0700
+Started GET "/events" for ::1 at 2019-09-10 12:10:51 -0700
+Processing by RestaurantsController#index as */*
+Processing by EventsController#index as */*
+  [1m[36mRestaurant Load (1.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/controllers/restaurants_controller.rb:9
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+No serializer found for resource: #<Restaurant id: 1, name: "Spice Grill & Tap", location: "Orlando", kind: "Argentinian", website: "https://picsum.photos/id/365/5616/3744", rating: 3, like: 22, created_at: "2019-09-09 18:22:13", updated_at: "2019-09-09 18:22:13">
+  ↳ app/controllers/events_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Restaurant::ActiveRecord_Relation (2.95ms)
+No serializer found for resource: #<Event id: 1, name: "Meditation In the Park", location: "Los Angeles", description: "Come and join us as we lift each other to enlighte...", kind: "Outdoor", website: "https://picsum.photos/id/375/5184/3456", rating: 5, like: 10, created_at: "2019-09-09 18:22:13", updated_at: "2019-09-09 18:22:13">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Event::ActiveRecord_Relation (26.63ms)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 1.1ms)
+
+
+Completed 200 OK in 34ms (Views: 33.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/restaurants" for ::1 at 2019-09-10 12:16:38 -0700
+Started GET "/events" for ::1 at 2019-09-10 12:16:38 -0700
+Processing by EventsController#index as */*
+Processing by RestaurantsController#index as */*
+  [1m[36mEvent Load (1.0ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:5
+No serializer found for resource: #<Event id: 1, name: "Meditation In the Park", location: "Los Angeles", description: "Come and join us as we lift each other to enlighte...", kind: "Outdoor", website: "https://picsum.photos/id/375/5184/3456", rating: 5, like: 10, created_at: "2019-09-09 18:22:13", updated_at: "2019-09-09 18:22:13">
+  [1m[36mRestaurant Load (0.9ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Event::ActiveRecord_Relation (1.02ms)
+  ↳ app/controllers/restaurants_controller.rb:9
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 1.0ms)
+
+
+No serializer found for resource: #<Restaurant id: 1, name: "Spice Grill & Tap", location: "Orlando", kind: "Argentinian", website: "https://picsum.photos/id/365/5616/3744", rating: 3, like: 22, created_at: "2019-09-09 18:22:13", updated_at: "2019-09-09 18:22:13">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Restaurant::ActiveRecord_Relation (2.15ms)
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.9ms)
+
+

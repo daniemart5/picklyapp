@@ -1,15 +1,19 @@
 import React, { Component } from 'react'
 import Header from '../layout/Header'; 
 import {withRouter} from "react-router-dom";
-
+import Restaurant from './Restaurant';
+import Event from './Event';
 
 class Favorites extends Component {
 
-    state = {
-        user: JSON.parse(localStorage.getItem("user")),  
-        restaurants: [],
-        events: []
-      };
+       constructor(props){
+           super(props);
+            this.state = {
+            user: JSON.parse(localStorage.getItem("user")),  
+            restaurants: [],
+            events: []
+        };
+    }
 
     componentDidMount = () => {
         let userID = this.state.user.id
@@ -21,22 +25,31 @@ class Favorites extends Component {
           }
           })
           .then(res => res.json())
-          .then(user => {this.setState({restaurants: user.restaurants, events: user.events})})
+          .then(user => {
+            return this.setState({restaurants: user.restaurants, events: user.events})}
+            )
         }
 
-        
+        renderFav = (restaurants, events) => {
+            console.log(restaurants, events, 'bob')
+        }
+
     render() {
+        
         return (
             
         <div className="App">
-    
-            <Header /> 
-
-            <h2>HERE ARE YOUR FAVORITES</h2>
-            <h1>BOB</h1>        
-            <img className="pictures" alt="Catcus logo for pickly"/>
-            <button className="form-submit">Unfavorite 🖤</button>
-            <hr/>
+            <div className="container">
+                <Header /> 
+                <h1>Restaurants:</h1> {this.state.restaurants.map(restaurant => {
+                    return <Restaurant restaurant={restaurant} />;}
+                    )}
+                <h1>Events:</h1> {this.state.events.map(event => {
+                    return <Event event={event} />;}
+                    )}
+                <img className="pictures"  alt="nice looking restaurant"/>
+                <hr/>
+            </div>
         </div>
         )
     }

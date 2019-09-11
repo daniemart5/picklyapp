@@ -2,11 +2,9 @@ import React from 'react';
 
 class Event extends React.Component {
 
-  likeButton = () => {
-    let newLikes = this.props.event.like + 1
-    this.setState({
-      likes: newLikes
-    })
+  state =  {
+    events: "",
+    favorited: false
   }
 
   handleFav = () => {
@@ -24,7 +22,7 @@ class Event extends React.Component {
         favorite_type: 'Event'})
       })
       .then(res => res.json())
-      .then(data =>  {console.log(data)})
+      .then(data =>  {this.setState({events: data.events})})
     
   }
 

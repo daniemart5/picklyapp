@@ -2,7 +2,7 @@ class FavoritesController < ApplicationController
 
     def index
         @favorites = Favorite.all
-        render @favorite, except: [:created_at, :updated_at]
+        render @favorites, except: [:created_at, :updated_at]
     end 
 
     def show
@@ -23,7 +23,6 @@ class FavoritesController < ApplicationController
     def destory
         @favorite = Favorite.find(params[id])
         @favorite.delete
-        session.clear
-        render @favorite, except: [:created_at, :updated_at]
+        render @favorites, except: [:created_at, :updated_at]
     end 
 end

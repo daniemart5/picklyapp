@@ -29,20 +29,21 @@ class Restaurant extends React.Component {
     let fav_id = fav.id
     let fav_type = fav.favorite_type
     console.log(user.id, fav_id, fav_type,'bob')
-    if (fav.id === fav_id && fav_type === "Restaurant"){
+    if (fav_type === "Restaurant" && fav.id === fav_id){
         fetch ('http://localhost:3000/favorites/' + fav_id, {
           method: 'DELETE',
           headers: {
             "Content-Type": "application/json",
           },
           body: JSON.stringify({ 
-            id: fav_id,
-            favorite_type: "Restaurant"
+            favorite_type: "Restaurant",
+            id: fav_id
+            
             })
           })
           .then(res => res.json())
           .then(data => {
-            this.setState({restaurant: data.restaurants})})
+          this.setState({restaurant: data.restaurants})})
           this.refreshPage()         
     }
   }

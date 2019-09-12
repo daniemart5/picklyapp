@@ -8,14 +8,13 @@ class Event extends React.Component {
  
   handleEveFav = () => {
     let user = JSON.parse(localStorage.getItem("user"))
-    let userID = user.id
     fetch ('http://localhost:3000/favorites', {
       method: 'POST',
       headers: {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({  
-        user_id: userID,          
+        user_id: user.id,          
         favorite_id: this.props.event.id,
         favorite_type: 'Event'})
       })
@@ -27,28 +26,28 @@ class Event extends React.Component {
 
   handleEventUnfav = () => {
     let user = JSON.parse(localStorage.getItem("user"))
-    let eve_id = this.props.event.id
     let fav = this.props.favorites[0]
     let fav_id = fav.id
     let fav_type = fav.favorite_type
-    console.log(user.id, eve_id, fav_type, fav_id, 'bob')
-    if (fav.id === fav_id && fav_type === "Event"){
+
+    console.log(user.id, fav_type, fav_id, 'bob')
+    if (fav_type === "Event" && fav.id === fav_id){
         fetch ('http://localhost:3000/favorites/' + fav_id, {
           method: 'DELETE',
           headers: {
             "Content-Type": "application/json",
           },
           body: JSON.stringify({ 
-            id: fav_id,
-            favorite_type: "Event"
+            favorite_type: "Event",
+            id: fav_id
+          
             })
           })
           .then(res => res.json())
           .then(data => {
-            this.setState({event: data.events})})
-          this.refreshPage()
-          
+          this.setState({event: data.events})})     
     }
+    this.refreshPage()
   }
 
   refreshPage = () => {

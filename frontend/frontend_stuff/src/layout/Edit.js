@@ -60,15 +60,13 @@ class Edit extends Component {
             image: data.image
             });
         })
-        this.props.history.push("/account")
+        
         this.refreshPage()
       }
-
-      refreshPage = () => {
-        let update = JSON.parse(localStorage.getItem("state"))
-        localStorage.setItem("state", JSON.stringify(update))
+    
+    refreshPage = () => {
         window.open('http://localhost:3001/account', "_self")
-      }
+    }
 
     render() {
         return (

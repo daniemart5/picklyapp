@@ -47,20 +47,28 @@ class Search extends React.Component {
    })
  }
 
+ 
+
   render() {
 
     return (
       <div className="App">
+        <Header />
+          <div class="searchBox">
+            <input className="searchInput"
+                type="text"
+                name=""
+                placeholder={"Search for food or fun!"}
+                onChange={this.handleChange}
+                value={this.filteredEve, this.filteredRes}
+            /> 
+            <button class="searchButton" href="#">
+              <i class="material-icons">search</i>
+            </button>
+          </div>
         <div className="container">
-
-          <Header />
-          <input
-          type="text"
-          placeholder={"Search for food or fun!"}
-          onChange={this.handleChange}
-          value={this.filteredEve, this.filteredRes}
-          />        
-
+        <br/><br/>  
+        <div>
           {this.filteredRestaurants().map((restaurant, index) => {
             return <Restaurant restaurant={restaurant} key={index}/>; 
             })
@@ -70,7 +78,7 @@ class Search extends React.Component {
             return <Event event={event} key={index} />;
               })
           }
-          
+        </div>
         </div>
       </div>
       );

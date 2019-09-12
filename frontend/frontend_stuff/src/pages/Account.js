@@ -43,7 +43,7 @@ class Account extends React.Component {
         <div className="container">
           <Header /> 
           <img className="pictures" src={this.state.user.image} alt="Catcus logo for pickly"/>
-            <h1>Hello, {this.state.user.name}</h1>
+            <h1>Hello, {this.state.user.name} :) </h1>
             <p>Age: {this.state.user.age}</p>
             <h4>Username: {this.state.user.username}</h4>
           <div>

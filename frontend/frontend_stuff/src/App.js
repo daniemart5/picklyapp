@@ -20,7 +20,8 @@ class App extends React.Component {
       username: "",
       city: "",
       bio: "",
-      age: ""
+      age: "",
+      favorites: ""
       },
       search: ""
       

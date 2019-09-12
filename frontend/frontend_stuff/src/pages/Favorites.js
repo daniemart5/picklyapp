@@ -11,7 +11,8 @@ class Favorites extends Component {
             this.state = {
             user: JSON.parse(localStorage.getItem("user")),  
             restaurants: [],
-            events: []
+            events: [],
+            favorites: []
         };
     }
 
@@ -26,28 +27,25 @@ class Favorites extends Component {
           })
           .then(res => res.json())
           .then(user => {
-            return this.setState({restaurants: user.restaurants, events: user.events})}
-            )
-        }
-
-        renderFav = (restaurants, events) => {
-            console.log(restaurants, events, 'bob')
+            return this.setState({favorites: user.favorites, restaurants: user.restaurants, events: user.events
+             })
+          })
         }
 
     render() {
         
-        return (
-            
+        return (    
         <div className="App">
             <div className="container">
+
                 <Header /> 
-                <h1>Restaurants:</h1> {this.state.restaurants.map(restaurant => {
-                    return <Restaurant restaurant={restaurant} />;}
+
+                <h1>Restaurants:</h1> {this.state.restaurants.map((restaurant, index) => {
+                    return <Restaurant favorites={this.state.favorites.map(favorite => favorite)} restaurant={restaurant} key={index}/>;}
                     )}
-                <h1>Events:</h1> {this.state.events.map(event => {
-                    return <Event event={event} />;}
+                <h1>Events:</h1> {this.state.events.map((event, index) => {
+                    return <Event favorites={this.state.favorites} event={event} key={index}/>;}
                     )}
-                <img className="pictures"  alt="nice looking restaurant"/>
                 <hr/>
             </div>
         </div>

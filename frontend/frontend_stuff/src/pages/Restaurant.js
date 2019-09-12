@@ -3,48 +3,47 @@ import React from 'react';
 class Restaurant extends React.Component {
   
   state = {
-    restaurants: "",
-    favorited: false
+    restaurants: ""
   }
 
   handleFav = () => {
     let user = JSON.parse(localStorage.getItem("user"))
-
-    fetch ('http://localhost:3000/favorites', {
+      fetch ('http://localhost:3000/favorites', {
       method: 'POST',
       headers: {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({            
-        user_id: user.id,
-        favorite_id: this.props.restaurant.id,
-        favorite_type: 'Restaurant'})
+          user_id: user.id,
+          favorite_id: this.props.restaurant.id,
+          favorite_type: 'Restaurant'})
       })
       .then(res => res.json())
-      .then(data => {
-        this.setState({restaurants: data.restaurants})})
-     
+      .then(data => this.setState({restaurants: data.restaurants}))
   }
 
-  deleteFav = () => {
+  handleUnfav = () => {
     let user = JSON.parse(localStorage.getItem("user"))
-
-    fetch ('http://localhost:3000/favorites', {
-      method: 'DELETE',
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({            
-        user_id: user.id,
-        favorite_id: this.props.restaurant.id,
-        favorite_type: 'Restaurant'})
-      })
-      
-     
+    let rest_id = this.props.restaurant.id
+    this.props.favorites.map(favorite => {
+      if (favorite.favorite_id == rest_id && favorite.favorite_type === 'Restaurant'){
+          fetch ('http://localhost:3000/favorites/' + rest_id, {
+            method: 'DELETE',
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({ 
+              id: favorite.id,           
+              user_id: user.id,
+              favorite_id: rest_id,
+              favorite_type: 'Restaurant'})
+            })
+            .then(res => res.json())
+            .then(data => console.log(data))
+    }})
   }
 
   render() {
-    const label = this.state.favorited ? 'Favorite ' : 'Unfavorite'
     return (
      <div className="App">
         <div className="container">
@@ -52,7 +51,8 @@ class Restaurant extends React.Component {
         <h2>{this.props.restaurant.name} | {this.props.restaurant.kind} </h2>
         <h3>City: {this.props.restaurant.location} | Rating: {this.props.restaurant.rating}</h3>
         <p>{this.props.restaurant.discription}</p>
-        <button onClick={this.handleFav} className="form-submit">{label}</button>
+        <button onClick={this.handleFav} className="form-submit">Favorite ❤️</button>
+        <button onClick={this.handleUnfav} className="form-submit">Unfavorite ❤</button>
         </div>
     </div>
       );

@@ -52,10 +52,23 @@ class Edit extends Component {
             })
         })
         .then(res => res.json())
-        .then(data =>  {this.setState({userDate: data})
-            this.props.history.push('/account')})
+        .then(data =>  {this.setState({
+            name: data.name,
+            bio: data.bio,
+            age: data.age,
+            city: data.city,
+            image: data.image
+            });
+        })
+        this.props.history.push("/account")
+        this.refreshPage()
       }
 
+      refreshPage = () => {
+        let update = JSON.parse(localStorage.getItem("state"))
+        localStorage.setItem("state", JSON.stringify(update))
+        window.open('http://localhost:3001/account', "_self")
+      }
 
     render() {
         return (

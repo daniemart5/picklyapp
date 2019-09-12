@@ -25,12 +25,11 @@ class Restaurant extends React.Component {
 
   handleResUnfav = () => {
     let user = JSON.parse(localStorage.getItem("user"))
-    let res_id = this.props.restaurant.id
     let fav = this.props.favorites[0]
     let fav_id = fav.id
     let fav_type = fav.favorite_type
     console.log(user.id, fav_id, fav_type,'bob')
-    if (fav.id == fav_id && fav_type === "Restaurant"){
+    if (fav.id === fav_id && fav_type === "Restaurant"){
         fetch ('http://localhost:3000/favorites/' + fav_id, {
           method: 'DELETE',
           headers: {

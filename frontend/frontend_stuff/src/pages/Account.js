@@ -29,9 +29,15 @@ class Account extends React.Component {
             this.setState({event: data.events})
             localStorage.clear()
             this.props.history.push("/");})
+      this.refreshPage()
+    }
+
+    refreshPage = () => {
+      window.open('http://localhost:3001/', "_self")
     }
 
     render() {
+      console.log(this.state.user)
       return (
       <div className="App">
         <div className="container">

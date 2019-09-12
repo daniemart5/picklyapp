@@ -32,7 +32,7 @@ class Event extends React.Component {
     let fav_id = fav.id
     let fav_type = fav.favorite_type
     console.log(user.id, eve_id, fav_type, fav_id, 'bob')
-    if (fav.id == fav_id && fav_type === "Event"){
+    if (fav.id === fav_id && fav_type === "Event"){
         fetch ('http://localhost:3000/favorites/' + fav_id, {
           method: 'DELETE',
           headers: {

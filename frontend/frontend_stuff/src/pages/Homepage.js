@@ -24,15 +24,14 @@ class Homepage extends React.Component {
     } 
 
     render() {
-      console.log(this.state.userData.favorites.length)
+      console.log(this.state.userData.favorites.sort())
         return (    
         <div className="App">
           <div className="container">
           <Header />
               <h1>You are awesome {this.state.user.name}</h1>
-               <h3>Check this out:</h3>
-               <h2>{}</h2>
-              <hr/>
+              <h2>What will you pick today?</h2>
+          
           </div>
         </div>
       )

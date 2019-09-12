@@ -22,7 +22,7 @@ class FavoritesController < ApplicationController
     def destroy
         @favorite = Favorite.find(params[:id])
         @favorite.delete
-        sesson.clear 
+        session.clear 
         render json: @favorite
     end 
 end

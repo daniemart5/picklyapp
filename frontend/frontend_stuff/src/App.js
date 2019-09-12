@@ -3,6 +3,7 @@ import {BrowserRouter, Switch, Route} from "react-router-dom";
 import Landing from './pages/Landing';
 import Homepage from './pages/Homepage';
 import Account from './pages/Account';
+import Edit from './layout/Edit';
 import Search from './pages/Search';
 import Login from './layout/Login';
 import Favorites from './pages/Favorites';
@@ -20,7 +21,8 @@ class App extends React.Component {
       username: "",
       city: "",
       bio: "",
-      age: ""
+      age: "",
+      favorites: ""
       },
       search: ""
       
@@ -31,7 +33,6 @@ class App extends React.Component {
     this.setState({search: ev.target.value.substr(0, 20)});
   }
 
-   
   render() {
     return (
       <BrowserRouter>
@@ -42,6 +43,7 @@ class App extends React.Component {
           <Route path = "/home" component = {Homepage}/> 
           <Route path = "/favorites" component = {Favorites}/>
           <Route path = "/account" component = {Account}/>
+          <Route path = "/edit" component = {Edit}/>
           <Route path = "/search" render={props =>
             <Search {...props} updateSearch={this.updateSearch} search={this.state.search}/>
            }/>

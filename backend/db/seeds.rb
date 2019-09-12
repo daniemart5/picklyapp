@@ -93,7 +93,7 @@ resImages = [
     "https://picsum.photos/id/42/3456/2304",
     "https://picsum.photos/id/428/2529/1581",
     "https://picsum.photos/id/490/5774/3818",
-    "https://picsum.photos/id/513/4373/3280",
+    "https://picsum.photos/id/395/4080/2720",
     "https://picsum.photos/id/625/2507/1674",
     "https://picsum.photos/id/670/2048/1367",
     "https://picsum.photos/id/686/4462/2975",

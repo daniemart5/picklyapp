@@ -13,11 +13,6 @@ class Login extends Component {
     
     handleSubmit=(e)=>{
         e.preventDefault() 
-        // const userData = {user: {
-        //     username: this.state.username,
-        //     password: this.state.password
-        //     }
-        // }
         this.handleLoginUser()
 
     }

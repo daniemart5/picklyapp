@@ -56,7 +56,7 @@ class Search extends React.Component {
           <Header />
           <input
           type="text"
-          placeholder={"Events"}
+          placeholder={"Search for food or fun!"}
           onChange={this.handleChange}
           value={this.filteredEve, this.filteredRes}
           />        

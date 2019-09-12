@@ -24,18 +24,19 @@ class Homepage extends React.Component {
     } 
 
     render() {
-        
-      return (    
-      
-      <div className="App">
+      console.log(this.state.userData.favorites.length)
+        return (    
+        <div className="App">
           <div className="container">
-
-              <Header /> 
+          <Header />
+              <h1>You are awesome {this.state.user.name}</h1>
+               <h3>Check this out:</h3>
+               <h2>{}</h2>
               <hr/>
           </div>
-      </div>
+        </div>
       )
-    }   
+  }   
 }       
 export default withRouter(Homepage);
   

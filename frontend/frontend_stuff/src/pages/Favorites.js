@@ -44,7 +44,7 @@ class Favorites extends Component {
                     return <Restaurant favorites={this.state.favorites.map(favorite => favorite)} restaurant={restaurant} key={index}/>;}
                     )}
                 <h1>Events:</h1> {this.state.events.map((event, index) => {
-                    return <Event favorites={this.state.favorites} event={event} key={index}/>;}
+                    return <Event favorites={this.state.favorites.map(favorite => favorite)} event={event} key={index}/>;}
                     )}
                 <hr/>
             </div>

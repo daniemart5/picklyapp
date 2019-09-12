@@ -25,6 +25,30 @@ class Event extends React.Component {
     
   }
 
+  handleUnfav = () => {
+    let user = JSON.parse(localStorage.getItem("user"))
+    let eve_id = this.props.event.id
+    let fav = this.props.favorites[0]
+    let fav_id = fav.id
+    let fav_type = fav.favorite_type
+    console.log(user.id, eve_id, fav_type, fav_id, 'bob')
+    if (fav_id === fav_id && fav_type === "Event"){
+        fetch ('http://localhost:3000/favorites/' + fav_id, {
+          method: 'DELETE',
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ 
+            id: eve_id,
+            favorite_type: "Event"
+            })
+          })
+          .then(res => res.json())
+          .then(data => {
+            this.setState({event: data.events})})
+    }
+  }
+
     render() {
       return (
        <div className="App">

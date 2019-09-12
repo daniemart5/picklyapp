@@ -19,28 +19,32 @@ class Restaurant extends React.Component {
           favorite_type: 'Restaurant'})
       })
       .then(res => res.json())
-      .then(data => this.setState({restaurants: data.restaurants}))
+      .then(data => {
+        this.setState({restaurants: data.restaurants})})
   }
 
   handleUnfav = () => {
     let user = JSON.parse(localStorage.getItem("user"))
     let rest_id = this.props.restaurant.id
-    this.props.favorites.map(favorite => {
-      if (favorite.favorite_id == rest_id && favorite.favorite_type === 'Restaurant'){
-          fetch ('http://localhost:3000/favorites/' + rest_id, {
-            method: 'DELETE',
-            headers: {
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify({ 
-              id: favorite.id,           
-              user_id: user.id,
-              favorite_id: rest_id,
-              favorite_type: 'Restaurant'})
+    let fav = this.props.favorites[0]
+    let fav_id = fav.id
+    let fav_type = fav.favorite_type
+    console.log(user.id, rest_id, fav_id, fav_type,'bob')
+    if (fav_id === fav_id && fav_type === "Restaurant"){
+        fetch ('http://localhost:3000/favorites/' + fav_id, {
+          method: 'DELETE',
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ 
+            id: fav_id,
+            favorite_type: "Restaurant"
             })
-            .then(res => res.json())
-            .then(data => console.log(data))
-    }})
+          })
+          .then(res => res.json())
+          .then(data => {
+            this.setState({restaurant: data.restaurants})})
+    }
   }
 
   render() {

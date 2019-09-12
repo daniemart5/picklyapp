@@ -2,13 +2,35 @@ import React from 'react';
 import Header from '../layout/Header';
 import {withRouter} from "react-router-dom";
 
-
 class Account extends React.Component {
     
     state = {
       user: JSON.parse(localStorage.getItem("user"))    
     };
-  
+
+    handleEdit = () => {
+      this.props.history.push("/edit");
+    }
+
+    handleDelete = () => {
+      let userID = this.state.user.id
+      console.log(userID)
+      fetch ('http://localhost:3000/users/' + userID, {
+          method: 'DELETE',
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ 
+            id: userID,
+            })
+          })
+          .then(res => res.json())
+          .then(data => {
+            this.setState({event: data.events})
+            localStorage.clear()
+            this.props.history.push("/");})
+    }
+
     render() {
       return (
       <div className="App">
@@ -19,8 +41,8 @@ class Account extends React.Component {
             <p>Age: {this.state.user.age}</p>
             <h4>Username: {this.state.user.username}</h4>
           <div>
-            <button className="form-submit">Edit Account Info</button>
-            <button className="form-submit">Delete Account</button>
+            <button onClick={this.handleEdit} className="form-submit">Edit Account Info</button>
+            <button onClick={this.handleDelete} className="form-submit">Delete Account</button>
           </div>
         </div>
       </div>

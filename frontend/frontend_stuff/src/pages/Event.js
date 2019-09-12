@@ -46,7 +46,9 @@ class Event extends React.Component {
           .then(res => res.json())
           .then(data => {
             this.setState({event: data.events})})
-    }
+          
+          }
+          
   }
 
     render() {

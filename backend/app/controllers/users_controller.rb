@@ -40,8 +40,24 @@ class UsersController < ApplicationController
       end
     end 
 
-    def destory
-      @user = User.find(params[id])
+    def edit
+      @user = User.find(params[:id])
+    end 
+
+    def update
+      @user = User.find_by(id: params[:id])
+      @user.update(
+      name: params[:name],  
+      bio: params[:bio], 
+      age: params[:age], 
+      city: params[:city],
+      image: params[:image])
+      @user.save
+      render json: @user
+    end 
+
+    def destroy
+      @user = User.find(params[:id])
       @user.delete
       session.clear
     end 

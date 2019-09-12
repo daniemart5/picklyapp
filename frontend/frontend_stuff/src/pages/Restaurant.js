@@ -44,7 +44,9 @@ class Restaurant extends React.Component {
           .then(res => res.json())
           .then(data => {
             this.setState({restaurant: data.restaurants})})
-    }
+            
+          }
+  
   }
 
   render() {

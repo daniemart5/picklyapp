@@ -33,7 +33,6 @@ class App extends React.Component {
     this.setState({search: ev.target.value.substr(0, 20)});
   }
 
-   
   render() {
     return (
       <BrowserRouter>

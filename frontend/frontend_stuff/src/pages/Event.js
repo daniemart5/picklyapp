@@ -6,7 +6,7 @@ class Event extends React.Component {
     events: ""
   }
  
-  handleFav = () => {
+  handleEveFav = () => {
     let user = JSON.parse(localStorage.getItem("user"))
     let userID = user.id
     fetch ('http://localhost:3000/favorites', {
@@ -25,30 +25,34 @@ class Event extends React.Component {
     
   }
 
-  handleUnfav = () => {
+  handleEventUnfav = () => {
     let user = JSON.parse(localStorage.getItem("user"))
     let eve_id = this.props.event.id
     let fav = this.props.favorites[0]
     let fav_id = fav.id
     let fav_type = fav.favorite_type
     console.log(user.id, eve_id, fav_type, fav_id, 'bob')
-    if (fav_id === fav_id && fav_type === "Event"){
+    if (fav.id == fav_id && fav_type === "Event"){
         fetch ('http://localhost:3000/favorites/' + fav_id, {
           method: 'DELETE',
           headers: {
             "Content-Type": "application/json",
           },
           body: JSON.stringify({ 
-            id: eve_id,
+            id: fav_id,
             favorite_type: "Event"
             })
           })
           .then(res => res.json())
           .then(data => {
             this.setState({event: data.events})})
+          this.refreshPage()
           
-          }
-          
+    }
+  }
+
+  refreshPage = () => {
+    window.open('http://localhost:3001/favorites', "_self")
   }
 
     render() {
@@ -59,8 +63,8 @@ class Event extends React.Component {
         <h2>{this.props.event.name} | {this.props.event.kind}</h2>
         <h3>{this.props.event.location} | Rating: {this.props.event.rating}</h3>
         <p>{this.props.event.description}</p>
-        <button onClick={this.handleFav} className="form-submit">Favorite ❤️</button>
-        <button onClick={this.handleUnfav} className="form-submit">Unfavorite ❤</button>
+        <button onClick={this.handleEveFav} className="form-submit">Favorite ❤️</button>
+        <button onClick={this.handleEventUnfav} className="form-submit">Unfavorite ❤</button>
         </div>
     </div>
       );

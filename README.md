@@ -11,3 +11,9 @@ Just npm install and start!
 
 Have fun :) 
 
+Used in Pickly App:
+Ruby on Rails - Backened 
+JavaScript/React - Frontend 
+CSS - Styling 
+
+Custom Logo by Marianne Martinoli 

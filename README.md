@@ -12,8 +12,15 @@ Just npm install and start!
 Have fun :) 
 
 Used in Pickly App:
+
+
 Ruby on Rails - Backened 
+
 JavaScript/React - Frontend 
+
 CSS - Styling 
 
 Custom Logo by Marianne Martinoli 
+
+Check out the blog I wrote about using a polymoric relationship (which I used in this app)
+https://medium.com/@daniemart5/polymorphic-relationships-e7b107739c09

@@ -24,7 +24,6 @@ class Homepage extends React.Component {
     } 
 
     render() {
-      console.log(this.state.userData.favorites.sort())
         return (    
         <div className="App">
           <div className="container">

@@ -15,6 +15,7 @@ class About extends Component {
 
                 <p><a href="https://github.com/daniemart5/">Github</a></p>
                 <p><a href="https://www.linkedin.com/in/daniemartinoli/">LinkedIn</a></p>
+                <p><a href="https://medium.com/@daniemart5">Blogs</a></p>
             </div>
         )
     }

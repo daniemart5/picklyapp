@@ -52,7 +52,7 @@ class Search extends React.Component {
   render() {
 
     return (
-      <div className="App">
+      <div className="container">
         <Header />
           <div class="searchBox">
             <input className="searchInput"

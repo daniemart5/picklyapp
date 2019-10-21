@@ -16,6 +16,7 @@ function Header(){
             | <Link to='/search'>Search </Link>
             | <Link to='/favorites'>Favorites </Link> 
             | <Link to='/account'>Account </Link>
+            | <Link to='/about'>About </Link>
             | <Link onClick={handleLogOut} to='/'>Log Out</Link>
         </header>
     )

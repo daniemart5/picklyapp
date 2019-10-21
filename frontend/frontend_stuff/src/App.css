@@ -106,4 +106,16 @@ html {
    border-radius: 15px;
 }
 
+.DANIE {
+  text-align: left;
+  width: 20%;
+  height: 25%;
+  border-radius: 35px;
+  padding: 1%;
+
+}
+
+.about {
+  text-align: center;
+}
 

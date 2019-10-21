@@ -8,6 +8,7 @@ import Search from './pages/Search';
 import Login from './layout/Login';
 import Favorites from './pages/Favorites';
 import Register from './layout/Register';
+import About from './pages/About'; 
 
 import "./App.css";
 
@@ -48,7 +49,8 @@ class App extends React.Component {
             <Search {...props} updateSearch={this.updateSearch} search={this.state.search}/>
            }/>
           <Route path = "/login" component = {Login}/>
-          <Route path = "/register" component = {Register}/>    
+          <Route path = "/register" component = {Register}/> 
+          <Route path = "/about" component = {About}/>    
           <div className="App">
             <div className="container">
             </div>
